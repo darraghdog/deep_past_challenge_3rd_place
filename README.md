@@ -1,8 +1,29 @@
 # 3rd Place Solution — Deep Past Initiative Machine Translation
 
-Kaggle competition: [Deep Past Initiative Machine Translation](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation)
+**Competition**: [Deep Past Initiative Machine Translation](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation)  
+**Result**: 3rd / 2,673 teams  
+**Prize**: $8,000  
 
-3rd place solution for translating Old Assyrian Akkadian transliterations to English.
+## Competition Overview
+
+Four thousand years ago, Assyrian merchants left behind one of the world's richest archives of everyday commercial life — tens of thousands of clay tablets recording debts, caravans, and family matters. Nearly 23,000 tablets survive documenting Old Assyrian trading networks connecting Mesopotamia to Anatolia. Only half have been translated, and fewer than a dozen scholars worldwide can read the rest.
+
+The task: build neural machine-translation models that convert transliterated Old Assyrian Akkadian into English. The challenge is that Akkadian is a low-resource, morphologically complex language where a single word can encode what takes multiple words in English.
+
+**Evaluation**: Geometric mean of corpus-level BLEU and chrF++ scores (micro-averaged via [SacreBLEU](https://github.com/mjpost/sacrebleu)).
+
+**Training data**: ~1,500 document-level transliteration/translation pairs + ~8,000 untranslated transliterations + raw OCR from ~880 scholarly publications.  
+**Test data**: ~4,000 sentence-level translations from ~400 documents.
+
+```bibtex
+@misc{deep-past-initiative-machine-translation,
+    author = {Abdulla, F. and Agarwal, R. and Anderson, A. and Barjamovic, G. and Lassen, A. and Ryan Holbrook and Mar\'{i}a Cruz},
+    title = {Deep Past Challenge - Translate Akkadian to English},
+    year = {2025},
+    howpublished = {\url{https://kaggle.com/competitions/deep-past-initiative-machine-translation}},
+    note = {Kaggle}
+}
+```
 
 ## Data Setup
 
