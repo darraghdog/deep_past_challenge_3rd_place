@@ -29,22 +29,7 @@ The task: build neural machine-translation models that convert transliterated Ol
 
 ### 1. Competition Data (hosted by Kaggle)
 
-Download from the [competition data page](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/data):
-
-```
-train.csv                            # 1,561 training pairs
-test.csv                             # Test submission format
-sample_submission.csv
-published_texts.csv                  # 7,953 transliterations (no translations)
-Sentences_Oare_FirstWord_LinNum.csv  # Sentence-level metadata
-bibliography.csv
-eBL_Dictionary.csv                   # Electronic Babylonian Library lexicon
-OA_Lexicon_eBL.csv                   # Old Assyrian lexicon
-publications.csv                     # Publication database
-resources.csv
-```
-
-Place these in `data/competition/`.
+Download from the [competition data page](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/data) and place in `data/competition/`.
 
 ### 2. Source Data (hosted on Kaggle Datasets)
 
@@ -58,21 +43,11 @@ This contains all PDF and reference sources used in the data extraction pipeline
 
 | Directory | Contents | Files | Size |
 |-----------|----------|-------|------|
-| `akt_subsets/side_by_side/` | AKT volumes with side-by-side transliteration/translation layout | 8 PDFs | 328M |
-| `akt_subsets/top_bottom/` | AKT volumes with top-bottom layout | 9 PDFs | 44M |
-| `akt_subsets/ocr/` | AKT 1 (1990) — oldest, OCR-quality scans | 1 PDF | 1.3M |
+| `akt_subsets/` | AKT volume page-range subsets (side-by-side, top-bottom, OCR layouts) | 18 PDFs | 373M |
 | `oaa_pihans/` | Reference publications (ICK4, Kouwenberg, Larsen, PIHANS96) | 4 PDFs | 183M |
 | `cad/` | Chicago Assyrian Dictionary open-access volumes | 26 PDFs | 750M |
-| `journal_articles/dergipark_v1/` | Turkish journal articles — batch 1 | 13 PDFs | 26M |
-| `journal_articles/michel/` | Michel 2025 OA Legal Cases | 1 PDF | 1M |
-| `journal_articles/round_2/turkish/` | Turkish journal articles — round 2 | 8 PDFs | 20M |
-| `journal_articles/round_2/english/` | English journal articles — round 2 | 3 PDFs | 6M |
-| `journal_articles/round_4/dergipark_tr/` | Turkish journal articles — round 4 | 26 PDFs | 96M |
-| `journal_articles/round_4/dergipark_en/` | English journal articles — round 4 | 8 PDFs | 23M |
-| `journal_articles/round_4/dergipark_de/` | German journal articles — round 4 | 2 PDFs | 1.6M |
-| `hecker_hpm/pdfs/` | Hecker aATU/HPM transliteration corpus | 70 PDFs | 35M |
-| `hecker_hpm/html_corpora/` | HPM web-scraped transliterations | 15 JSONLs | 828K |
-| `hecker_hpm/POAT_Hecker.pdf` | POAT Hecker publication | 1 PDF | 237K |
+| `journal_articles/` | Turkish, English, German journal articles across 4 collection rounds | 61 PDFs | 173M |
+| `hecker_hpm/` | Hecker aATU/HPM transliteration corpus (PDFs + web-scraped HTML) | 86 files | 36M |
 | Root files | `holdout_oare_ids.txt`, `Dataset_Instructions.txt`, `Dataset_Instructions_v2.txt` | 3 files | 27K |
 
 ### Expected directory structure after setup
