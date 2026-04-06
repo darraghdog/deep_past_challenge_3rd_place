@@ -31,7 +31,17 @@ The task: build neural machine-translation models that convert transliterated Ol
 
 Download from the [competition data page](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/data) and place in `data/competition/`.
 
-### 2. Source Data (hosted on Kaggle Datasets)
+### 2. Training Data (hosted on Kaggle Datasets)
+
+All extracted JSONL files and preparation scripts needed to build the training dataset. Drop-in replacement for the original `synth-claude-v23-aug3-68e4ba` dataset.
+
+```bash
+kaggle datasets download darraghdog/akkadian-3rd-place-training-data -p data/ --unzip
+```
+
+Run `scripts/prepare_sentence_data_23.py` to produce the final augmented training set.
+
+### 3. Source Data (hosted on Kaggle Datasets)
 
 Download from [akkadian-3rd-place-source-data-darragh](https://www.kaggle.com/datasets/darraghdog/akkadian-3rd-place-source-data-darragh):
 
@@ -39,7 +49,7 @@ Download from [akkadian-3rd-place-source-data-darragh](https://www.kaggle.com/da
 kaggle datasets download darraghdog/akkadian-3rd-place-source-data-darragh -p data/ --unzip
 ```
 
-This contains all PDF and reference sources used in the data extraction pipeline (~1.4 GB):
+Only needed if re-running extraction from scratch. Contains all PDF and reference sources (~1.4 GB):
 
 | Directory | Contents | Files | Size |
 |-----------|----------|-------|------|
