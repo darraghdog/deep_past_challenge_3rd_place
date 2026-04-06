@@ -60,29 +60,53 @@ Only needed if re-running extraction from scratch. Contains all PDF and referenc
 | `hecker_hpm/` | Hecker aATU/HPM transliteration corpus (PDFs + web-scraped HTML) | 86 files | 36M |
 | Root files | `holdout_oare_ids.txt`, `Dataset_Instructions.txt`, `Dataset_Instructions_v2.txt` | 3 files | 27K |
 
-### Expected directory structure after setup
+## Extraction Pipeline
 
+The pipeline extracts transliteration/translation pairs from source PDFs and competition data, then assembles them into the final augmented training set. All Gemini API calls go through the NVIDIA inference endpoint.
+
+### Prerequisites
+
+```bash
+pip install pandas requests PyMuPDF rapidfuzz
 ```
-data/
-  competition/           # From Kaggle competition page
-    train.csv
-    published_texts.csv
-    ...
-  akt_subsets/           # From source data dataset
-    side_by_side/
-    top_bottom/
-    ocr/
-  oaa_pihans/
-  cad/
-  journal_articles/
-    dergipark_v1/
-    michel/
-    round_2/
-    round_4/
-  hecker_hpm/
-    pdfs/
-    html_corpora/
-  holdout_oare_ids.txt
-  Dataset_Instructions.txt
-  Dataset_Instructions_v2.txt
+
+### API Key Setup
+
+```bash
+cp .env.example .env
+# Edit .env and add your NVIDIA API key
+```
+
+### Running the Full Pipeline
+
+```bash
+bash run_pipeline.sh
+```
+
+This runs all stages sequentially. Individual scripts support `--shard K/N` for parallelization.
+
+### Pipeline Stages
+
+| Stage | Script | API | Output |
+|-------|--------|-----|--------|
+| 1a | `extract_expert_published_texts.py` | - | Combined expert pairs |
+| 1b | `repair_expert_translations_v16.py` | Gemini Pro | Repaired translations |
+| 1c | `split_expert_sentences_v16.py` | Gemini Pro | Sentence-split expert pairs |
+| 1d | `dedup_expert_v19.py` | - | `expert_v19_dedup.jsonl` |
+| 2a-c | `extract_akt_pairs_v24.py` (3 modes) | Gemini Pro 3.1 | AKT v24 JSONLs |
+| 3a | `extract_cad_pairs_v20.py` | Gemini Pro 3.1 | CAD raw pairs |
+| 3b | `normalize_cad_v20.py` | - | `cad_normalized.jsonl` |
+| 4a-g | `extract_akt_pairs_v24.py` (journals) | Gemini Pro 3.1 | Journal article JSONLs |
+| 5a | `extract_akt_pairs_v24.py` (hecker) | Gemini Pro 3.1 | Hecker transliterations |
+| 5b | `crossref_hecker.py` | - | Cross-referenced pairs |
+| 5c | `split_published_texts_v22.py` (hecker) | Gemini Pro 3.1 | `hecker_v22.jsonl` |
+| 6a | `split_published_texts_v22.py` (synthetic) | Gemini Pro 3.1 | `synthetic_v22.jsonl` |
+| 7 | `prepare_sentence_data_23.py` | - | Final training set |
+
+### Shortcut: Using Pre-extracted Data
+
+To skip extraction and go straight to training, download the training data dataset (step 2 above) which contains all pre-extracted JSONLs. Then run only Stage 7:
+
+```bash
+python3 scripts/preparation/prepare_sentence_data_23.py --hecker --round4
 ```

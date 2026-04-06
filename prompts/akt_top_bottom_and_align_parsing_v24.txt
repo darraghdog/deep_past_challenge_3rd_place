@@ -1,0 +1,145 @@
+------------------------GERMAN TO ENGLISH SUPPLEMENT (Larsen/OAA Style)------------------------
+This supplement provides German→English vocabulary mappings for ICK 4 (Hecker) texts.
+Use alongside the master Dataset_Instructions.txt conventions.
+
+## German→English Vocabulary Mappings
+
+### Commodities & Materials
+- Zinn → "tin" (never "lead")
+- Silber → "silver"
+- Gold → "gold"
+- Gewand/Stoff → "textile" (never "garment" or "cloth")
+- Kutānum-Stoff → "kutānum-textile"
+- schwarzer Stoff → "black textile"
+- Esel → "donkey"
+- Rind → "ox"
+- Bronze → "bronze"
+
+### People & Professions
+- Kaufmann/Gläubiger → "merchant"
+- Diener/Bursche → "employee" (or "servant" in domestic contexts)
+- Sklavin → "slave-girl" (hyphenated)
+- Sklave → "slave"
+- Anwalt/Kommissär → "attorney"
+- Bote/Reisender → "traveller"
+- Packer/Karawanenführer → "transporter" (or "harnesser")
+- Bruder → "brother" (may mean "colleague" in business)
+- Herr → "lord" or "boss" (in business contexts)
+
+### Financial & Legal Terms
+- Geldbeutel/Sack (naruqqum) → "joint-stock fund" (abstract) or "sack" (physical)
+- Betriebskapital (be'ūlātum) → "working capital"
+- Kaufpreis/Erlös (šīmum) → "purchase" or "proceeds"
+- Zins (ṣibtum) → "interest"
+- Tafel/Urkunde (ṭuppum) → "tablet" or "document"
+- Hüllentafel (ṭuppum ḫarmum) → "certified tablet"
+- Hand/Anteil (qātum) → "share" or "claim"
+- Karawane (ellat) → "caravan"
+- Abrechnung (nikkassū) → "accounts"
+- Abgabe (šaddu'utum) → "transport tariff"
+- Wegerecht/Gebühr (datum) → "road-tax"
+- Zehnt (išrātum) → "tithe"
+- Eid der Stadt (nīš ālim) → "oath of the City"
+
+### Terms to Keep Untranslated
+- kārum (Hafen/Kolonie) → keep as "kārum"
+- wubārtum (Station) → keep as "wubārtum"
+
+### Judicial & Procedural Terms (common in ICK 4)
+- Urteil des Kārum (dīn kārim) → "verdict of the colony"
+- Wort/Sache/Angelegenheit (awātum) → "case" or "affair" (legal contexts)
+- Zeugen (šībū) → "witnesses"
+- Schafschur (buqūmum) → "plucking time"
+- Hand legen (qātam šakānum) → "to lay claim"
+
+### Direction Terms (preserve topography)
+- hinaufgehen (elā'um) → "to go up" (travel toward Assur)
+- hinabgehen (warādum) → "to go down" (travel toward Kanesh)
+
+### Special Notes
+- "City" (capitalized) always refers to Assur
+- "city" (lowercase) refers to local Anatolian towns
+- ṣubāt ša qātim → "quality textile"
+-------------------------------------------------------------------------------
+
+I am uploading a PDF document containing pages of Old Assyrian/Akkadian texts. I need you to perform a structured, semantic data extraction with style normalization. It is critical to read the pages in order.
+
+**ROLE:**
+You are an expert Assyriologist and Data Engineer. You are processing a PDF document of Old Assyrian/Akkadian texts.
+
+**CRITICAL TRIGGER (Read First):**
+Locate the texts by finding **Sequential Text Blocks**.
+* **Format:** Identify blocks of Old Assyrian/Akkadian Transliteration (which contain margin line counts like 1, 5, 10).
+* **Matching:** Associate these Transliteration blocks with the German Translation paragraphs immediately following them. The German translations will use superscript line numbers (e.g., <sup>1-2)</sup>, <sup>3-6)</sup>) to map back to the transliteration.
+* **Ignore:** Full-width introductions, footnotes, commentary, and bibliographies. If a page has no text blocks matching this pattern, return `[]`.
+
+**EXTRACTION INSTRUCTIONS:**
+Your goal is to extract the text by matching the MEANING of the Akkadian to the MEANING of the German translation.
+
+1.  **Identify the Page Number & ID:** Track the page number at the top. Look above the text blocks for a text ID (e.g., "I 437"). If a text continues onto a new page, use the ID from the previous page.
+2.  **Semantic Chunking (Maximum Atomicity):** Read the Akkadian block and the German block. Break the text down into the smallest, most "atomic" chunks possible.
+    * Do NOT extract strictly line-by-line. Instead, use the superscript line ranges provided in the German translation (e.g., <sup>1-2)</sup>, <sup>3-6)</sup>) as your initial guide to create chunks.
+    * **The Atomic List Rule:** You MUST make the data as atomic as possible. If a single translation range contains a list of distinct witnesses, people, or itemized goods, **break that chunk down further** into distinct, individual JSON objects for each person/item.
+3.  **Calculate Line Ranges:** For each chunk, output the clean integer values in the `start_line` and `end_line` fields. Use the margin numbers (1, 5, 10) as mathematical anchors to count backwards and forwards. Ignore topological markers like "Vs.", "Rs.", "u. K." when extracting the integer.
+4.  **Language Processing & Translation:**
+    * **`language`**: Set to `"de"`.
+    * **`translation`**: Store the exact original German text for that chunk as seen on the page.
+    * **`english_translation`**: Translate the German text into **scholarly English** using the vocabulary mappings provided above. *CRITICAL:* Derive proper nouns, divine names, and technical terms directly from the Akkadian Transliteration, not just the German rendering. Normalize letter formulas (e.g., "To X: Thus Y:").
+5.  **Handle Unmatched Text:** If a piece of Akkadian text is transliterated but completely ignored in the translation, extract it as its own chunk and set `"translation": "MISSING"` and `"english_translation": "MISSING"`.
+6.  **Assess Quality Metrics:**
+    * **`ocr_quality`**: Rate image clarity ("high", "medium", "low"). Do NOT lower for `[...]` or expected tablet damage.
+    * **`match_quality`**: Rate confidence in the semantic alignment ("high", "medium", "low").
+7.  **Ensure Complete Extraction:** You MUST include ALL transliteration lines from the identified text blocks. Do not leave any transliteration lines out.
+
+**CLEANING RULES:**
+1.  **Flattening:** Treat text within chunks as a continuous stream. Use spaces to separate words, no newlines (`\n`).
+2.  **Exact OCR:** Keep typos, brackets `[...]`, half-brackets `⌈...⌉`, and special chars (š, ṣ, ṭ, ₄, ₆) exactly as seen.
+3.  **Strip Markers:** Remove the topological line indicators (`Vs.`, `Rs.`, `u. K.`, `o. K.`, `l. S.`) and the original margin numbers (`1`, `5`, `10`) from the final `transliteration` strings so only the actual Akkadian text remains.
+
+------------------------EXAMPLE------------------------
+**Input Context:** Text "I 437". Showing the mapping of the first three semantic chunks based on the German superscript ranges `1-2)`, `3-6)`, and `6-8)`. Notice how Akkadian Line 6 is correctly split across two chunks based on meaning.
+
+**EXPECTED OUTPUT:**
+------------------------PARSED CHUNKS------------------------
+[
+  {
+    "id": "I 437",
+    "page": "Unknown",
+    "transliteration": "a-na Bu-za-zu qí-bi-ma um-ma A-ha-ha-ma",
+    "translation": "An Buzāzu, folgendermaßen Aḫaḫa:",
+    "language": "de",
+    "english_translation": "To Buzāzu: Thus Aḫaḫa:",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "I 437",
+    "page": "Unknown",
+    "transliteration": "KÙ.BABBAR ša Ku-lu-ma-a a-ma-lá ší-ma-tim a-ma-kam a-ma-ma-an lá ta-da-an-ma lá i-ṭá-hi",
+    "translation": "Das Silber des Kulūmāja gib dort entsprechend den testamentarischen Bestimmungen niemandem, und niemand soll sich (ihm) nähern.",
+    "language": "de",
+    "english_translation": "Do not give the silver of Kulūmāja to anyone there in accordance with the testamentary provisions, and no one should approach (it).",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 3,
+    "end_line": 6
+  },
+  {
+    "id": "I 437",
+    "page": "Unknown",
+    "transliteration": "KÙ.BABBAR [l]i-ki-ni-ik-ma a-na a-lim{ki} [šé]-bi-lam",
+    "translation": "Das Silber soll gesiegelt werden; [sch]icke es dann her in die Stadt.",
+    "language": "de",
+    "english_translation": "The silver should be sealed; then send it here to the City.",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 6,
+    "end_line": 8
+  }
+]
+------------------------End Of chunks------------------------
+
+**OUTPUT FORMAT:**
+Return the result strictly as a JSON array inside the `PARSED CHUNKS` / `End Of chunks` delimiters shown above. If no text is found, return `[]` inside the delimiters.

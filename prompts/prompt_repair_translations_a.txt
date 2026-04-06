@@ -1,0 +1,50 @@
+You are reviewing translations made by expert Assyriologists with deep knowledge of Old Assyrian Akkadian. These scholars have far more expertise in the language, culture, and textual context than you do. Their translation choices—even ones that might seem unusual—are almost always deliberate and informed by scholarship you cannot access.
+
+Below is a list of transliteration-translation pairs. The translations are from expert scholars and are generally correct. Your job is to identify ONLY genuine errors, not stylistic differences.
+
+## WHAT TO CORRECT (genuine errors only):
+1. **Wrong language**: Translation is in German, French, or another language instead of English. Translate it to English.
+2. **Wrong passage translated**: The translation doesn't match the transliteration at all (e.g., translation is from a different tablet).
+3. **Accidentally omitted passages**: The transliteration contains text that the translator forgot to include in their translation (a copy-paste or oversight error). This is different from "..." gaps which indicate damaged/illegible portions of the original tablet—do NOT fill those in.
+4. **Obvious typos**: Clear spelling errors like "whithout" (without), "andfrom" (and from), "a attorney" (an attorney).
+5. **Encoding errors**: Stray characters from other scripts (Hebrew, etc.) that appear due to copy-paste or encoding issues.
+
+## NEVER CORRECT THESE (CRITICAL - VIOLATIONS WILL BE REJECTED):
+
+**NEVER touch quotation marks.** Do not add, remove, or change any quotation marks, whether single ('), double ("), or any other style. Even if you see "stray" quotes, extra quotes, or missing quotes - LEAVE THEM ALONE. This is NOT your job.
+
+**NEVER change capitalization.** Do not capitalize or uncapitalize any word, including proper names like "hinnāya" vs "Hinnāya". Scholars choose their capitalization deliberately. This is NOT your job.
+
+## DO NOT CORRECT (these are scholarly choices, not errors):
+
+1. **Name spelling conventions**: "Assur" vs "Aššur", "Ishtar" vs "Ištar", "Puzur-Istar" vs "Puzur-Ištar". Scholars choose their conventions deliberately.
+2. **Diacritics usage**: Presence or absence of macrons (ā, ē, ī, ū) and other diacritics is a style choice.
+3. **Numeric interpretations**: Do NOT second-guess shekel/mina calculations. Expert Assyriologists understand the numeric system.
+4. **Placeholder terms**: "-textile", "-garment", "-container" are intentional when the scholar is uncertain about the specific type. Do NOT replace with "kutānu-textile" etc.
+5. **Intentional gaps**: "..." or ellipses indicate damaged/illegible text. Do NOT fill these in.
+6. **Translation style**: Do not rephrase, improve flow, or modernize language. If meaning is conveyed correctly, leave it alone.
+
+## OUTPUT FORMAT:
+
+For each input that NEEDS REPAIR, return a JSON object with:
+- "oare_id": the identifier (copy exactly from input)
+- "find": the exact text in the original translation that needs to be replaced (must match exactly)
+- "replace": the corrected text to replace it with
+- "edit": a brief explanation of what was fixed (REQUIRED - must not be empty)
+
+For multiple fixes in the same translation, return multiple objects with the same oare_id.
+
+Examples:
+- Typo fix: {"oare_id": "abc", "find": "whithout the silver", "replace": "without the silver", "edit": "Fixed typo"}
+- Wrong language: {"oare_id": "xyz", "find": "Er gab ihm Silber", "replace": "He gave him silver", "edit": "Translated from German"}
+- Missing passage: {"oare_id": "def", "find": "he paid. Witnessed by", "replace": "he paid. He also delivered 5 textiles. Witnessed by", "edit": "Added omitted passage"}
+
+IMPORTANT:
+- The "find" text MUST exist exactly in the original translation. Be precise with spacing and punctuation.
+- The "find" text MUST be UNIQUE within the translation. Include enough surrounding context so there is only ONE match. For example, if "silver" appears multiple times, use "5 shekels of silver to Puzur" instead of just "silver".
+- For missing passages, anchor to the surrounding text that exists on both sides of the gap.
+- If a translation is acceptable (even if you might translate it differently), do NOT include it in the output.
+- Only return items with GENUINE errors. The output array should be much shorter than the input.
+- When in doubt, leave the translation unchanged.
+
+Return a JSON array containing ONLY the items that need repair. If all translations are acceptable, return an empty array [].

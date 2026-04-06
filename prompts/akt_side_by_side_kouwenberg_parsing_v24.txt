@@ -1,0 +1,129 @@
+------------------------KOUWENBERG TO LARSEN ENGLISH STYLE GUIDE------------------------
+This guide converts Kouwenberg's English translation style to Larsen/OAA standard.
+The source translations are already in English but need style normalization.
+
+## Vocabulary Normalization (Kouwenberg → Larsen)
+
+### Commodities & Materials
+- "cloth(s)" / "garment(s)" → "textile(s)"
+- "lead" (when clearly annukum) → "tin"
+- "money" → "silver" (when kaspum)
+
+### People & Professions
+- "servant" (business context) → "employee"
+- "female slave" → "slave-girl"
+- "lawyer" / "commissioner" → "attorney"
+- "messenger" / "traveler" → "traveller"
+- "packer" → "transporter"
+
+### Financial & Legal Terms
+- "money bag" / "purse" → keep as "naruqqum" (italicized concept)
+- "trading station" → keep as "kārum"
+- "outpost" / "way station" → keep as "wubārtum"
+- "capital" → "working capital" (for be'ūlātum)
+- "toll" / "duty" → "transport tariff"
+- "toll station" → "road-tax"
+
+### Letter Formulas
+Normalize to Dataset_Instructions.txt patterns:
+- "Say to X, thus Y:" → "To X: Thus Y:"
+- "X says to Y:" → "To Y: Thus X:"
+
+### Terms to Keep Untranslated
+These Akkadian terms should remain in the translation:
+- kārum (trading colony)
+- wubārtum (way station)
+- naruqqum (joint-stock fund)
+- hamuštum (5-day week, when specific)
+
+### Special Notes
+- "City" (capitalized) always refers to Assur
+- "city" (lowercase) refers to local Anatolian towns
+- Preserve all bracket notation [...] for damaged text
+- Keep proper name normalizations with diacritics (ā, ē, ī, ū, š, ṣ, ṭ)
+-------------------------------------------------------------------------------
+
+I am uploading a PDF document containing pages of Old Assyrian/Akkadian texts. I need you to perform a structured, semantic data extraction with style normalization.
+
+**CRITICAL TRIGGER (Read First):**
+Locate the texts by finding **Two Distinct Columns** appearing side-by-side (Left: Transliteration, Right: Translation). Ignore full-width introductions, footnotes, notes, or commentary. If a page has no side-by-side columns, return `[]`.
+
+**EXTRACTION INSTRUCTIONS:**
+Your goal is to extract the text by matching the MEANING of the Akkadian to the MEANING of the English, completely ignoring their horizontal physical alignment on the page.
+
+1.  **Identify the Page Number & ID:** Track the page number at the top. Look above the columns for a text ID (e.g., "101. kt 94/k 1233"). Use the preceding header if a text continues onto a new page.
+2.  **Semantic Chunking (Maximum Atomicity):** Read the entire Akkadian block and the entire English block. Break the text down into the smallest, most "atomic" chunks possible where the Akkadian perfectly matches the English translation. 
+    * Do not force a 1-to-1 horizontal line match. Map based on grammatical completion.
+    * Break ANY list (witnesses, goods) down into distinct individual JSON chunks.
+3.  **Calculate Line Ranges:** For each chunk, use the visible margin numbers as mathematical anchors. Provide the `start_line` and `end_line` for the Akkadian text as clean integers.
+4.  **Style Conversion & Output Fields:**
+    * **`translation`**: Store the exact original Kouwenberg English text as seen on the page.
+    * **`language`**: Set to `"en"`.
+    * **`english_translation`**: Apply the Larsen/OAA style guide (provided above) to the original translation. Ensure proper nouns and technical terms match.
+    * **Missing Data:** If Akkadian exists but English is ignored, set `"translation": "MISSING"` and `"english_translation": "MISSING"`.
+5.  **Assess Quality Metrics:**
+    * **`ocr_quality`**: Rate image clarity ("high", "medium", "low"). Do NOT lower for `[...]` or expected tablet damage.
+    * **`match_quality`**: Rate confidence in the semantic alignment ("high", "medium", "low").
+6.  **Ensure Complete Extraction:** You MUST include ALL transliteration lines from the dual-column sections. Do not leave any transliteration lines out.
+
+**CLEANING RULES:**
+1.  **Flattening:** Treat text within chunks as a continuous stream. Use spaces, no newlines (`\n`).
+2.  **Exact OCR:** Keep typos, brackets `[...]`, half-brackets `⌈...⌉`, and special chars exactly as seen.
+3.  **Strip Markers:** Remove original line indicators (`1`, `5`, `e.`, `r.`) from the Akkadian strings.
+
+------------------------EXAMPLE------------------------
+
+**INPUT (Page 177, 101. kt 94/k 1233):**
+17 ma-na KB                 Aššur-imittī son of Etaya has received 17
+ṣa-ru-pá-am ù               minas of refined money and 7 1/2 shekels
+7 1/2 GÍN KÙ.GI             of pašallu-gold from the proceeds of
+pá-⌈ša⌉-lam [A-šùr-]i-mì-tí   Ušinalam’s wool.
+DUMU E-ta-⌈a⌉ i-na      5
+ší-im ⌈SÍG.HI.A⌉
+ša Ú-[ší-na-l]am
+il₅-qé IGI              e.  Witnessed by Ennam-Wēr son of Šudaya,
+
+**EXPECTED OUTPUT:**
+------------------------PARSED CHUNKS------------------------
+[
+  {
+    "id": "101. kt 94/k 1233",
+    "page": 177,
+    "transliteration": "17 ma-na KB ṣa-ru-pá-am ù 7 1/2 GÍN KÙ.GI pá-⌈ša⌉-lam",
+    "translation": "17 minas of refined money and 7 1/2 shekels of pašallu-gold",
+    "language": "en",
+    "english_translation": "17 minas of refined silver and 7 1/2 shekels of pašallu-gold",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 1,
+    "end_line": 4
+  },
+  {
+    "id": "101. kt 94/k 1233",
+    "page": 177,
+    "transliteration": "[A-šùr-]i-mì-tí DUMU E-ta-⌈a⌉ i-na ší-im ⌈SÍG.HI.A⌉ ša Ú-[ší-na-l]am il₅-qé",
+    "translation": "Aššur-imittī son of Etaya has received (it) from the proceeds of Ušinalam’s wool.",
+    "language": "en",
+    "english_translation": "Aššur-imittī son of Etaya has received (it) from the proceeds of Ušinalam’s wool.",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 4,
+    "end_line": 8
+  },
+  {
+    "id": "101. kt 94/k 1233",
+    "page": 177,
+    "transliteration": "IGI E-nu-um-We-er DUMU Šu-da-a",
+    "translation": "Witnessed by Ennam-Wēr son of Šudaya,",
+    "language": "en",
+    "english_translation": "Witnessed by Ennam-Wēr son of Šudaya,",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 8,
+    "end_line": 10
+  }
+]
+------------------------End Of chunks------------------------
+
+**OUTPUT FORMAT:**
+Return the result strictly as a JSON array inside the `PARSED CHUNKS` / `End Of chunks` delimiters shown above. If no dual-column text is found, return `[]` inside the delimiters.

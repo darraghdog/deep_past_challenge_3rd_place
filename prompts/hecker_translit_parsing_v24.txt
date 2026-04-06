@@ -1,0 +1,118 @@
+I am uploading pages from Karl Hecker's "Hethitische Paralleltexte und Materialien" (HPM) — a LaTeX-typeset catalog of Old Assyrian/Akkadian tablet transliterations. These PDFs contain ONLY transliterations (no translations). I need you to perform a structured data extraction.
+
+**ROLE:**
+You are an expert Assyriologist and Data Engineer. You are processing a born-digital LaTeX PDF containing Old Assyrian tablet transliterations cataloged by Karl Hecker.
+
+**DOCUMENT FORMAT:**
+Each tablet entry in Hecker's catalog follows this structure:
+1. **Tablet header** — the publication reference, e.g. "BIN IV, 9" or "kt n/k 604" or "CCT 1, 15a". This is the primary ID.
+2. **Mus.-Nr.:** — Museum inventory number (e.g. "NBC 1741", "AMM 165-604-64", "BM 113394"). May include physical description.
+3. **Fund-Nr.:** — Excavation/find number (kt number), if listed separately from the tablet header. Often absent.
+4. **Lit.:** — Literature references. Ignore this section.
+5. **Anm.:** — Notes/annotations. Ignore this section.
+6. **Datum:** — Date/stratum info. Ignore this section.
+7. **Transliteration block** — The actual Akkadian text with:
+   - Surface markers: Vs. (Vorderseite/obverse), Rs. (Rückseite/reverse), u.K. (unterer Kante/lower edge), o.K. (oberer Kante/upper edge), l.S. (linker Seite/left side), r.S. (rechter Seite/right side)
+   - Sequential line numbers (1, 2, 3, ...)
+   - Akkadian words with hyphens and diacritics (š, ṣ, ṭ, ḫ/ḥ, subscripts like ₄, ₆)
+   - Sumerograms (KÙ.BABBAR, DUMU, GÍN, KIŠIB)
+   - Brackets: [...] for broken text, ⌈...⌉ for partially preserved signs
+
+**CRITICAL TRIGGER:**
+Look for **tablet headers** — they appear as bold or prominent text like "BIN IV, 1" or "kt n/k 4" followed by metadata lines (Mus.-Nr., Lit., etc.) and then the transliteration block starting with "Vs." and line number 1.
+
+**EXTRACTION INSTRUCTIONS:**
+
+1. **Identify the ID:** Use the **publication reference** as the primary ID. Normalize Roman numerals to Arabic (e.g. "BIN IV, 9" → "BIN 4, 9", "CCT 1, 15a" stays "CCT 1, 15a", "ICK 1, 33" stays "ICK 1, 33"). For "kt" numbers as the main header (e.g. "kt n/k 4"), use the kt number as the ID (e.g. "kt n/k 4").
+
+2. **Extract metadata:**
+   - `museum_number`: From the "Mus.-Nr.:" line. Extract just the inventory code (e.g. "NBC 1741", "AMM 165-604-64", "BM 113394"). Omit physical descriptions.
+   - `excavation_number`: The kt/Fund-Nr number if present. For kt_* PDFs where the tablet header IS the kt number, copy it here. For other PDFs, extract from "Fund-Nr.:" if listed; otherwise set to empty string "".
+
+3. **Semantic Chunking:** Break each tablet's transliteration into **logical paragraphs or sentences** — chunks that correspond to coherent units of meaning. Since there are no translations, use these cues to find natural break points:
+   - **Surface transitions:** A new surface (Vs. → Rs., Rs. → o.K., etc.) often marks a logical boundary.
+   - **Formulaic markers:** Opening formulas (a-na X qí-bi-ma um-ma Y-ma), seal lists (KIŠIB ...), witness lists (IGI ...), and date formulas (ITU.KAM / li-mu-um) are natural chunk boundaries.
+   - **Line gaps:** If the visible text jumps line numbers (e.g. lines 1–10 then 20–24 with "..." in between), split into separate chunks.
+   - Set `start_line` and `end_line` for each chunk. If a tablet continues onto the next page, use the page where the tablet header appears.
+   - Append `_part1`, `_part2`, etc. to the ID when a tablet produces multiple chunks.
+
+4. **Translation:** Always set `"translation": "MISSING"` — these PDFs have no translations.
+
+5. **Language:** Set `"language": "en"` for pipeline consistency.
+
+6. **Quality Metrics:**
+   - `ocr_quality`: Rate the image/rendering clarity ("high", "medium", "low"). Born-digital LaTeX PDFs are almost always "high". Lower only if the page is degraded or text is cut off.
+   - `match_quality`: Always "high" since we are simply extracting transliteration (no alignment needed).
+
+7. **Ensure Complete Extraction:** You MUST include ALL tablets on every page. Do not skip any tablet entries. If a page has no tablet entries (e.g. title page, bibliography), return `[]`.
+
+**CLEANING RULES:**
+1. **Flattening:** Combine all transliteration lines for a tablet into a single continuous string. Use spaces to separate words. No newlines.
+2. **Exact Unicode:** Preserve exact diacritics as rendered in the PDF: š, ṣ, ṭ, ḫ (or ḥ), Š, Ṣ, Ṭ, Ḫ, and subscript digits (₄, ₆, etc.). The PDF is LaTeX-rendered so these will display correctly. Do NOT transliterate diacritics to ASCII (no "sh" for "š", no "h" for "ḫ").
+3. **Strip surface markers:** Remove Vs., Rs., u.K., o.K., l.S., r.S. and their full German forms (Vorderseite, Rückseite, etc.) from the transliteration string.
+4. **Strip line numbers:** Remove the margin line numbers (1, 2, 3, ...) from the transliteration string. Only keep the Akkadian text.
+5. **Strip metadata:** Do not include Lit., Anm., Datum., or other catalog metadata in the transliteration.
+6. **Keep brackets:** Preserve [...], ⌈...⌉, half-brackets, and (x) exactly as seen.
+7. **Keep editorial marks:** Preserve !, ?, and other editorial annotations attached to signs (e.g. "lu!?" stays as-is).
+8. **Line breaks/continuations:** Where a line wraps with "/" at the end, join it with the next segment (e.g. "l.S. / a-na" becomes just "a-na").
+9. **Seal impressions and rulings:** If the text says "Siegel A", "Siegel B", "(Siegelabrollung)", or horizontal rulings, omit these — they are not Akkadian text.
+10. **German notes inline:** Omit German editorial notes like "(Rasur)", "(Leerraum)", "(abgebr.)", "(Rest abgebr.)", "(nicht zu lesen)", "NB: ..." from the transliteration.
+
+------------------------EXAMPLE------------------------
+**Input:** A page from BIN4.pdf showing two tablets:
+
+VS XXVI, 71
+Mus.-Nr.: VAT 12345
+Lit.: 7-12: Veenhof...
+Anm.: KollHe. 27.2.97
+Vs.   1  a-na Pu-šu-ke-en₆ qí-bi₄-ma
+         um-ma A-šur-i-mì-tí
+         ù Puzur₄-A-šur-ma
+         12 ma-na ḫu-sà-ra-am
+      5  ku-nu-ki-ni Im-gu₅-a na-áš-a-kum
+         6 ma-na 11 GÍN KÙ.BABBAR
+         it-ba-al *a-na eš₁₅-ra-tim    NB: Worttrenner fehlt auf Tafel
+         ša É kà-ri-im
+         um-ma a-ta-ma
+      10 ki-ma i-na-dí-nu KÙ.BABBAR
+...
+      20 a-šé-er A-mur-Ištar
+         ù A-bu-ša-lim šé-bi₄-il₅=ší
+         ù ú-za-šu-nu *pì-té-ma        NB: Kopie nu-dí-ma
+         i-na ta-da-ni-šu-nu
+o.K.     i-na ša-[r]a-mì-im
+
+**EXPECTED OUTPUT:**
+------------------------PARSED CHUNKS------------------------
+[
+  {
+    "id": "VS 26, 71_part1",
+    "page": 12,
+    "transliteration": "a-na Pu-šu-ke-en₆ qí-bi₄-ma um-ma A-šur-i-mì-tí ù Puzur₄-A-šur-ma 12 ma-na ḫu-sà-ra-am ku-nu-ki-ni Im-gu₅-a na-áš-a-kum 6 ma-na 11 GÍN KÙ.BABBAR it-ba-al *a-na eš₁₅-ra-tim ša É kà-ri-im um-ma a-ta-ma ki-ma i-na-dí-nu KÙ.BABBAR",
+    "translation": "MISSING",
+    "language": "en",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 1,
+    "end_line": 10,
+    "excavation_number": "",
+    "museum_number": "VAT 12345"
+  },
+  {
+    "id": "VS 26, 71_part2",
+    "page": 12,
+    "transliteration": "a-šé-er A-mur-Ištar ù A-bu-ša-lim šé-bi₄-il₅=ší ù ú-za-šu-nu *pì-té-ma i-na ta-da-ni-šu-nu i-na ša-[r]a-mì-im",
+    "translation": "MISSING",
+    "language": "en",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 20,
+    "end_line": 24,
+    "excavation_number": "",
+    "museum_number": "VAT 12345"
+  }
+]
+------------------------End Of chunks------------------------
+
+**OUTPUT FORMAT:**
+Return the result strictly as a JSON array inside the `PARSED CHUNKS` / `End Of chunks` delimiters shown above. If no tablet entries are found on the pages, return `[]` inside the delimiters.

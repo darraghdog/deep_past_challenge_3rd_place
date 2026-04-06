@@ -1,0 +1,181 @@
+------------------------TURKISH TO ENGLISH SUPPLEMENT (Larsen/OAA Style)------------------------
+This supplement provides Turkish→English vocabulary mappings for AKT volumes.
+Use alongside the master Dataset_Instructions.txt conventions.
+
+## Turkish→English Vocabulary Mappings
+
+### Commodities & Materials
+- kalay → "tin" (never "lead")
+- gümüş → "silver"
+- altın → "gold"
+- kumaş/bez/tekstil → "textile" (never "garment" or "cloth")
+- kutānum kumaşı → "kutānum-textile"
+- siyah kumaş → "black textile"
+- eşek → "donkey"
+- sığır/öküz → "ox"
+- bronz/tunç → "bronze"
+
+### People & Professions
+- tüccar/alacaklı → "merchant"
+- hizmetçi/uşak/çalışan → "employee" (or "servant" in domestic contexts)
+- cariye/köle kadın → "slave-girl" (hyphenated)
+- köle → "slave"
+- avukat/komisyon → "attorney"
+- haberci/yolcu → "traveller"
+- paketçi/kervan başı → "transporter" (or "harnesser")
+- kardeş → "brother" (may mean "colleague" in business)
+- efendi/bey → "lord" or "boss" (in business contexts)
+- oğul → "son"
+- kızı/kız → "daughter"
+
+### Financial & Legal Terms
+- naruqqum/kese/para kesesi → "joint-stock fund" (abstract) or "sack" (physical)
+- işletme sermayesi (be'ūlātum) → "working capital"
+- satın alma/bedel (šīmum) → "purchase" or "proceeds"
+- faiz (ṣibtum) → "interest"
+- tablet/vesika/belge (ṭuppum) → "tablet" or "document"
+- zarflı tablet/mühürlü tablet (ṭuppum ḫarmum) → "certified tablet"
+- el/pay/hisse (qātum) → "share" or "claim"
+- kervan (ellat) → "caravan"
+- hesap/hesaplar (nikkassū) → "accounts"
+- vergi/harç (šaddu'utum) → "transport tariff"
+- yol vergisi (datum) → "road-tax"
+- ondalık (išrātum) → "tithe"
+- şehrin yemini (nīš ālim) → "oath of the City"
+- mühür (KIŠIB) → "seal"
+- tanık (IGI) → "witness"
+
+### Terms to Keep Untranslated
+- kārum (liman/koloni) → keep as "kārum"
+- wubārtum (istasyon) → keep as "wubārtum"
+- hamuštum (hafta) → keep as "hamuštum" or translate as "week"
+- limum (eponim) → keep as "limum" or translate as "eponymy"
+- tahsistum → keep as "tahsistum" (memorandum/record)
+
+### Judicial & Procedural Terms
+- kārum kararı (dīn kārim) → "verdict of the colony"
+- dava/mesele (awātum) → "case" or "affair" (legal contexts)
+- tanıklar (šībū) → "witnesses"
+- el koymak (qātam šakānum) → "to lay claim"
+
+### Direction Terms (preserve topography)
+- yukarı gitmek (elā'um) → "to go up" (travel toward Assur)
+- aşağı gitmek/inmek (warādum) → "to go down" (travel toward Kanesh)
+
+### Time & Date Terms
+- ay başından itibaren → "from the beginning of the month"
+- hafta/haftasından → "week of" / "from the week of"
+- ... gününde → "on the day of..."
+- vade → "due date" or "term"
+
+### Measurements
+- mina → "mina" (weight unit)
+- şekel → "shekel" (NOT "sheqel")
+- talent → "talent"
+- tasfiye edilmiş (gümüş) → "refined (silver)"
+
+### Special Notes
+- "Şehir" (capitalized) always refers to Assur → translate as "the City"
+- "şehir" (lowercase) refers to local Anatolian towns → translate as "city" or "town"
+- ṣubāt ša qātim → "quality textile"
+- Proper names: derive from Akkadian transliteration, not Turkish rendering
+
+### Known Artifacts to Correct
+- "sheqel" → "shekel" (Turkish rendering artifact)
+- "sheqels" → "shekels"
+- "corns" → "grains" (if referring to grain units)
+-------------------------------------------------------------------------------
+
+I am uploading a PDF document containing pages of Old Assyrian/Akkadian texts. I need you to perform a structured, semantic data extraction with style normalization. It is critical to read the pages in order.
+
+**ROLE:**
+You are an expert Assyriologist and Data Engineer. You are processing a PDF document of Old Assyrian/Akkadian texts.
+
+**CRITICAL TRIGGER (Read First):**
+Locate the texts by finding **Sequential Text Blocks**.
+* **Format:** Identify paragraphs of Transliteration where line numbers are embedded in parentheses (e.g., `(1)`, `(5)`).
+* **Matching:** Associate these Transliteration paragraphs with the Turkish Translation paragraphs immediately following them, which contain corresponding line ranges (e.g., `(1-5)`).
+* **Ignore:** Full-width introductions, footnotes, commentary, bibliographies, or introductory summaries that appear *before* the transliteration. If a page has no text blocks matching this pattern, return `[]`.
+
+**EXTRACTION INSTRUCTIONS:**
+Your goal is to extract the text by matching the MEANING of the Akkadian to the MEANING of the Turkish translation.
+
+1.  **Identify the Page Number & ID:** Track the page number at the top. Look above the text blocks for a text ID (e.g., "No. 19"). If a text continues onto a new page, use the ID from the previous page.
+2.  **Semantic Chunking (Maximum Atomicity):** Read the Akkadian block and the Turkish block. Break the text down into the smallest, most "atomic" chunks possible.
+    * Do NOT extract line-by-line. Instead, use the line ranges provided in the Turkish translation paragraph (e.g., `(1-5)`, `(6-7)`) as your initial guide to create chunks.
+    * **The Atomic List Rule:** You MUST make the data as atomic as possible. If a single translation range (like `(16-19)`) contains a list of distinct witnesses, people, or itemized goods, **break that chunk down further** into distinct, individual JSON objects for each person/item.
+3.  **Calculate Line Ranges:** For each chunk, output the clean integer values in the `start_line` and `end_line` fields based on the numbers in the parentheses (e.g., if the chunk covers `(1)` through `(5)`, start_line is 1, end_line is 5). Ignore letters like "Ay." or "rev." when extracting the integer.
+4.  **Language Processing & Translation:**
+    * **`language`**: Set to `"tr"`.
+    * **`translation`**: Store the exact original Turkish text for that chunk as seen on the page.
+    * **`english_translation`**: Translate the Turkish text into **scholarly English** using the vocabulary mappings provided above. Derive proper nouns and technical terms directly from the Akkadian Transliteration.
+5.  **Handle Unmatched Text:** If a piece of Akkadian text is transliterated but completely ignored in the translation, extract it as its own chunk and set `"translation": "MISSING"` and `"english_translation": "MISSING"`.
+6.  **Assess Quality Metrics:**
+    * **`ocr_quality`**: Rate image clarity ("high", "medium", "low"). Do NOT lower for `[...]` or expected tablet damage.
+    * **`match_quality`**: Rate confidence in the semantic alignment ("high", "medium", "low").
+7.  **Ensure Complete Extraction:** You MUST include ALL transliteration lines from the identified text blocks. Do not leave any transliteration lines out.
+
+**CLEANING RULES:**
+1.  **Flattening:** Treat text within chunks as a continuous stream. Use spaces to separate words, no newlines (`\n`).
+2.  **Exact OCR:** Keep typos, brackets `[...]`, half-brackets `⌈...⌉`, and special chars (š, ṣ, ṭ, ₄, ₆) exactly as seen.
+3.  **Strip Markers:** Remove the embedded line numbers like `(1)`, `(Ay. 11)` from the final `transliteration` and `translation` strings so only the actual text remains.
+
+------------------------EXAMPLE------------------------
+**Input Context:** Text "No. 19" on Page 26. Showing mapping of a standard sentence (lines 1-5) and atomic list sub-chunking (lines 16-19).
+
+**EXPECTED OUTPUT:**
+------------------------PARSED CHUNKS------------------------
+[
+  {
+    "id": "No. 19",
+    "page": 26,
+    "transliteration": "2 1/3 ma-na KÙ.BABBAR şa-ru!-pá-am i-şé-er Da-da-a DUMU A-šur-i-mi-tí UḪ.ME ša Sú-en6 dEn-líl-ba-ni i-şu",
+    "translation": "Tanrı Sin'in râhibi Aššur-imittī'nin oğlu Dadā'nın üzerinde Enlil-bāni'nin 2 1/3 mina tasfiye edilmiş gümüşü vardır.",
+    "language": "tr",
+    "english_translation": "Enlil-bāni has a claim of 2 1/3 minas of refined silver against Dadā son of Aššur-imittī, the priest of Suen.",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 1,
+    "end_line": 5
+  },
+  {
+    "id": "No. 19",
+    "page": 26,
+    "transliteration": "IGI Pí-lá-aḫ-a DUMU E-na-Sú-en6",
+    "translation": "Enna-Su'en'in oğlu Pilah-ā'nın huzûrunda,",
+    "language": "tr",
+    "english_translation": "Witnessed by Pilah-ā son of Enna-Suen,",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 16,
+    "end_line": 16
+  },
+  {
+    "id": "No. 19",
+    "page": 26,
+    "transliteration": "IGI A-mur-Ištar DUMU En-um-a-a",
+    "translation": "Ennum-ā'nın oğlu Amur-Ištar'ın huzûrunda,",
+    "language": "tr",
+    "english_translation": "by Amur-Ištar son of Ennum-ā,",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 17,
+    "end_line": 17
+  },
+  {
+    "id": "No. 19",
+    "page": 26,
+    "transliteration": "IGI Í-lí-a-lim DUB.SAR DUMU Ri-ma-a-nim",
+    "translation": "Rīm-Anum'un oğlu kâtip İlī-ālum'un huzûrunda.",
+    "language": "tr",
+    "english_translation": "by the scribe İlī-ālum son of Rīm-Anum.",
+    "ocr_quality": "high",
+    "match_quality": "high",
+    "start_line": 18,
+    "end_line": 19
+  }
+]
+------------------------End Of chunks------------------------
+
+**OUTPUT FORMAT:**
+Return the result strictly as a JSON array inside the `PARSED CHUNKS` / `End Of chunks` delimiters shown above. If no text is found, return `[]` inside the delimiters.

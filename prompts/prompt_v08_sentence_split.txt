@@ -1,0 +1,136 @@
+INPUT :
+{
+  "transliteration": "um-ma šu-ta-mu-zi e-lá-a en-um-a-šùr ù lá-ma-sí-ma a-na en-um-a-šùr ù a-lá-ḫi-im qí-bi₄-ma a-ma-la na-áš-pé-er-tí-ku-nu ra-bi-ṣa-am ni-ḫu-za-ku-nu-tí a-bi-a DUMU be-e-be ra-bi₄-iṣ-ni i-na ša-am-ší ša ra-bi-ṣú-um e-ra-ba-ni iḫ-da-ma i-zi-za-ma lu DAM.GÀR a-bi-ku-nu lu ša a-wa-tám tí-šu-a-ni ra-bi-ṣú-um i-na ša-ḫa-tí-ku-nu li-zi-iz-ma i-na KÙ.BABBAR pá-ni-ma a-šar ta-ma-ḫa-ra-ni KÙ.BABBAR ša É a-lim(ki) šu-ta-aṣ-bi-ta-ma ma-lá a-bu-ku-nu ḫa-bu-lu KÙ.BABBAR ku-un-kà-ma šé-bi-lá-nim ra-bi₄-ṣú-um iš-tí-ku-nu li-ik-nu-uk-ma KÙ.BABBAR šé-bi-lá-nim-ma li-ma-am lu nu-ša-bi ṣí-ba-at ṣí-ib-tim lá i-ma-i-da-ku-nu-tí-ma li-ba-ku-nu e im-ra-aṣ ma-lá e-ṭá-ar É a-bi₄-ku-nu ep-ša šu-ma ta-da-ga-lá-ma ṭup-pu ḫa-ru-mu-tum ú ba-ba-a-tum ru-qá-tum i-ba-ší-ú ṭup-pí ku-un-kà-ma a-na DUMU um-me-a-nim ke-nim ša ki-ma ku-nu-tí pí-iq-da-ma u₄-me-e-ku-nu ba-lu-um mì-ma-ma lá tù-ri-qá-ma lá ta-sà-ḫu-ra iš-tí ra",
+  "translation": "From Šu-Tammuzī, Elaya, Ennam-Aššur and Lamassī to Ennam-Aššur and Ali-ahum: In accordance with your missive we have hired an attorney for you; Abiya son of Bebe is our attorney. Take care to stand by the very day the attorney arrives, and have the attorney assist you both with regard to the customers of your father and those with whom you have an argument, and of the first silver, wherever you receive it, collect the silver of the City Hall, as much as your father owes, seal the silver and send it; the attorney should seal it together with you, and then send the silver so we can satisfy the eponym. The compound interest should not grow too big for you and make you unhappy. Act so as to save your father's house. If you observe that there are certified deeds and credits outstanding on long terms, then seal the tablets, entrust them to a trustworthy affiliated trader, like yourselves, and do not extend your terms without special reasons, do not delay but set out and come together with the attorney. Here we seized (witnesses) against Šu-Kūbum and said: Did Šalim-Aššur give you 5 minas of silver out of those in your tablet?\" He refused to confirm to us the silver, what you will declare there. 0.6666 mina of silver: hire for the attorney; he received 0.3333 mina of silver here and will receive 0.3333 mina there. We gave 16.3333 shekels of silver for their disposal; 36.6666 shekels of silver, their expenses, we borrowed in a merchant-house against interest. Seal silver there and send it with the first transport so we can pay back the merchant. Also, send at least 1 or 2 minas of silver; send it so we can store 40 litres of grain before you come. Elaya says: If you are truly my brothers, you must seal the proceeds from the textile in silver and do me a favour. \"",
+}
+
+
+OUTPUT :
+[
+  {
+    "transliteration": "um-ma šu-ta-mu-zi e-lá-a en-um-a-šùr ù lá-ma-sí-ma a-na en-um-a-šùr ù a-lá-ḫi-im qí-bi₄-ma",
+    "translation": "From Šu-Tammuzī, Elaya, Ennam-Aššur and Lamassī to Ennam-Aššur and Ali-ahum:",
+    "quality": "high"
+  },
+  {
+    "transliteration": "a-ma-la na-áš-pé-er-tí-ku-nu ra-bi-ṣa-am ni-ḫu-za-ku-nu-tí",
+    "translation": "In accordance with your missive we have hired an attorney for you;",
+    "quality": "high"
+  },
+  {
+    "transliteration": "a-bi-a DUMU be-e-be ra-bi₄-iṣ-ni",
+    "translation": "Abiya son of Bebe is our attorney.",
+    "quality": "high"
+  },
+  {
+    "transliteration": "i-na ša-am-ší ša ra-bi-ṣú-um e-ra-ba-ni iḫ-da-ma i-zi-za-ma lu DAM.GÀR a-bi-ku-nu lu ša a-wa-tám tí-šu-a-ni ra-bi-ṣú-um i-na ša-ḫa-tí-ku-nu li-zi-iz-ma",
+    "translation": "Take care to stand by the very day the attorney arrives, and have the attorney assist you both with regard to the customers of your father and those with whom you have an argument,",
+    "quality": "high"
+  },
+  {
+    "transliteration": "i-na KÙ.BABBAR pá-ni-ma a-šar ta-ma-ḫa-ra-ni KÙ.BABBAR ša É a-lim(ki) šu-ta-aṣ-bi-ta-ma ma-lá a-bu-ku-nu ḫa-bu-lu KÙ.BABBAR ku-un-kà-ma šé-bi-lá-nim",
+    "translation": "and of the first silver, wherever you receive it, collect the silver of the City Hall, as much as your father owes, seal the silver and send it;",
+    "quality": "high"
+  },
+  {
+    "transliteration": "ra-bi₄-ṣú-um iš-tí-ku-nu li-ik-nu-uk-ma KÙ.BABBAR šé-bi-lá-nim-ma li-ma-am lu nu-ša-bi",
+    "translation": "the attorney should seal it together with you, and then send the silver so we can satisfy the eponym.",
+    "quality": "high"
+  },
+  {
+    "transliteration": "ṣí-ba-at ṣí-ib-tim lá i-ma-i-da-ku-nu-tí-ma li-ba-ku-nu e im-ra-aṣ",
+    "translation": "The compound interest should not grow too big for you and make you unhappy.",
+    "quality": "high"
+  },
+  {
+    "transliteration": "ma-lá e-ṭá-ar É a-bi₄-ku-nu ep-ša",
+    "translation": "Act so as to save your father's house.",
+    "quality": "high"
+  },
+  {
+    "transliteration": "šu-ma ta-da-ga-lá-ma ṭup-pu ḫa-ru-mu-tum ú ba-ba-a-tum ru-qá-tum i-ba-ší-ú ṭup-pí ku-un-kà-ma a-na DUMU um-me-a-nim ke-nim ša ki-ma ku-nu-tí pí-iq-da-ma",
+    "translation": "If you observe that there are certified deeds and credits outstanding on long terms, then seal the tablets, entrust them to a trustworthy affiliated trader, like yourselves,",
+    "quality": "high"
+  },
+  {
+    "transliteration": "u₄-me-e-ku-nu ba-lu-um mì-ma-ma lá tù-ri-qá-ma lá ta-sà-ḫu-ra iš-tí ra",
+    "translation": "and do not extend your terms without special reasons, do not delay but set out and come together with the attorney.",
+    "quality": "medium"
+  },
+  {
+    "transliteration": "",
+    "translation": "Here we seized (witnesses) against Šu-Kūbum and said: Did Šalim-Aššur give you 5 minas of silver out of those in your tablet?\"",
+    "quality": "low"
+  },
+  {
+    "transliteration": "",
+    "translation": "He refused to confirm to us the silver, what you will declare there.",
+    "quality": "low"
+  },
+  {
+    "transliteration": "",
+    "translation": "0.6666 mina of silver: hire for the attorney; he received 0.3333 mina of silver here and will receive 0.3333 mina there.",
+    "quality": "low"
+  },
+  {
+    "transliteration": "",
+    "translation": "We gave 16.3333 shekels of silver for their disposal; 36.6666 shekels of silver, their expenses, we borrowed in a merchant-house against interest.",
+    "quality": "low"
+  },
+  {
+    "transliteration": "",
+    "translation": "Seal silver there and send it with the first transport so we can pay back the merchant.",
+    "quality": "low"
+  },
+  {
+    "transliteration": "",
+    "translation": "Also, send at least 1 or 2 minas of silver; send it so we can store 40 litres of grain before you come.",
+    "quality": "low"
+  },
+  {
+    "transliteration": "",
+    "translation": "Elaya says: If you are truly my brothers, you must seal the proceeds from the textile in silver and do me a favour. \"",
+    "quality": "low"
+  }
+]
+
+_______
+
+TASK :
+- Split both the "transliteration" and "translation" into sentence pairs in the format.
+- Return the quality for each tranlation tranliteration pair in terms of accuracy of the translation of that sentence - high/medium/low.
+- The transliteration sentence MUST be taken EXACTLY from the original transliteration.
+- The translation sentences MUST be taken EXACTLY from the original translation.
+- Do NOT try to repair or fix the tranliteration or translation.
+- If there are translation sentences for missing transliterations, leave the translitation blank.
+- If there are transliterations sentences for missing translations, leave the translation blank.
+- If the sentence has a half present transliteration and full present translation - return half and full in the sentence pairs and mark the quality as medium/low.
+- Return only the list.
+
+_______
+
+For BATCHED inputs, use this format:
+
+INPUT:
+[
+  {"id": 0, "transliteration": "...", "translation": "..."},
+  {"id": 1, "transliteration": "...", "translation": "..."}
+]
+
+OUTPUT:
+[
+  {"id": 0, "sentence_pairs": [{"transliteration": "...", "translation": "...", "quality": "high"}, ...]},
+  {"id": 1, "sentence_pairs": [{"transliteration": "...", "translation": "...", "quality": "high"}, ...]}
+]
+
+Process each input independently. Return results with matching ids.
+
+_______
+
+INPUT :
+<INSERT_TRANLITERATION_TRANSLATION_PAIR_HERE>
+
+OUTPUT :
+
+
+
