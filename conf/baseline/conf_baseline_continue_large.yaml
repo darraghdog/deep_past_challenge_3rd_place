@@ -1,0 +1,68 @@
+seed: 95613
+save_model: true
+use_wandb: false
+local_rank: 0
+enable_cuda_optimizations: true
+mixed_precision: bf16
+
+onomasticon_dataset: conjuring92/dpc-onomasticon-polysemy
+onomasticon_file: onomasticon.parquet
+polysemic_file: polysemy.parquet
+single_variant_file: onomasticon_single_variant.parquet
+
+dataset:
+  input_dataset: "conjuring92/dpc-mix-gold-b2"
+
+model:
+  backbone_path: /workspace/models/large_cpt_mix_a05/checkpoints/step_14000
+  max_length: 1024
+  use_gradient_checkpointing: true
+  compile_model: false
+      
+train_params:
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 8
+  num_train_epochs: 4
+  gradient_accumulation_steps: 1
+
+  warmup_pct: 0.1
+  lr_decay_target: 0.1
+  eval_frequency: 400
+  use_ema: true
+  ema_decay: 0.9992
+  label_smoothing: 0.01
+
+  use_awp: true
+  awp_adv_lr: 1.0
+  awp_adv_eps: 0.001
+  awp_trigger_epoch: 0
+
+augmentation:
+  name_swap_prob: 0.3  # set to 0.0 to disable
+
+optimizer:
+  name: AdamW
+
+  lr: 6e-5
+  lr_encoder: 6e-5
+  lr_decoder: 6e-5
+
+  weight_decay: 1e-2
+  max_grad_norm: 0.3
+
+  adam_beta_1: 0.9
+  adam_beta_2: 0.98
+  adam_epsilon: 1e-8
+
+generation:
+  max_new_tokens: 384 # 512
+  do_sample: true
+  top_k: 50
+  top_p: 1.0
+  temperature: 0.1
+
+outputs:
+  model_dir: /workspace/models/a05_14k_b2_ns
+wandb:
+  project: dpc-dev-a2
+  run_name: dpc-continue-b2-nameswap

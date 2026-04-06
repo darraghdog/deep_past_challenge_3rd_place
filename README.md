@@ -1,8 +1,10 @@
 # 3rd Place Solution — Deep Past Initiative Machine Translation
 
 **Competition**: [Deep Past Initiative Machine Translation](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation)  
+**Team**: Darragh Hanley & Raja Biswas  
 **Result**: 3rd / 2,673 teams  
 **Prize**: $8,000  
+**Solution Writeup**: [Synthetic Data to Teach OA Fundamentals — Deep Past Challenge - Translate Akkadian to English](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/writeups/3rd-synthetic-data-to-teach-oa-fundamentals)  
 
 ## Competition Overview
 
@@ -109,4 +111,57 @@ To skip extraction and go straight to training, download the training data datas
 
 ```bash
 python3 scripts/preparation/prepare_sentence_data_23.py --hecker --round4
+```
+
+## Training Pipeline
+
+### Environment Setup
+
+```bash
+# Requires Python >= 3.11 and uv (https://docs.astral.sh/uv/)
+uv sync
+```
+
+### Training Datasets (hosted on Kaggle Datasets)
+
+The training configs pull datasets from Kaggle Hub automatically via `kagglehub`. The following datasets are required for model training:
+
+| Dataset | Used By | Purpose |
+|---------|---------|---------|
+| [conjuring92/dpc-mix-pretrain-a05](https://www.kaggle.com/datasets/conjuring92/dpc-mix-pretrain-a05) | CPT configs | Continued pre-training datamix (synthetic drills + real data) |
+| [conjuring92/dpc-mix-gold-b2](https://www.kaggle.com/datasets/conjuring92/dpc-mix-gold-b2) | `conf_baseline_continue_large` | Fine-tuning datamix (ByT5-Large) |
+| [conjuring92/dpc-mix-gold-m2](https://www.kaggle.com/datasets/conjuring92/dpc-mix-gold-m2) | `conf_baseline_continue_xl` | Fine-tuning datamix (ByT5-XL) |
+| [conjuring92/dpc-reward-mix-v3](https://www.kaggle.com/datasets/conjuring92/dpc-reward-mix-v3) | `conf_reward` | Reward model preference data |
+| [conjuring92/dpc-onomasticon-polysemy](https://www.kaggle.com/datasets/conjuring92/dpc-onomasticon-polysemy) | FT configs | Name-swap augmentation lookup |
+
+### Running Training
+
+Training uses hydra for configuration and HF Accelerate for distributed training. All commands are run from the repo root. Training was run on a node with 8xH100 GPUs.
+
+**Stage 1 — Continued Pre-training (CPT):**
+
+```bash
+# ByT5-Large
+accelerate launch code/train_baseline.py --config-name=conf_baseline_pretrain_large
+
+# ByT5-XL
+accelerate launch code/train_baseline.py --config-name=conf_baseline_pretrain_xl
+```
+
+**Stage 2 — Fine-tuning (FT):**
+
+Update `model.backbone_path` in the config to point to your CPT checkpoint, then:
+
+```bash
+# ByT5-Large
+accelerate launch code/train_baseline.py --config-name=conf_baseline_continue_large
+
+# ByT5-XL
+accelerate launch code/train_baseline.py --config-name=conf_baseline_continue_xl
+```
+
+**Reward Model:**
+
+```bash
+accelerate launch code/train_reward.py
 ```

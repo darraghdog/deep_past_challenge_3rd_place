@@ -1,0 +1,97 @@
+seed: 9143
+debug: false
+save_model: true
+save_merged_model: true
+use_wandb: false
+local_rank: 0
+enable_cuda_optimizations: true
+mixed_precision: bf16
+
+dataset:
+  input_dataset: "conjuring92/dpc-reward-mix-v3"
+  input_file: "inputs.parquet"
+  valid_frac: 0.1
+  full_fit: false
+
+model:
+  backbone_path: Qwen/Qwen3-8B
+  max_length: 2048
+  num_labels: 3
+  label_smoothing: 0.05
+  use_gradient_checkpointing: true
+  compile_model: false
+  trust_remote_code: true
+  attn_implementation: sdpa
+
+  tokenizer:
+    truncation_side: left
+    use_fast: true
+
+  use_bnb: false
+  use_lora: true
+
+  lora:
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+      - up_proj
+      - down_proj
+      - gate_proj
+
+    r: 32
+    lora_alpha: 64
+    lora_dropout: 0.01
+    modules_to_save: []
+
+train_params:
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  num_train_epochs: 3
+  gradient_accumulation_steps: 4
+
+  warmup_pct: 0.05
+  decay_target: 0.1
+  eval_frequency: 100
+
+  use_ema: true
+  ema_decay: 0.998
+
+optimizer:
+  name: AdamW
+
+  lr: 1e-6
+  lr_lora_a: 1e-5
+  lr_lora_b: 4e-5
+  lr_embed_tokens: 1e-6
+
+  weight_decay: 1e-2
+  max_grad_norm: 4.0
+
+  adam_beta_1: 0.9
+  adam_beta_2: 0.95
+  adam_epsilon: 1e-8
+
+outputs:
+  model_dir: /workspace/models/qwen3-8b-reward-v3-hp-2
+
+wandb:
+  project: dpc-dev
+  run_name: qwen3-8b-reward-v3
+
+
+# Acc=0.7955 | A=0.723 B=0.711 EQUAL=0.842
+
+# #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Acc=0.7118 | A=0.724 B=0.457 EQUAL=0.818
+#   B precision/recall at thresholds:
+#     Th    Prec     Rec      N    TP
+#    0.3   0.453   0.690    870   394
+#    0.4   0.527   0.545    590   311
+#    0.5   0.599   0.370    352   211
+#    0.6   0.665   0.215    185   123
+#    0.7   0.784   0.121     88    69
+#    0.8   0.833   0.053     36    30
+#    0.9   1.000   0.009      5     5
+# #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
