@@ -1,0 +1,31 @@
+# CAD/ESAD deliberate practice drill generation
+output_path: data/cad_drill/raw
+
+datasets:
+  dpc: "conjuring92/dpc-mix-gold-b2"
+
+paths:
+  senses: data/supl_data/cad_esad_senses.parquet
+  examples: data/supl_data/headword_training_examples.parquet
+  plan: data/supl_data/generation_plan.parquet
+
+agent:
+  max_tool_calls: 8
+
+api:
+  model:  "aws/anthropic/bedrock-claude-sonnet-4-5-v1"
+  base_url: "https://inference-api.nvidia.com"
+  max_retries: 10
+
+prompts:
+  system: "system_cad_drill"
+  user: "user_cad_drill"
+
+generation:
+  polysemous_only: false 
+  max_contrastive_senses: 4
+  contrastive_per_sense: 2
+  n_names: 4
+  raw_text_max_chars: 1200
+
+# uv run python sdg/generate_cad_drills.py --config sdg/conf/conf_cad_drill.yaml 2>&1 | tee sdg/logs/run_cad_drill.log

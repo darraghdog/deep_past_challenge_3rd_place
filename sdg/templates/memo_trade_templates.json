@@ -1,0 +1,3430 @@
+[
+  {
+    "id": "total_commodity",
+    "category": "accounting",
+    "tl": "ŠU.NÍGIN {AMT_TL} {COMM_TL}",
+    "tr": "In all: {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Total/grand total of a commodity. ŠU.NÍGIN = ŠUNIGIN = sum total."
+  },
+  {
+    "id": "total_your_commodity",
+    "category": "accounting",
+    "tl": "ŠU.NÍGIN {COMM_TL}-pi-ka {AMT_TL} {COMM_TL}",
+    "tr": "Total of your {COMM_TR}: {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Total of 'your' silver/tin/copper. -pi-ka = your (for silver), -ki-ka for tin."
+  },
+  {
+    "id": "total_declared_value",
+    "category": "accounting",
+    "tl": "ŠU.NÍGIN {AMT_TL} a-wi-ti",
+    "tr": "The total declared value of the shipment: {AMT_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Total declared value (awītum) of a caravan shipment."
+  },
+  {
+    "id": "thereof_gave",
+    "category": "accounting",
+    "tl": "ŠÀ.BA {AMT_TL} {COMM_TL} a-na {PN1_TL} a-dí-in",
+    "tr": "Thereof I gave {AMT_TR} of {COMM_TR} to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Specification/thereof: I gave N of commodity to person. ŠÀ.BA = SA.BA = thereof."
+  },
+  {
+    "id": "thereof_took",
+    "category": "accounting",
+    "tl": "ŠÀ.BA {AMT_TL} {COMM_TL} {PN1_TL} il5-qé",
+    "tr": "Thereof {PN1_TR} took {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Specification/thereof: person took N of commodity."
+  },
+  {
+    "id": "thereof_paid_tax",
+    "category": "tax",
+    "tl": "ŠÀ.BA {AMT_TL} ni-is-ha-tim áš-qúl",
+    "tr": "Thereof I paid {AMT_TR} as import duty.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Thereof I paid N as nishatum (import duty/excise)."
+  },
+  {
+    "id": "thereof_received",
+    "category": "accounting",
+    "tl": "ŠÀ.BA {AMT_TL} {COMM_TL} al-qé-e",
+    "tr": "Thereof I received {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Thereof I received N of commodity."
+  },
+  {
+    "id": "thereof_person_will_pay",
+    "category": "accounting",
+    "tl": "ŠÀ ša {AMT_TL} {COMM_TL} {PN1_TL} i-ša-qal",
+    "tr": "Thereof {PN1_TR} will pay {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Thereof person will pay N for items."
+  },
+  {
+    "id": "thereof_belongs_to",
+    "category": "accounting",
+    "tl": "i-na ŠÀ.BA {AMT_TL} {COMM_TL} ša {PN1_TL}",
+    "tr": "{AMT_TR} of {COMM_TR} thereof belongs to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Breakdown: N of commodity thereof belongs to person."
+  },
+  {
+    "id": "separately_amount",
+    "category": "accounting",
+    "tl": "a-ha-ma {AMT_TL} {COMM_TL}",
+    "tr": "Further, {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Separately/further/in addition (ahāma). Introduces additional items or amounts."
+  },
+  {
+    "id": "separately_gave",
+    "category": "accounting",
+    "tl": "a-ha-ma {AMT_TL} {COMM_TL} a-na {PN1_TL} a-dí-in",
+    "tr": "Further, I gave {AMT_TR} of {COMM_TR} to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Separately/in addition I gave N to person."
+  },
+  {
+    "id": "separately_took",
+    "category": "accounting",
+    "tl": "a-ha-ma {AMT_TL} {COMM_TL} {PN1_TL} il5-qé",
+    "tr": "Further, {PN1_TR} took {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Separately/in addition person took N of commodity."
+  },
+  {
+    "id": "separately_entrusted",
+    "category": "accounting",
+    "tl": "a-ha-ma {AMT_TL} {COMM_TL} ša {PN1_TL} ip-qí-dam",
+    "tr": "Further, {PN1_TR} entrusted {AMT_TR} of {COMM_TR} to me.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Further, person entrusted me with N of commodity."
+  },
+  {
+    "id": "commodity_silver_amount",
+    "category": "commodity",
+    "tl": "{AMT_TL} KÙ.BABBAR",
+    "tr": "{AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Simple silver amount listing."
+  },
+  {
+    "id": "commodity_refined_silver",
+    "category": "commodity",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am",
+    "tr": "{AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Refined silver amount."
+  },
+  {
+    "id": "commodity_litu_silver",
+    "category": "commodity",
+    "tl": "{AMT_TL} KÙ.BABBAR li-tí",
+    "tr": "{AMT_TR} of litu-silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Litu-silver (a specific type/quality of silver)."
+  },
+  {
+    "id": "commodity_tin",
+    "category": "commodity",
+    "tl": "{AMT_TL} AN.NA",
+    "tr": "{AMT_TR} of tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Simple tin amount listing."
+  },
+  {
+    "id": "commodity_expense_tin",
+    "category": "commodity",
+    "tl": "{AMT_TL} AN.NA qá-tim",
+    "tr": "{AMT_TR} of expense-tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Expense-tin (annakum qātim): tin given for travel/operational expenses."
+  },
+  {
+    "id": "commodity_copper",
+    "category": "commodity",
+    "tl": "{AMT_TL} URUDU",
+    "tr": "{AMT_TR} of copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Simple copper amount."
+  },
+  {
+    "id": "commodity_good_copper",
+    "category": "commodity",
+    "tl": "{AMT_TL} URUDU SIG5",
+    "tr": "{AMT_TR} of good copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Good quality copper."
+  },
+  {
+    "id": "commodity_refined_copper",
+    "category": "commodity",
+    "tl": "{AMT_TL} URUDU ma-sí-am",
+    "tr": "{AMT_TR} of refined copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Refined/washed copper (masium)."
+  },
+  {
+    "id": "commodity_bad_copper",
+    "category": "commodity",
+    "tl": "{AMT_TL} URUDU la-mu-nam",
+    "tr": "{AMT_TR} of bad copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Bad/inferior quality copper."
+  },
+  {
+    "id": "commodity_sikku_copper",
+    "category": "commodity",
+    "tl": "{AMT_TL} URUDU ší-kam",
+    "tr": "{AMT_TR} of šikku-copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Šikku-copper (a specific type or grade)."
+  },
+  {
+    "id": "commodity_gold",
+    "category": "commodity",
+    "tl": "{AMT_TL} GUŠKIN",
+    "tr": "{AMT_TR} of gold.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Gold amount."
+  },
+  {
+    "id": "commodity_wool",
+    "category": "commodity",
+    "tl": "{AMT_TL} SÍG.ḪI.A",
+    "tr": "{AMT_TR} of wool.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Wool amount."
+  },
+  {
+    "id": "commodity_textiles_plain",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG.ḪI.A",
+    "tr": "{AMT_TR} textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Plain textile count."
+  },
+  {
+    "id": "commodity_kutanu",
+    "category": "commodity",
+    "tl": "{AMT_TL} {TÚG}ku-ta-nu",
+    "tr": "{AMT_TR} kutānu-textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Kutānu-textiles (a specific high-value textile type)."
+  },
+  {
+    "id": "commodity_dark_textiles",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG šu-ru-tum",
+    "tr": "{AMT_TR} dark textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Dark/black textiles (šurūtum)."
+  },
+  {
+    "id": "commodity_abarnian",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG a-bar-ni-a-am",
+    "tr": "{AMT_TR} Abarnian textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Abarnian-type textiles (from Abarnas)."
+  },
+  {
+    "id": "commodity_pirikannu",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG pí-ri-kà-nu",
+    "tr": "{AMT_TR} pirikannu-textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Pirikannu-type textiles."
+  },
+  {
+    "id": "commodity_saptinnu",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG sà-áp-tí-ni",
+    "tr": "{AMT_TR} saptinnu-textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Saptinnu-type textiles (wool-based)."
+  },
+  {
+    "id": "commodity_kusitu",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG ku-sí-tám",
+    "tr": "{AMT_TR} kusītu-textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Kusītu-type textile."
+  },
+  {
+    "id": "textiles_of_person",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG {COMM_TL} ša {PN1_TL}",
+    "tr": "{AMT_TR} {COMM_TR} belonging to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "values": [
+            "TÚG/textiles",
+            "ku-ta-nu/kutānu-textiles"
+          ]
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "N textiles of type X belonging to person."
+  },
+  {
+    "id": "textile_at_rate",
+    "category": "trade",
+    "tl": "{AMT_TL} {COMM_TL} a-na {AMT2_TL} KÙ.BABBAR",
+    "tr": "{AMT_TR} {COMM_TR} for {AMT2_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "N textiles sold/exchanged for N silver."
+  },
+  {
+    "id": "kutanu_at_shekels_each",
+    "category": "trade",
+    "tl": "{AMT_TL} ku-ta-ni {AMT2_TL} GÍN.TA",
+    "tr": "{AMT_TR} kutānu-textiles at {AMT2_TR} shekels each.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Kutānu-textiles priced at N shekels per piece."
+  },
+  {
+    "id": "textiles_person_listing",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG {PN1_TL}",
+    "tr": "{AMT_TR} textiles: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Textile count attributed to person (memo listing style)."
+  },
+  {
+    "id": "dark_textiles_of_person",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG šu-ru-tum ša {PN1_TL}",
+    "tr": "{AMT_TR} dark textiles of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Dark textiles belonging to person."
+  },
+  {
+    "id": "kutanu_of_person",
+    "category": "commodity",
+    "tl": "{AMT_TL} ku-ta-nu ša {PN1_TL}",
+    "tr": "{AMT_TR} kutānu-textiles of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Kutānu-textiles belonging to person."
+  },
+  {
+    "id": "textiles_wrapping",
+    "category": "commodity",
+    "tl": "{AMT_TL} TÚG ša li-wi-tim",
+    "tr": "{AMT_TR} textiles for the wrapping.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles used as wrapping for tin ingots in transport."
+  },
+  {
+    "id": "textiles_packed_in",
+    "category": "container",
+    "tl": "{AMT_TL} TÚG.ḪI.A i-na {AMT2_TL} mu-ta-tim ú {AMT3_TL} e-li-a-tim dar-ku-ú",
+    "tr": "{AMT_TR} textiles are packed in {AMT2_TR} half-packs and {AMT3_TR} top-packs.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT3",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles packed in half-packs (mutātum) and top-packs (eliātum)."
+  },
+  {
+    "id": "container_sack_barley",
+    "category": "container",
+    "tl": "{AMT_TL} na-ru-uq ŠE-am",
+    "tr": "{AMT_TR} sacks of barley.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Sacks of barley (narūqum)."
+  },
+  {
+    "id": "container_sack_wheat",
+    "category": "container",
+    "tl": "{AMT_TL} na-ru-uq GIG",
+    "tr": "{AMT_TR} sacks of wheat.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Sacks of wheat."
+  },
+  {
+    "id": "container_pot_wheat",
+    "category": "container",
+    "tl": "{AMT_TL} DUG GIG",
+    "tr": "{AMT_TR} jars of wheat.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Jars/pots of wheat."
+  },
+  {
+    "id": "container_pot_barley",
+    "category": "container",
+    "tl": "{AMT_TL} DUG ŠE",
+    "tr": "{AMT_TR} jars of barley.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Jars of barley."
+  },
+  {
+    "id": "container_pot_oil",
+    "category": "container",
+    "tl": "{AMT_TL} DUG Ì.GIŠ",
+    "tr": "{AMT_TR} pots of oil.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Pots of sesame oil."
+  },
+  {
+    "id": "container_jar_person",
+    "category": "container",
+    "tl": "{AMT_TL} ki-ru-um {PN1_TL}",
+    "tr": "{AMT_TR} jars: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Jar(s) attributed to person."
+  },
+  {
+    "id": "container_tablet_boxes",
+    "category": "container",
+    "tl": "{AMT_TL} ta-ma-lá-ki ša ṭup-pí",
+    "tr": "{AMT_TR} tablet containers.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Tablet containers/boxes (tamallakum)."
+  },
+  {
+    "id": "container_packages_silver",
+    "category": "container",
+    "tl": "{AMT_TL} né-pí-šu {AMT2_TL} ma-na KÙ.BABBAR ṣa-ru-pu-um šu-qú-ul-ta-áš-nu",
+    "tr": "{AMT_TR} packages of refined silver, {AMT2_TR} minas each was their weight.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Silver packages (nēpišum) with specified weight each."
+  },
+  {
+    "id": "grain_sacks_price",
+    "category": "trade",
+    "tl": "{AMT_TL} na-ru-uq ŠE-am {AMT2_TL} GÍN.TA KÙ.BABBAR a-na na-ru-qí-im",
+    "tr": "{AMT_TR} sacks of barley at {AMT2_TR} shekels of silver per sack.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Sacks of barley priced at N shekels per sack."
+  },
+  {
+    "id": "grain_sacks_owed_by",
+    "category": "trade",
+    "tl": "{AMT_TL} GÍN KÙ.BABBAR ší-im {AMT2_TL} na-ru-uq ŠE-im iš-tí {PN1_TL}",
+    "tr": "{AMT_TR} shekels of silver, the price of {AMT2_TR} sacks of barley, is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Price of grain sacks as debt owed by person."
+  },
+  {
+    "id": "grain_person_listing",
+    "category": "commodity",
+    "tl": "{AMT_TL} na-ru-uq ŠE-am {AMT2_TL} na-ru-uq GIG {PN1_TL}",
+    "tr": "{AMT_TR} sacks of barley, {AMT2_TR} sacks of wheat: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Grain listing: N sacks barley, N sacks wheat attributed to person."
+  },
+  {
+    "id": "bread_oil_person",
+    "category": "commodity",
+    "tl": "{AMT_TL} NINDA {AMT2_TL} DUG Ì.GIŠ {PN1_TL}",
+    "tr": "{AMT_TR} loaves of bread, {AMT2_TR} pots of oil: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Bread and oil rations attributed to person."
+  },
+  {
+    "id": "tax_import_duty_amount",
+    "category": "tax",
+    "tl": "{AMT_TL} ni-is-ha-tim",
+    "tr": "{AMT_TR} as import duty.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Specific amount paid as import duty (nishātum)."
+  },
+  {
+    "id": "tax_import_textiles",
+    "category": "tax",
+    "tl": "{AMT_TL} TÚG ni-is-ha-tum",
+    "tr": "{AMT_TR} textiles as import-tax.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles taken as import tax."
+  },
+  {
+    "id": "tax_textiles_deducted",
+    "category": "tax",
+    "tl": "{AMT_TL} TÚG ni-is-ha-tim iṣ-hu-ru-kà",
+    "tr": "{AMT_TR} textiles were deducted for you as import tax.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles deducted as import tax."
+  },
+  {
+    "id": "tax_preemption",
+    "category": "tax",
+    "tl": "{AMT_TL} TÚG a-na ší-mì-im i-na É.GAL-lim i-le-qé-ú",
+    "tr": "{AMT_TR} textiles have been taken on pre-emption in the palace.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Palace pre-emption right to purchase textiles at fixed price."
+  },
+  {
+    "id": "tax_preemption_simple",
+    "category": "tax",
+    "tl": "{AMT_TL} TÚG a-ší-mì-im",
+    "tr": "{AMT_TR} textiles as pre-emption.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles taken by palace pre-emption."
+  },
+  {
+    "id": "tax_tithe",
+    "category": "tax",
+    "tl": "{AMT_TL} TÚG ù {AMT2_TL} GÍN KÙ.BABBAR iš-ra-tù-šu",
+    "tr": "{AMT_TR} textiles and {AMT2_TR} shekels of silver are his tithe.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Tithe (išrātum): one-tenth tax on goods."
+  },
+  {
+    "id": "tax_transport_paid",
+    "category": "tax",
+    "tl": "ša-du-a-sú {PN1_TL} ša-bu",
+    "tr": "{PN1_TR} has been paid the transport tariff.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Transport tariff paid to person."
+  },
+  {
+    "id": "tax_road_toll",
+    "category": "tax",
+    "tl": "iš-tù {PLACE_TL} a-dí {PLACE2_TL} {AMT_TL} GÍN.TA da-tum",
+    "tr": "From {PLACE_TR} to {PLACE2_TR} the road-tax was {AMT_TR} shekels per talent.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PLACE2",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Road-tax (dātum) per talent for a route segment."
+  },
+  {
+    "id": "tax_road_total",
+    "category": "tax",
+    "tl": "iš-tù A-lim{ki} a-dí {PLACE_TL} 1 GÚ-tám {AMT_TL} da-tum ik-šu-dam",
+    "tr": "From the City until {PLACE_TR} the toll-and-fees amounted to {AMT_TR} per talent.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Total road-tax from the City to destination per talent."
+  },
+  {
+    "id": "tax_palace_import_tin",
+    "category": "tax",
+    "tl": "{AMT_TL} AN.NA ni-is-ḫa-tum ša É.GAL",
+    "tr": "{AMT_TR} of tin: the import duty of the palace.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Tin paid as palace import duty."
+  },
+  {
+    "id": "tax_fees_for_textiles",
+    "category": "tax",
+    "tl": "{AMT_TL} AN.NA da-at {AMT2_TL} TÚG.ḪI.A ša {PN1_TL}",
+    "tr": "{AMT_TR} of tin: the fees for {AMT2_TR} textiles belonging to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tin paid as fees for textiles belonging to person."
+  },
+  {
+    "id": "tax_head_tax",
+    "category": "tax",
+    "tl": "{AMT_TL} GÍN.TA qá-qá-da-tù-um",
+    "tr": "{AMT_TR} shekels per person as head-tax.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Head-tax per person on caravan personnel."
+  },
+  {
+    "id": "price_of_commodity",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im {COMM_TL}",
+    "tr": "{AMT_TR} of silver, the price of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true,
+          "exclude_silver": true
+        }
+      }
+    ],
+    "notes": "Silver amount being the price of a commodity. COMM must not be silver (silver prices silver is nonsensical). weight_only restricts to weight-based commodities; exclude_silver further bars silver/KÙ.BABBAR entries."
+  },
+  {
+    "id": "price_of_donkey",
+    "category": "trade",
+    "tl": "{AMT_TL} ší-im ANŠE",
+    "tr": "{AMT_TR}, the price of a donkey.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Price of a donkey."
+  },
+  {
+    "id": "price_of_donkeys",
+    "category": "trade",
+    "tl": "{AMT_TL} ší-im {AMT2_TL} ANŠE.ḪI.A",
+    "tr": "{AMT_TR}, the price of {AMT2_TR} donkeys.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Price of multiple donkeys."
+  },
+  {
+    "id": "price_of_kutanu",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im {AMT2_TL} ku-ta-ni",
+    "tr": "{AMT_TR} of silver, the price of {AMT2_TR} kutānu-textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver as price of kutānu-textiles."
+  },
+  {
+    "id": "price_of_slave",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im sú-ub-ri-im",
+    "tr": "{AMT_TR} of silver, the price of the slave.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver as price of a slave."
+  },
+  {
+    "id": "price_of_copper",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im URUDU",
+    "tr": "{AMT_TR} of silver, the price of copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver as price of copper."
+  },
+  {
+    "id": "price_of_ox",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im GU4 ṣa-al-mì-im",
+    "tr": "{AMT_TR} of silver, the price of a black ox.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Price of a black ox."
+  },
+  {
+    "id": "price_of_rations",
+    "category": "trade",
+    "tl": "{AMT_TL} URUDU ší-im ep-ri",
+    "tr": "{AMT_TR} of copper, the price of rations.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Copper paid for food rations."
+  },
+  {
+    "id": "sold_in_place",
+    "category": "trade",
+    "tl": "{AMT_TL} {COMM_TL} a-na {AMT2_TL} KÙ.BABBAR i-{PLACE_TL} ta-ad-nu",
+    "tr": "{AMT_TR} {COMM_TR} have been sold in {PLACE_TR} for {AMT2_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Goods sold in a place for silver."
+  },
+  {
+    "id": "exchange_rate_tin",
+    "category": "trade",
+    "tl": "{AMT_TL} AN.NA {AMT2_TL} GÍN.TA KÙ.BI {AMT3_TL}",
+    "tr": "{AMT_TR} of tin at the rate in silver 1 to {AMT2_TR}, its price in silver: {AMT3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "bare_number": true
+        }
+      },
+      {
+        "name": "AMT3",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Tin at exchange rate to silver with silver equivalent."
+  },
+  {
+    "id": "exchange_rate_for_tin",
+    "category": "trade",
+    "tl": "a-na AN.NA-ki-a {AMT_TL} GÍN.TA",
+    "tr": "at the rate {AMT_TR}:1 for my tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Exchange rate for tin."
+  },
+  {
+    "id": "entrusted_to_person",
+    "category": "transport",
+    "tl": "mì-ma a-nim ku-nu-ki-a a-na {PN1_TL} áp-qí-id",
+    "tr": "All this, under my seals, I entrusted to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Standard entrusting formula under seal."
+  },
+  {
+    "id": "entrusted_commodity",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} ku-nu-ki-a a-na {PN1_TL} áp-qí-id",
+    "tr": "{AMT_TR} of {COMM_TR} under my seal I entrusted to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Specific amount entrusted under seal to person."
+  },
+  {
+    "id": "entrusted_brought_city",
+    "category": "transport",
+    "tl": "mì-ma a-nim ku-nu-ki-a {PN1_TL} áp-qí-id-ma a-na A-lim{ki} ú-bi-il5",
+    "tr": "All this, under my seals, I entrusted to {PN1_TR} and he brought it to the City.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "All goods under seal entrusted to person who brought them to Assur."
+  },
+  {
+    "id": "entrusted_for_purchases",
+    "category": "transport",
+    "tl": "a-na {PN1_TL} áp-qí-id-ma a-na {PLACE_TL} a-na ší-a-ma-tim ú-šé-bi-il5-šu",
+    "tr": "I entrusted to {PN1_TR} and sent it with him to {PLACE_TR} for purchases.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Goods entrusted for purchases in a specific place."
+  },
+  {
+    "id": "deposited_to_person",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} e-zi-ib",
+    "tr": "{AMT_TR} of {COMM_TR} I left with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Left/deposited commodity with person."
+  },
+  {
+    "id": "transport_under_seal_brings",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} ku-nu-ki-a {PN1_TL} na-áš-a-kum",
+    "tr": "{PN1_TR} brings you {AMT_TR} of {COMM_TR} under my seal.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Person brings commodity to addressee under sender's seal."
+  },
+  {
+    "id": "transport_brought_here",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} {PN1_TL} ub-lam",
+    "tr": "{PN1_TR} brought {AMT_TR} of {COMM_TR} here.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Person brought commodity here."
+  },
+  {
+    "id": "transport_leads_to_you",
+    "category": "transport",
+    "tl": "mì-ma a-nim {PN1_TL} i-ra-de8-a-ku-nu-tí",
+    "tr": "{PN1_TR} is leading to you all of this.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Person driving goods with donkeys to addressee."
+  },
+  {
+    "id": "transport_in_caravan",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} ILLAT {PN1_TL} ad-ma-ku",
+    "tr": "I invested {AMT_TR} {COMM_TR} in the caravan of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Invested goods in the caravan of person."
+  },
+  {
+    "id": "transport_second_trip",
+    "category": "transport",
+    "tl": "a-ha-ma {AMT_TL} {COMM_TL} i ša-ni-tim šé-pí-šu-nu",
+    "tr": "further, {AMT_TR} of {COMM_TR} in their second transport.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Goods sent in the second caravan trip."
+  },
+  {
+    "id": "donkey_black",
+    "category": "transport",
+    "tl": "{AMT_TL} ANŠE ṣa-lá-mu",
+    "tr": "{AMT_TR} black donkeys.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Black donkeys."
+  },
+  {
+    "id": "donkey_harness",
+    "category": "transport",
+    "tl": "{AMT_TL} ANŠE.ḪI.A ṣa-lá-mu ú ú-nu-sú-nu",
+    "tr": "{AMT_TR} black donkeys and their harness.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Black donkeys with their harness/equipment."
+  },
+  {
+    "id": "donkey_cost",
+    "category": "transport",
+    "tl": "{AMT_TL} ANŠE ṣa-lá-mu {AMT2_TL} KÙ.BABBAR it-bu-lu",
+    "tr": "{AMT_TR} black donkeys cost {AMT2_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Black donkeys with purchase price."
+  },
+  {
+    "id": "donkey_hire",
+    "category": "transport",
+    "tl": "{AMT_TL} GÍN ig-re ANŠE ù sá-ri-dí-im iš-tù {PLACE_TL} a-dí {PLACE2_TL} áš-qúl",
+    "tr": "I paid {AMT_TR} shekels for the hire of a donkey and donkey-driver from {PLACE_TR} to {PLACE2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PLACE2",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Hire of donkey and driver for a route."
+  },
+  {
+    "id": "donkey_wagon_hire",
+    "category": "transport",
+    "tl": "{AMT_TL} AN.NA iš-tù {PLACE_TL} a-dí {PLACE2_TL} a-na ig-re e-re-qí-im",
+    "tr": "{AMT_TR} of tin from {PLACE_TR} until {PLACE2_TR} as hire for a wagon.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PLACE2",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Tin paid as wagon hire for a route segment."
+  },
+  {
+    "id": "donkey_saddlecloth",
+    "category": "transport",
+    "tl": "{AMT_TL} ú-kà-pu-ú ša {AMT2_TL} ANŠE.ḪI.A",
+    "tr": "{AMT_TR} saddlecloths of {AMT2_TR} donkeys.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Saddlecloths for donkeys."
+  },
+  {
+    "id": "donkey_porter_hire",
+    "category": "transport",
+    "tl": "{AMT_TL} ša bi-lá-tim iš-tù {PLACE_TL} a-dí {PLACE2_TL} {AMT2_TL} GÍN.TA áš-qúl",
+    "tr": "For {AMT_TR} porters from {PLACE_TR} until {PLACE2_TR} at {AMT2_TR} shekels each I paid.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PLACE2",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Porter hire per person for a route."
+  },
+  {
+    "id": "wool_fleeces_transport",
+    "category": "transport",
+    "tl": "{AMT_TL} SÍG.ḪI.A {AMT2_TL} maš-ku {AMT3_TL} ANŠE ṣa-lá-mu ú ú-nu-sú-nu",
+    "tr": "{AMT_TR} of wool, {AMT2_TR} fleeces, {AMT3_TR} black donkeys plus their harness.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT3",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Wool, fleeces, and donkeys as a transport consignment."
+  },
+  {
+    "id": "wool_of_person",
+    "category": "commodity",
+    "tl": "{AMT_TL} SÍG.ḪI.A ša {PN1_TL}",
+    "tr": "{AMT_TR} of wool belonging to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Wool belonging to person."
+  },
+  {
+    "id": "working_capital_of",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR be-ú-lá-at {PN1_TL}",
+    "tr": "{AMT_TR} of silver, the working capital of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Working capital (be'ulātum) of person."
+  },
+  {
+    "id": "working_capital_for",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na bé-a-lim a-na {PN1_TL}",
+    "tr": "{AMT_TR} of silver for a working capital for {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver given as working capital to person."
+  },
+  {
+    "id": "working_capital_plain",
+    "category": "trade",
+    "tl": "{AMT_TL} a-be-a-lim",
+    "tr": "{AMT_TR} for a working capital.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Simple working capital amount."
+  },
+  {
+    "id": "investment_loan",
+    "category": "trade",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} a-na e-bu-ṭim a-dí-in",
+    "tr": "I gave {AMT_TR} of {COMM_TR} to {PN1_TR} as an investment loan.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Investment loan (ebutum) given to person."
+  },
+  {
+    "id": "free_loan",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ta-ad-mì-iq-tù-šu ša {PN1_TL}",
+    "tr": "{AMT_TR} of silver, his free loan for {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Free loan (tadmiqtum): interest-free advance."
+  },
+  {
+    "id": "free_loan_gave",
+    "category": "trade",
+    "tl": "{AMT_TL} a-ta-ad-mì-iq-tim a-na {PN1_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} as a free loan to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Gave amount as free loan to person."
+  },
+  {
+    "id": "investment_share",
+    "category": "trade",
+    "tl": "{AMT_TL} {COMM_TL} i-na na-ru-qí-šu ša {PN1_TL} ad-ma-ku",
+    "tr": "{AMT_TR} of {COMM_TR} I have as investment share in the joint-stock capital of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Investment share in narūqum (joint-stock fund) of person."
+  },
+  {
+    "id": "settled_accounts_witness",
+    "category": "accounting",
+    "tl": "IGI {PN1_TL} ù {PN2_TL} ni-kà-sí ni-sí-ma",
+    "tr": "with {PN1_TR} and {PN2_TR} as witnesses we settled accounts.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Settled accounts with named witnesses."
+  },
+  {
+    "id": "cleared_accounts",
+    "category": "accounting",
+    "tl": "{PN1_TL} ù {PN2_TL} iz-ku-ú-ma",
+    "tr": "{PN1_TR} and {PN2_TR} cleared accounts.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Two persons cleared their mutual accounts."
+  },
+  {
+    "id": "rest_of_textiles",
+    "category": "accounting",
+    "tl": "ší-tí TÚG.ḪI-tí-šu {AMT_TL} {COMM_TL}",
+    "tr": "The rest of his textiles: {AMT_TR} {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "values": [
+            "TÚG/textiles",
+            "ku-ta-nu/kutānu-textiles",
+            "SÍG.HI.A/wool"
+          ]
+        }
+      }
+    ],
+    "notes": "Remainder of person's textiles."
+  },
+  {
+    "id": "rest_of_silver",
+    "category": "accounting",
+    "tl": "si-ti KÙ.BABBAR-pi-ka {AMT_TL} KÙ.BABBAR",
+    "tr": "The rest of your silver is {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Remainder of addressee's silver."
+  },
+  {
+    "id": "rest_of_tin",
+    "category": "accounting",
+    "tl": "si-ti AN.NA-ki-ka {AMT_TL} AN.NA",
+    "tr": "the rest of your tin: {AMT_TR} of tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Remainder of addressee's tin."
+  },
+  {
+    "id": "rest_textiles_cleared",
+    "category": "accounting",
+    "tl": "ší-tí TÚG.ḪI.A {AMT_TL} TÚG.ḪI-tù-šu iz-ku-ú-nim",
+    "tr": "The rest of the textiles: {AMT_TR} textiles were cleared.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Remaining textiles that were cleared/settled."
+  },
+  {
+    "id": "palace_entered",
+    "category": "trade",
+    "tl": "ŠU.NÍGIN {AMT_TL} ku-ta-nu ša {PN1_TL} a-na É.GAL-lim e-ru-bu",
+    "tr": "in all: {AMT_TR} kutānus belonging to {PN1_TR} entered the palace.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Textiles entered the palace for sale/pre-emption."
+  },
+  {
+    "id": "palace_textiles_entered",
+    "category": "trade",
+    "tl": "{AMT_TL} TÚG.ḪI.A a-na É.GAL-lim e-ru-bu",
+    "tr": "{AMT_TR} textiles entered the palace.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles entered palace."
+  },
+  {
+    "id": "palace_lost",
+    "category": "trade",
+    "tl": "ù {AMT_TL} ku-ta-nu i-na e-kál-lim iḫ-li-qú",
+    "tr": "and {AMT_TR} kutānus were lost in the palace.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles lost in the palace."
+  },
+  {
+    "id": "smuggling",
+    "category": "trade",
+    "tl": "i-na {AMT_TL} TÚG.ḪI.A ša pá-zu-ur-tim",
+    "tr": "Of the {AMT_TR} smuggled textiles.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Smuggled textiles (pazurtum)."
+  },
+  {
+    "id": "gave_silver_to",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {PN1_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} of silver to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Gave silver to person."
+  },
+  {
+    "id": "paid_silver_to",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {PN1_TL} áš-qúl",
+    "tr": "I paid {AMT_TR} of silver to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Paid silver to person."
+  },
+  {
+    "id": "shekels_to_person",
+    "category": "accounting",
+    "tl": "{AMT_TL} GÍN a-na {PN1_TL}",
+    "tr": "{AMT_TR} shekels to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Simple disbursement to person."
+  },
+  {
+    "id": "shekels_person_listing",
+    "category": "accounting",
+    "tl": "{AMT_TL} GÍN KÙ.BABBAR {PN1_TL}",
+    "tr": "{AMT_TR} shekels of silver: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver amount attributed to person (colon-style listing)."
+  },
+  {
+    "id": "shekels_person_bare",
+    "category": "accounting",
+    "tl": "{AMT_TL} GÍN {PN1_TL}",
+    "tr": "{AMT_TR} shekels: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Bare listing: N shekels then person name."
+  },
+  {
+    "id": "minas_person_listing",
+    "category": "accounting",
+    "tl": "{AMT_TL} ma-na {PN1_TL}",
+    "tr": "{AMT_TR} minas: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Bare listing: N minas then person name."
+  },
+  {
+    "id": "gave_for_purchases",
+    "category": "trade",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} a-na ší-a-ma-tim a-dí-in",
+    "tr": "I gave {AMT_TR} {COMM_TR} to {PN1_TR} for purchases.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Gave goods to person for purchasing."
+  },
+  {
+    "id": "gave_for_expenses",
+    "category": "accounting",
+    "tl": "{AMT_TL} {COMM_TL} a-na qá-tí-šu a-dí-in",
+    "tr": "I gave {AMT_TR} of {COMM_TR} for his expenses.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Gave commodity for person's expenses."
+  },
+  {
+    "id": "gave_for_sacrifices",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {PN1_TL} ni-qí-i-šu a-dí-in",
+    "tr": "I gave {AMT_TR} of silver to {PN1_TR} for his sacrifices.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver given for sacrificial offerings when going to the City."
+  },
+  {
+    "id": "gave_for_food",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na ú-ku-ul-tí-šu-nu a-dí-šu-nu-tí",
+    "tr": "{AMT_TR} of silver I gave them for their food.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver given for food/sustenance."
+  },
+  {
+    "id": "expense_inn",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na {PLACE_TL} a-na É wa-áb-ri",
+    "tr": "{AMT_TR} of silver in {PLACE_TR} for the inn.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Silver spent at an inn in a specific city."
+  },
+  {
+    "id": "expense_oil",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na Ì.GIŠ",
+    "tr": "{AMT_TR} of silver for oil.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver spent on sesame oil."
+  },
+  {
+    "id": "expense_fodder",
+    "category": "accounting",
+    "tl": "{AMT_TL} GÍN ú-ku-ul-tí ANŠE",
+    "tr": "{AMT_TR} shekels fodder for the donkey.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true,
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Donkey fodder cost."
+  },
+  {
+    "id": "expense_drinks",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na ki-ri-im",
+    "tr": "{AMT_TR} of silver for drinks.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver spent on drinks/banquet."
+  },
+  {
+    "id": "expense_firewood",
+    "category": "accounting",
+    "tl": "{AMT_TL} a-na {AMT2_TL} bi-lá-tim e-ṣé áš-qúl",
+    "tr": "{AMT_TR} paid for {AMT2_TR} loads of firewood.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Payment for firewood loads."
+  },
+  {
+    "id": "expense_clothes",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na lu-bu-ší-šu-nu",
+    "tr": "{AMT_TR} of silver for their clothes.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver for clothes."
+  },
+  {
+    "id": "expense_in_place",
+    "category": "accounting",
+    "tl": "{AMT_TL} URUDU a-dí i-{PLACE_TL} úṣ-a-ni ga-me-er",
+    "tr": "{AMT_TR} of copper were spent until I left {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Copper spent during stay until departure."
+  },
+  {
+    "id": "expense_on_behalf",
+    "category": "accounting",
+    "tl": "mì-ma a-nim a-šu-mi {PN1_TL} ú-ša-qí-il5",
+    "tr": "All this I paid out on behalf of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "All expenses paid on behalf of person."
+  },
+  {
+    "id": "votive_offering",
+    "category": "trade",
+    "tl": "{AMT_TL} KÙ.BABBAR ik-ri-bi ša A-šùr",
+    "tr": "{AMT_TR} of silver, votive offerings for Aššur.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver designated as votive offerings for Aššur."
+  },
+  {
+    "id": "owed_by_person",
+    "category": "accounting",
+    "tl": "{AMT_TL} {COMM_TL} KI {PN1_TL}",
+    "tr": "{AMT_TR} of {COMM_TR} is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Amount owed by person."
+  },
+  {
+    "id": "owed_with_interest",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR ú ṣí-ba-sú KI {PN1_TL}",
+    "tr": "{AMT_TR} of silver and its interest due from {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver plus interest owed by person."
+  },
+  {
+    "id": "owed_refined_silver",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pu-um i-ṣé-er {PN1_TL}",
+    "tr": "{AMT_TR} of refined silver is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Refined silver owed by person."
+  },
+  {
+    "id": "owed_in_possession",
+    "category": "accounting",
+    "tl": "{AMT_TL} {COMM_TL} iš-tí {PN1_TL}",
+    "tr": "{AMT_TR} of {COMM_TR} is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Amount with/owed by person."
+  },
+  {
+    "id": "silver_belongs_to",
+    "category": "accounting",
+    "tl": "KÙ.BABBAR ša {PN1_TL}",
+    "tr": "The silver belongs to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Statement of silver ownership."
+  },
+  {
+    "id": "all_this_for",
+    "category": "accounting",
+    "tl": "mì-ma a-nim a-na {PN1_TL}",
+    "tr": "All this for {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "All the above items are for/belonging to person."
+  },
+  {
+    "id": "all_this_left",
+    "category": "transport",
+    "tl": "mì-ma a-nim a-na {PN1_TL} e-zi-ib",
+    "tr": "All this I left behind to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "All items left behind/deposited with person."
+  },
+  {
+    "id": "will_pay_weeks",
+    "category": "accounting",
+    "tl": "a-na {AMT_TL} ḫa-am-ša-tim i-ša-qal",
+    "tr": "He will pay in {AMT_TR} weeks.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Payment due in N weeks."
+  },
+  {
+    "id": "reckoned_from_week",
+    "category": "accounting",
+    "tl": "iš-tù ḫa-mu-uš-tim ša {PN1_TL} a-na {AMT_TL} ḫa-am-ša-tim i-ša-qal",
+    "tr": "Reckoned from the week of {PN1_TR} he will pay in {AMT_TR} weeks.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Payment reckoned from hamuštum-week of named eponym."
+  },
+  {
+    "id": "deficit_shortage",
+    "category": "accounting",
+    "tl": "{AMT_TL} mu-ṭá AN.NA-ak qá-tim",
+    "tr": "{AMT_TR} was underweight on the expense-tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Deficit/shortage on expense-tin weight."
+  },
+  {
+    "id": "deducted",
+    "category": "accounting",
+    "tl": "iṣ-hi-ir-ma {AMT_TL}",
+    "tr": "was deducted and {AMT_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Amount deducted."
+  },
+  {
+    "id": "tablet_about_silver",
+    "category": "accounting",
+    "tl": "ṭup-pu-um ša {AMT_TL} KÙ.BABBAR ša {PN1_TL}",
+    "tr": "a tablet about {AMT_TR} of silver of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tablet documenting a debt/amount of silver of person."
+  },
+  {
+    "id": "tablet_debt",
+    "category": "accounting",
+    "tl": "ṭup-pu-ú ša ḫu-bu-ul {PN1_TL}",
+    "tr": "Tablets concerning {PN1_TR}'s debts.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tablets documenting person's debts."
+  },
+  {
+    "id": "tablet_concerning",
+    "category": "accounting",
+    "tl": "ṭup-pu-um a-šu-mì {PN1_TL}",
+    "tr": "The tablet was written because of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tablet written concerning person."
+  },
+  {
+    "id": "memo_header_witnesses",
+    "category": "accounting",
+    "tl": "ta-ah-sí-sà-tum ša ší-be ša ší-im {COMM_TL} ša {PN1_TL}",
+    "tr": "Memorandum with witnesses concerning the proceeds of {PN1_TR}'s {COMM_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Memorandum header with witnesses about commodity proceeds."
+  },
+  {
+    "id": "missive_unopened",
+    "category": "accounting",
+    "tl": "na-áš-pé-er-tám lá pá-tí-tám {PN1_TL} a-qá-tí-ni iš-ku-un",
+    "tr": "{PN1_TR} placed the unopened missive in our hands.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Unopened missive placed in hands."
+  },
+  {
+    "id": "beads_person",
+    "category": "commodity",
+    "tl": "{AMT_TL} ḫi-dim {PN1_TL}",
+    "tr": "{AMT_TR} beads: {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver or tin beads attributed to person."
+  },
+  {
+    "id": "bronze_pins",
+    "category": "commodity",
+    "tl": "{AMT_TL} sí-pá-ra-tim",
+    "tr": "{AMT_TR} bronze pins.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Bronze pins."
+  },
+  {
+    "id": "lapis_lazuli",
+    "category": "commodity",
+    "tl": "{AMT_TL} hu-sà-ra-am",
+    "tr": "{AMT_TR} of lapis lazuli.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Lapis lazuli."
+  },
+  {
+    "id": "scrap_metal",
+    "category": "commodity",
+    "tl": "{AMT_TL} ḫu-ša-ú",
+    "tr": "{AMT_TR} of scrap metal.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Scrap metal."
+  },
+  {
+    "id": "slaves_listing",
+    "category": "commodity",
+    "tl": "{AMT_TL} ÌR-du ù {AMT2_TL} a-ma-tum",
+    "tr": "{AMT_TR} slaves and {AMT2_TR} slave-girls.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Listing of male and female slaves."
+  },
+  {
+    "id": "month_eponymy",
+    "category": "accounting",
+    "tl": "ITI.1.KAM {COMM_TL} li-mu-um {PN1_TL}",
+    "tr": "Month {COMM_TR}, eponymy of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Date formula: month name and eponym year."
+  },
+  {
+    "id": "tin_inn_in_place",
+    "category": "accounting",
+    "tl": "{AMT_TL} AN.NA i-na {PLACE_TL} a-na É ub-ri a-dí-in",
+    "tr": "{AMT_TR} of tin I gave in {PLACE_TR} to the inn.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Tin given at an inn in a specific place."
+  },
+  {
+    "id": "tin_to_commander",
+    "category": "accounting",
+    "tl": "{AMT_TL} AN.NA i-na {PLACE_TL} a-na GAL sí-ki-tim a-dí-in",
+    "tr": "{AMT_TR} of tin I gave in {PLACE_TR} to the commander.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Tin given to a local official."
+  },
+  {
+    "id": "wedding_gift",
+    "category": "accounting",
+    "tl": "i-nu-mì {PN1_TL} a-ša-sú e-ḫu-zu {AMT_TL} KÙ.BABBAR a-na a-ší-tí-šu a-dí-in",
+    "tr": "When {PN1_TR} married his wife I gave {AMT_TR} of silver to his wife.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Silver given as wedding gift."
+  },
+  {
+    "id": "blessing_city_trip",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR i-nu-mì {PN1_TL} a-na A-lim{ki} i-li-ku ak-ru-ub-šu-um",
+    "tr": "When {PN1_TR} went to the City I dedicated {AMT_TR} of silver as a blessing for him.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver dedicated as blessing when person went to Assur."
+  },
+  {
+    "id": "took_for_journey",
+    "category": "transport",
+    "tl": "{AMT_TL} ku-ta-ni a-na ḫa-ra-ni-a al-qé",
+    "tr": "I took {AMT_TR} kutānus for my journey.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      }
+    ],
+    "notes": "Textiles taken for personal journey."
+  },
+  {
+    "id": "colony_proceedings_other",
+    "category": "accounting",
+    "tl": "a-na a-wa-tim a-ni-a-tim kà-ru-um {PLACE_TL} i-dí-ni-a-tí-ma ší-bu-tí-ni ni-dí-in",
+    "tr": "The {PLACE_TR} colony gave us for these proceedings and we gave our testimony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Proceedings for colonies other than Kanesh."
+  },
+  {
+    "id": "deposited_silver_person",
+    "category": "transport",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {PN1_TL} a-dí-i",
+    "tr": "I deposited {AMT_TR} of silver with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Deposited (nadu, a-di-i 1sg) variant of entrusted."
+  },
+  {
+    "id": "deposited_commodity",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} a-dí-i",
+    "tr": "I deposited {AMT_TR} of {COMM_TR} with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Deposited (nadu) variant with commodity."
+  },
+  {
+    "id": "deposited_stative",
+    "category": "transport",
+    "tl": "{AMT_TL} KÙ.BABBAR KI {PN1_TL} na-dí",
+    "tr": "{AMT_TR} of silver is deposited with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Deposited (nadu stative na-di) variant."
+  },
+  {
+    "id": "left_with_commodity",
+    "category": "transport",
+    "tl": "{AMT_TL} {COMM_TL} KI {PN1_TL} e-zi-ib",
+    "tr": "I left {AMT_TR} of {COMM_TR} with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Left with (ezebum, e-zi-ib) variant with commodity."
+  },
+  {
+    "id": "left_with_silver_sealed",
+    "category": "transport",
+    "tl": "{AMT_TL} KÙ.BABBAR ku-nu-ki-a KI {PN1_TL} e-zi-ib",
+    "tr": "{AMT_TR} of silver under my seal I left with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Left with (ezebum) sealed silver variant."
+  },
+  {
+    "id": "possession_libi_silver",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na li-bi4 {PN1_TL}",
+    "tr": "{AMT_TR} of silver is in {PN1_TR}'s possession.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Standalone i-na li-bi4 + PN (no i-šu) = possession. Attested: '4 ma-na KÙ.BABBAR i-na li-bi4 A-šùr-ma-lik' → '4 minas of silver is in the possession of Aššur-malik.'"
+  },
+  {
+    "id": "possession_ilibi_silver",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR i-li-bi4 {PN1_TL}",
+    "tr": "{AMT_TR} of silver is in {PN1_TR}'s possession.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "i-li-bi4 spelling variant. Attested: '4 ⅙ GÍN KÙ.BABBAR i-li-bi4 Hu-ra-ṣa-nim' → '4 ⅙ shekels of silver is in Huraṣānum's possession.'"
+  },
+  {
+    "id": "with_libi_silver_refined",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-na li-bi {PN1_TL}",
+    "tr": "{AMT_TR} of refined silver is with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "'is with PN' variant. Attested: '46 ma-na KÙ.BABBAR ṣa-ru-pá-am i-na li-bi I-dí-Sú-en' → '46 minas of refined silver are with Idī-Suen.'"
+  },
+  {
+    "id": "with_ilibi_silver_refined",
+    "category": "accounting",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-li-bi4 {PN1_TL}",
+    "tr": "{AMT_TR} of refined silver is with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "i-li-bi4 variant of 'is with'. Attested: '43 ½ ma-na 5 GÍN KÙ.BABBAR ṣa-ru-pá-am i-li-bi4 Šu-li' → '43 ½ minas 5 shekels of refined silver is with Šulī.'"
+  },
+  {
+    "id": "with_libi_all_this",
+    "category": "accounting",
+    "tl": "mì-ma a-nim i-na li-bi4 {PN1_TL}",
+    "tr": "All this is with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Summary line. Attested: 'mì-ma a-nim i-na li-bi4 Dan-A-šùr' → 'All these things are with Dān-Aššur.'"
+  },
+  {
+    "id": "possession_remainder_libi",
+    "category": "accounting",
+    "tl": "ší-tí {COMM_TL} i-li-bi {PN1_TL} a-hu-ur",
+    "tr": "The rest of the {COMM_TR} remains in {PN1_TR}'s possession.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Remainder + a-hu-ur (outstanding). Attested: 'ší-tí hu-sà-ri-im i-li-bi Šu-Ištar a-hu-ur' → 'The rest of the lapis lazuli remains in Šu-Ištar's possession.'"
+  }
+]

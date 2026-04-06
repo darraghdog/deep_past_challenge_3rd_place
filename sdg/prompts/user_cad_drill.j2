@@ -1,0 +1,49 @@
+HEADWORD: {{ headword }} ({{ pos }}{% if grammatical_info and grammatical_info != "N/A" %}, {{ grammatical_info }}{% endif %})
+{% if entry_overview and entry_overview != "N/A" %}
+OVERVIEW: {{ entry_overview }}
+{% endif %}
+
+## ALL SENSES ({{ n_senses }} total)
+{% for sense in all_senses %}
+{{ loop.index }}. {{ headword }} → "{{ sense.gloss }}" [{{ sense.domain }}] {% if sense.sense_id == target_sense_id %}← TARGET{% endif %}
+
+{% if sense.sense_id != target_sense_id and sense.best_attestation %}   ex: {{ sense.best_attestation.transliteration }} → {{ sense.best_attestation.translation }}  [{{ sense.best_attestation.source_ref }}]
+{% endif %}
+{% endfor %}
+
+## TARGET: {{ headword }} → "{{ target_gloss }}" [{{ target_domain }}]
+
+ALL ATTESTATIONS FOR THIS SENSE:
+{% for att in target_attestations %}
+{{ loop.index }}. {{ att.transliteration }} → {{ att.translation }}  [{{ att.source_ref }}]
+{%- if att.surface_forms %}  (forms: {{ att.surface_forms | join(", ") }}){% endif %}
+{% endfor %}
+{% if target_attestations | length == 0 %}
+(No attestations — generate from the gloss and entry overview.)
+{% endif %}
+{% if raw_entry_text_excerpt %}
+
+## SCHOLARLY CONTEXT (from dictionary entry)
+{{ raw_entry_text_excerpt }}
+{% endif %}
+
+## REAL TRAINING EXAMPLES (competition format reference)
+{% for ex in training_examples %}
+{{ loop.index }}. TL: {{ ex.transliteration }}
+   TR: {{ ex.translation }}
+{% endfor %}
+
+## NAMES (transliteration → English)
+{% for name in names %}
+- {{ name.transliteration }} → {{ name.translation }}
+{% endfor %}
+
+## GENERATE
+
+**Target: {{ headword }} → "{{ target_gloss }}"**: Generate {{ n_to_generate }} sentences.
+{% if contrastive_senses | length > 0 %}
+**Contrastive senses**: For each of the following, generate 2 sentences where {{ headword }} means THAT sense instead:
+{% for cs in contrastive_senses %}- {{ headword }} → "{{ cs.gloss }}" [{{ cs.domain }}]
+{% endfor %}
+{% endif %}
+Total output: {{ n_to_generate }} target + {{ contrastive_senses | length * 2 }} contrastive = {{ n_to_generate + contrastive_senses | length * 2 }} sentences.

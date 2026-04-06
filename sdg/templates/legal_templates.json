@@ -1,0 +1,2746 @@
+[
+  {
+    "id": "seal_single",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL}",
+    "tr": "Seal of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Single seal impression without patronymic. Common on debt notes and legal documents."
+  },
+  {
+    "id": "seal_with_patronymic",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Seal of {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Single seal with patronymic. Most common seal formula."
+  },
+  {
+    "id": "seal_double",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL}",
+    "tr": "Seal of {PN1_TR} son of {PN2_TR}, seal of {PN3_TR} son of {PN4_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Two seal impressions in sequence."
+  },
+  {
+    "id": "seal_triple",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL} KIŠIB {PN5_TL} DUMU {PN6_TL}",
+    "tr": "Seal of {PN1_TR} son of {PN2_TR}, seal of {PN3_TR} son of {PN4_TR}, seal of {PN5_TR} son of {PN6_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN6",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Three seal impressions in sequence. Common on multi-party legal documents."
+  },
+  {
+    "id": "seal_colony",
+    "category": "legal_seal",
+    "tl": "KIŠIB ka-ri-im {PLACE_TL}",
+    "tr": "Seal of the {PLACE_TR} colony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit",
+            "Hu-ra-ma/Hurama",
+            "Wa-ah-su-sa-na/Wahsusana"
+          ]
+        }
+      }
+    ],
+    "notes": "Colony institutional seal."
+  },
+  {
+    "id": "seal_colony_plenary",
+    "category": "legal_seal",
+    "tl": "KIŠIB ka-ri-im {PLACE_TL} sa-he-er GAL",
+    "tr": "Seal of the {PLACE_TR} colony in plenary session.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Colony seal from full assembly. sa-he-er GAL = small and great = plenary."
+  },
+  {
+    "id": "sealed_by_single",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL}",
+    "tr": "Sealed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Alternative translation using 'sealed by' instead of 'seal of'."
+  },
+  {
+    "id": "seal_to_addressee",
+    "category": "legal_seal",
+    "tl": "a-na {PN1_TL} KIŠIB {PN2_TL}",
+    "tr": "To {PN1_TR}; seal of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal formula combined with addressee."
+  },
+  {
+    "id": "seal_to_addressee_patronymic",
+    "category": "legal_seal",
+    "tl": "a-na {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL}",
+    "tr": "To {PN1_TR} son of {PN2_TR}; seal of {PN3_TR} son of {PN4_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal formula with full patronymics for both addressee and sealer."
+  },
+  {
+    "id": "seal_to_representatives",
+    "category": "legal_seal",
+    "tl": "a-na sa ki-ma i-a-ti u {PN1_TL} KIŠIB {PN2_TL}",
+    "tr": "To my representatives and {PN1_TR}; seal of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal addressed to representatives and a named person."
+  },
+  {
+    "id": "seal_scribe",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUB.SAR",
+    "tr": "Seal of {PN1_TR}, scribe.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal of the scribe who wrote the tablet."
+  },
+  {
+    "id": "witness_single",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL}",
+    "tr": "In the presence of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Single witness without patronymic. IGI = before/in the presence of."
+  },
+  {
+    "id": "witness_patronymic",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} DUMU {PN2_TL}",
+    "tr": "In the presence of {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Witness with patronymic. Standard witness entry."
+  },
+  {
+    "id": "witness_witnessed_by",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Witnessed by {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Alternative translation with 'Witnessed by'."
+  },
+  {
+    "id": "witness_double",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} DUMU {PN2_TL} IGI {PN3_TL} DUMU {PN4_TL}",
+    "tr": "Witnessed by {PN1_TR} son of {PN2_TR}, by {PN3_TR} son of {PN4_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Two witnesses in a single clause."
+  },
+  {
+    "id": "witness_triple",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} IGI {PN2_TL} IGI {PN3_TL}",
+    "tr": "In the presence of {PN1_TR}, of {PN2_TR}, of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Three witnesses without patronymics."
+  },
+  {
+    "id": "witness_four",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} IGI {PN2_TL} IGI {PN3_TL} IGI {PN4_TL}",
+    "tr": "Witnessed by {PN1_TR}, by {PN2_TR}, by {PN3_TR}, by {PN4_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Four witnesses in sequence."
+  },
+  {
+    "id": "witness_triple_patronymic",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} DUMU {PN2_TL} IGI {PN3_TL} DUMU {PN4_TL} IGI {PN5_TL} DUMU {PN6_TL}",
+    "tr": "Witnessed by {PN1_TR} son of {PN2_TR}, by {PN3_TR} son of {PN4_TR}, by {PN5_TR} son of {PN6_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN6",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Three witnesses each with patronymics."
+  },
+  {
+    "id": "witness_scribe",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} DUB.SAR",
+    "tr": "Witnessed by {PN1_TR}, the scribe.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Scribe listed as witness."
+  },
+  {
+    "id": "absent_partner",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DUMU {PN2_TL} tap-pa-i-ni",
+    "tr": "{PN1_TR} son of {PN2_TR} was our (absent) partner.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "The absent partner formula. A party not present at proceedings but represented."
+  },
+  {
+    "id": "absent_partner_my",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DUMU {PN2_TL} tap-pa-i",
+    "tr": "{PN1_TR} son of {PN2_TR} was my absent partner.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Singular variant: my partner instead of our."
+  },
+  {
+    "id": "colony_proceedings_dagger",
+    "category": "legal_witness",
+    "tl": "a-na a-wa-tim a-ni-a-tim ka-ru-um {PLACE_TL} i-di-ni-a-ti-ma IGI GIR sa A-šur si-bu-ti-ni ni-di-in",
+    "tr": "The {PLACE_TR} colony gave us for these proceedings and we gave our testimony before Aššur's dagger.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit",
+            "Hu-ra-ma/Hurama"
+          ]
+        }
+      }
+    ],
+    "notes": "Most frequent legal formula (118+ matches). Colony assigns arbitrators and testimony before dagger."
+  },
+  {
+    "id": "colony_proceedings_plenary_dagger",
+    "category": "legal_witness",
+    "tl": "a-na a-wa-tim a-ni-a-tim ka-ru-um {PLACE_TL} sa-he-er GAL i-di-ni-a-ti-ma IGI GIR sa A-šur si-bu-ti-ni ni-di-in",
+    "tr": "The {PLACE_TR} colony in plenary session gave us for these proceedings, and we gave our testimony before Aššur's dagger.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Plenary session variant of colony proceedings formula."
+  },
+  {
+    "id": "colony_proceedings_tablet_dagger",
+    "category": "legal_witness",
+    "tl": "a-na a-wa-tim a-ni-a-tim ka-ru-um {PLACE_TL} i-di-ni-a-ti-ma tup-pa-am IGI GIR sa A-šur si-bu-ti-ni ni-di-in",
+    "tr": "The {PLACE_TR} colony gave us for these proceedings and we gave a tablet with our testimony before Aššur's dagger.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Variant mentioning the tablet explicitly."
+  },
+  {
+    "id": "station_proceedings_dagger",
+    "category": "legal_witness",
+    "tl": "a-na a-wa-tim a-ni-a-tim wa-bar-tum sa {PLACE_TL} i-di-ni-a-ti-ma tup-pa-am IGI GIR sa a-šur si-bu-ti-ni ni-di-in",
+    "tr": "The station at {PLACE_TR} gave us for these proceedings and we gave a tablet with our testimony before Aššur's dagger.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Wa-as-ha-ni-a/Washaniya"
+          ]
+        }
+      }
+    ],
+    "notes": "Station (wabarum) variant instead of colony (karum). Smaller trading outposts."
+  },
+  {
+    "id": "grasped_dagger",
+    "category": "legal_witness",
+    "tl": "GIR sa A-šur is-bu-tu-ni-ma {PN1_TL} DUMU {PN2_TL} pa-su-nu is-me-u-ni",
+    "tr": "they seized Aššur's dagger and {PN1_TR} son of {PN2_TR} heard their statement.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Physical grasping of the dagger as oath-taking, with adjudicator hearing the statement."
+  },
+  {
+    "id": "attorney_was",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} ra-bi-su-um",
+    "tr": "{PN1_TR} was the attorney.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Identifies the attorney (rabisuum) for the proceedings."
+  },
+  {
+    "id": "attorney_for_goods",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} ra-bi-su-um a-na lu-qu-tim",
+    "tr": "{PN1_TR} was the attorney for the goods.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Attorney specifically for merchandise/goods."
+  },
+  {
+    "id": "attorney_of_firm",
+    "category": "legal_witness",
+    "tl": "ra-bi-su-um sa E {PN1_TL}",
+    "tr": "the attorney of {PN1_TR}'s firm.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Attorney designated for a specific merchant's firm."
+  },
+  {
+    "id": "third_man",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} sa-li-is-ni",
+    "tr": "{PN1_TR} was our third man.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Third-party mediator in legal proceedings."
+  },
+  {
+    "id": "representative_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} sa ki-ma {PN2_TL}",
+    "tr": "{PN1_TR}, {PN2_TR}'s representative.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Person acting as representative (sa kima = who is like) for another."
+  },
+  {
+    "id": "investors_of",
+    "category": "legal_witness",
+    "tl": "um-me-a-ni {PN1_TL}",
+    "tr": "The investors of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Identifies the investors (ummeanum) associated with a trader."
+  },
+  {
+    "id": "these_men_judges",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} u {PN2_TL} a-wi-lu a-ni-u-tum da-a-nu",
+    "tr": "{PN1_TR} and {PN2_TR}, these men acted as judges.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Identifies the judges at the end of a verdict record."
+  },
+  {
+    "id": "oath_impressed_on_us",
+    "category": "legal_oath",
+    "tl": "{PN1_TL} sa ni-is A-lim{ki} uz-na-ti-ni il5-pu-ut",
+    "tr": "{PN1_TR} impressed on us what had been sworn by the City.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Formally reminding the assembly of an oath sworn by the City."
+  },
+  {
+    "id": "oath_swore_on_behalf",
+    "category": "legal_oath",
+    "tl": "{PN1_TL} ki-ma a-ha-ti-su a-hi-su u a-ha-at a-bi-su it-ma",
+    "tr": "{PN1_TR} swore on behalf of his sister, his brother and his father's sister.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Swearing the oath on behalf of absent family members."
+  },
+  {
+    "id": "oath_tablet",
+    "category": "legal_oath",
+    "tl": "tup-pu-um a-ni-um sa ma-mi-it {PN1_TL}",
+    "tr": "This tablet contains the oath by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Identifies the tablet as an oath record."
+  },
+  {
+    "id": "verdict_come_let_us_go",
+    "category": "legal_verdict",
+    "tl": "ba-a-am a-na {PLACE_TL} lu ni-lik",
+    "tr": "Come on, let us go to {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "A-lim{ki}/the City",
+            "Dur4-hu-mi-it/Durhumit",
+            "Ka-ni-is/Kanesh"
+          ]
+        }
+      }
+    ],
+    "notes": "Exhortation to travel for legal proceedings."
+  },
+  {
+    "id": "guarantee_anyone_claim_clear",
+    "category": "legal_guarantee",
+    "tl": "su-ma a-na {PN1_TL} ma-ma-an i-tu-a-ar {PN2_TL} u-bab-su",
+    "tr": "If anyone raises claim against {PN1_TR}, {PN2_TR} will clear him.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Guarantee formula. Guarantor promises to resolve future claims against the buyer."
+  },
+  {
+    "id": "guarantee_claim_attorney_clear",
+    "category": "legal_guarantee",
+    "tl": "su-ma i-tu-ru {PN1_TL} u ra-bi-sum u-bu-bu-su-nu",
+    "tr": "If they do raise claim, {PN1_TR} and the attorney will clear them.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Combined guarantee with attorney support."
+  },
+  {
+    "id": "guarantee_anyone_claim_pay",
+    "category": "legal_guarantee",
+    "tl": "su-ma ma-ma-an a-su-mi {ITEM_TL} a-na {PN1_TL} i-tu-a-ar {PN2_TL} {AMT_TL} KÙ.BABBAR i-sa-qu-lu",
+    "tr": "If anybody raises a claim against {PN1_TR} because of the {ITEM_TR}, {PN2_TR} will pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "ITEM",
+        "type": "item",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Guarantee with specific monetary penalty. Used in purchase contracts."
+  },
+  {
+    "id": "guarantee_is_guarantor",
+    "category": "legal_guarantee",
+    "tl": "{PN1_TL} qa-ta-tum",
+    "tr": "{PN1_TR} is guarantor.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Simple guarantor designation."
+  },
+  {
+    "id": "guarantee_registered",
+    "category": "legal_guarantee",
+    "tl": "{PN1_TL} u {PN2_TL} il5-ta-ap-tu-ni",
+    "tr": "{PN1_TR} and {PN2_TR} had themselves registered as guarantors.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Formal registration as guarantors."
+  },
+  {
+    "id": "guarantee_house_security",
+    "category": "legal_guarantee",
+    "tl": "E-be-tum sa a-lim{ki} sa {PN1_TL} e-ru-ba-at KU",
+    "tr": "{PN1_TR}'s house in the City serves as security for the silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "House pledged as collateral for a silver debt."
+  },
+  {
+    "id": "noclaim_must_not_raise",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} a-na {PN2_TL} u-la i-tu-ru",
+    "tr": "{PN1_TR} must not raise claim against {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Non-claim prohibition. Very common (39+ instances)."
+  },
+  {
+    "id": "noclaim_must_not_for_debt",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} a-na hu-bu-ul {PN2_TL} la i-tu-ar-su-nu-ti",
+    "tr": "{PN1_TR} must not raise claim against them for {PN2_TR}'s debt.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Non-claim specifically tied to a named person's debt."
+  },
+  {
+    "id": "protest_if_he_says",
+    "category": "legal_claim",
+    "tl": "su-ma {PN1_TL} i-qa-bi um-ma su-ut-ma",
+    "tr": "If {PN1_TR} says:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Protest clause opener. Introduces hypothetical objection."
+  },
+  {
+    "id": "tablet_any_false",
+    "category": "legal_claim",
+    "tl": "su-ma tup-pu-um sa {PN1_TL} i-se-er {PN2_TL} it-ba-am tup-pu-um sa-ar",
+    "tr": "If any tablet of {PN1_TR} against {PN2_TR} turns up, that tablet is false.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tablet invalidation formula."
+  },
+  {
+    "id": "seizure_against",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} a-na {PN2_TL} is-ba-at-ni-a-ti-ma um-ma {PN1_TL}-ma a-na {PN2_TL}-ma",
+    "tr": "{PN1_TR} seized us against {PN2_TR}, and {PN1_TR} said to {PN2_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Standard legal proceedings opener (47+ instances)."
+  },
+  {
+    "id": "seizure_against_patronymic",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} DUMU {PN2_TL} a-na {PN3_TL} DUMU {PN4_TL} is-ba-at-ni-a-ti-ma um-ma {PN1_TL}-ma a-na {PN3_TL}-ma",
+    "tr": "{PN1_TR} son of {PN2_TR} seized us in his case against {PN3_TR} son of {PN4_TR}, and {PN1_TR} said to {PN3_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seizure formula with full patronymics."
+  },
+  {
+    "id": "seizure_seized_hem",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} si-ki-i {PN2_TL} is-ba-at-ma um-ma {PN2_TL}-ma",
+    "tr": "{PN1_TR} seized {PN2_TR} by his hem whereupon {PN2_TR} said:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Physical seizure by the garment hem."
+  },
+  {
+    "id": "seizure_representing",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} ki-ma {PN2_TL} {PN3_TL} is-ba-at-ma um-ma {PN1_TL}-ma",
+    "tr": "{PN1_TR}, representing {PN2_TR}, seized {PN3_TR} and {PN1_TR} said:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seizure on behalf of someone else."
+  },
+  {
+    "id": "seizure_hired_attorney",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} a-na {PN2_TL} ra-bi-sa-am e-hu-za-ni",
+    "tr": "{PN1_TR} had hired an attorney against {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Attorney hired for proceedings against another party."
+  },
+  {
+    "id": "confirm_deny",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} KÙ.BABBAR ha-bu-la-ti la ha-bu-la-ti u-la ik-ri u-la ka-i-na-ni",
+    "tr": "Confirm or deny that you owe me {AMT_TR} of silver!",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Formal demand for confirmation or denial of debt."
+  },
+  {
+    "id": "produce_witnesses",
+    "category": "legal_claim",
+    "tl": "si-be-e {PN1_TL} a-na {PN2_TL} u-se-la-ma",
+    "tr": "{PN1_TR} will produce witnesses against {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "One party producing witnesses against another."
+  },
+  {
+    "id": "gate_god_led",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} {PN2_TL} a-na ba-ab DINGIR-lim a-su-mi",
+    "tr": "{PN1_TR} led {PN2_TR} to the Gate of the God because of",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Led to the Gate of the God for divine judgment."
+  },
+  {
+    "id": "debt_tablet_statement",
+    "category": "legal_claim",
+    "tl": "1 tup-pu-um sa {AMT_TL} i-se-er {PN1_TL} {PN2_TL} i-su",
+    "tr": "1 tablet stating that {PN1_TR} owes {AMT_TR} to {PN2_TR};",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt note. Lists amount owed, debtor and creditor."
+  },
+  {
+    "id": "debt_tablet_of",
+    "category": "legal_claim",
+    "tl": "1 tup-pu-um {AMT_TL} hu-bu-ul {PN1_TL}",
+    "tr": "1 tablet concerning {AMT_TR}, debt of {PN1_TR};",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Alternative debt note formula."
+  },
+  {
+    "id": "debt_owes_silver",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} KÙ.BABBAR sa-ru-pa-am i-se-er {PN1_TL} DUMU {PN2_TL} {PN3_TL} i-su",
+    "tr": "{PN1_TR} son of {PN2_TR} owes {AMT_TR} of refined silver to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Standard debt formula with refined silver."
+  },
+  {
+    "id": "debt_owes_gold",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} KU.KI i-se-er {PN1_TL} DUMU {PN2_TL} {PN3_TL} i-su",
+    "tr": "{PN1_TR} son of {PN2_TR} owes {AMT_TR} of gold to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Gold debt formula."
+  },
+  {
+    "id": "debt_owes_copper",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} URUDU ma-si-am i-se-er {PN1_TL} DUMU {PN2_TL} {PN3_TL} i-su",
+    "tr": "{PN1_TR} son of {PN2_TR} owes {AMT_TR} of washed copper to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Copper debt formula."
+  },
+  {
+    "id": "debt_yes_i_owe",
+    "category": "legal_claim",
+    "tl": "ke-na {AMT_TL} KÙ.BABBAR ha-bu-la-ku-um",
+    "tr": "Yes, I owe you {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Admission of debt in legal proceedings."
+  },
+  {
+    "id": "debt_i_do_not_owe",
+    "category": "legal_claim",
+    "tl": "a-na {PN1_TL} la ha-bu-la-ku",
+    "tr": "I do not owe anything to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Denial of debt."
+  },
+  {
+    "id": "debt_you_owe_silver",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} KÙ.BABBAR u si-ba-su a-na {PN1_TL} ha-bu-la-ti",
+    "tr": "You owe {AMT_TR} of silver and its interest to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Accusation of debt with interest."
+  },
+  {
+    "id": "interest_add_rate",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} GÍN.TA si-ib-tam i ITU.1.KAM u-sa-ab",
+    "tr": "he will add {AMT_TR} as interest per month.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest rate clause."
+  },
+  {
+    "id": "interest_per_mina_per_month",
+    "category": "legal_claim",
+    "tl": "su-ma la is-qul {AMT_TL} GÍN.TA a ma-na-im i-na ITU.KAM si-ib-tam u-sa-ab",
+    "tr": "If he has not paid, he will add {AMT_TR} per mina per month as interest.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest clause specifying rate per mina per month."
+  },
+  {
+    "id": "payment_within_weeks",
+    "category": "legal_claim",
+    "tl": "is-tu ha-mu-us-tim sa {PN1_TL} a-na {NUM_TL} ha-am-sa-tim i-sa-qal",
+    "tr": "From the week of {PN1_TR} he will pay within {NUM_TR} weeks.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Payment deadline counted from a hamustum week-eponymy."
+  },
+  {
+    "id": "payment_within_months",
+    "category": "legal_claim",
+    "tl": "a-na ITU.{NUM_TL}.KAM i-sa-qal",
+    "tr": "He will pay within {NUM_TR} months.",
+    "slots": [
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Payment deadline in months."
+  },
+  {
+    "id": "satisfied_paid_full",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} sa-bu",
+    "tr": "{PN1_TR} has been paid in full.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Confirmation that creditor is satisfied."
+  },
+  {
+    "id": "case_their_case",
+    "category": "legal_claim",
+    "tl": "a-wa-tu-su-nu sa {PN1_TL} {PN2_TL}",
+    "tr": "Their case concerning {PN1_TR} and {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Case header identifying the parties in dispute."
+  },
+  {
+    "id": "marriage_married",
+    "category": "legal_marriage",
+    "tl": "{PN1_TL} {PN2_TL} e-hu-uz",
+    "tr": "{PN1_TR} married {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Basic marriage statement."
+  },
+  {
+    "id": "marriage_slave_wife",
+    "category": "legal_marriage",
+    "tl": "{PN1_TL} {PN2_TL} a-na am-tu-tim e-hu-uz-ma",
+    "tr": "{PN1_TR} married {PN2_TR} as a slave girl.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Marriage with amtum (slave-wife) status."
+  },
+  {
+    "id": "divorce_if_leaves_pay",
+    "category": "legal_marriage",
+    "tl": "su-ma {PN1_TL} e-te-zi-ib-su {AMT_TL} KÙ.BABBAR i-sa-qal",
+    "tr": "If {PN1_TR} divorces her, he will pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Divorce penalty for the husband."
+  },
+  {
+    "id": "divorce_if_she_leaves_pay",
+    "category": "legal_marriage",
+    "tl": "su-ma {PN1_TL} e-te-zi-ib-su {AMT_TL} KÙ.BABBAR ta-sa-qal",
+    "tr": "If {PN1_TR} divorces him, she will pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Divorce penalty for the wife."
+  },
+  {
+    "id": "marriage_if_touched_house",
+    "category": "legal_marriage",
+    "tl": "su-ma a-na be-ti-su u am-ti-su ta-ta-hi-i {AMT_TL} KÙ.BABBAR ta-sa-qal",
+    "tr": "If you have touched his house and his slave-girls, you must return {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Penalty clause for violating restriction during husband's absence."
+  },
+  {
+    "id": "slave_bought_from",
+    "category": "legal_property",
+    "tl": "am-tam is-ti {PN1_TL} {PN2_TL} is-am-si",
+    "tr": "{PN2_TR} bought the slave-girl from {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Slave purchase formula."
+  },
+  {
+    "id": "slave_price_received",
+    "category": "legal_property",
+    "tl": "{AMT_TL} KÙ.BABBAR si-im am-tim {PN1_TL} il5-qe",
+    "tr": "{AMT_TR} of silver, the price of a slave-girl, {PN1_TR} has received.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Receipt of silver for a slave sale."
+  },
+  {
+    "id": "house_sold_for",
+    "category": "legal_property",
+    "tl": "E sa {PN1_TL} a-na {AMT_TL} KÙ.BABBAR a-na {PN2_TL} i-di-nu-ma",
+    "tr": "The house of {PN1_TR} they sold to {PN2_TR} for {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "House sale formula."
+  },
+  {
+    "id": "house_satisfied_price",
+    "category": "legal_property",
+    "tl": "KÙ.BABBAR si-im E-su-nu {PN1_TL} u {PN2_TL} sa-bu-u",
+    "tr": "With the price for their house {PN1_TR} and {PN2_TR} are satisfied.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Sellers confirm satisfaction with house sale price."
+  },
+  {
+    "id": "house_belongs_to",
+    "category": "legal_property",
+    "tl": "E-tu sa {PLACE_TL} u u-tu-up-tum sa {PN1_TL} {PN2_TL} la ta-hu",
+    "tr": "The house in {PLACE_TR} and its furniture belong to {PN1_TR}, {PN2_TR} is not entitled to it.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Property ownership declaration."
+  },
+  {
+    "id": "inheritance_divided",
+    "category": "legal_property",
+    "tl": "{PN1_TL} u {PN2_TL} i-zu-zu-ma {PN1_TL} zi-tu-su il5-qe",
+    "tr": "{PN1_TR} and {PN2_TR} divided and {PN1_TR} took his share.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Estate division formula between heirs."
+  },
+  {
+    "id": "inheritance_tuzinnum",
+    "category": "legal_property",
+    "tl": "{PN1_TL} zi-tu-su u tu-zi-nam sa {TITLE_TL} il5-qe",
+    "tr": "{PN1_TR} took his share and the tuzinnum of the {TITLE_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "TITLE",
+        "type": "occupation",
+        "options": {
+          "values": [
+            "ra-bi-um/eldest son",
+            "DUMU.GAL/firstborn"
+          ]
+        }
+      }
+    ],
+    "notes": "tuzinnum = the extra share of the eldest son in inheritance."
+  },
+  {
+    "id": "blood_money",
+    "category": "legal_property",
+    "tl": "da-me sa {PN1_TL}",
+    "tr": "the blood-money for {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Blood money (compensation for killing or injury)."
+  },
+  {
+    "id": "penalty_concealment",
+    "category": "legal_guarantee",
+    "tl": "su-ma mi-ma u-pa-za-ar {AMT_TL} KÙ.BABBAR i-sa-qal",
+    "tr": "If he conceals anything, he will pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Penalty clause for concealment."
+  },
+  {
+    "id": "penalty_service_contract",
+    "category": "legal_guarantee",
+    "tl": "{PN1_TL} a-di {NUM_TL} sa-na-at is-ti {PN2_TL} us-sa-ab la i-sa-mu-hu-ma su-ma is-ta-mu-hu-ma it-ti-si {AMT_TL} KÙ.BABBAR i-sa-qal",
+    "tr": "{PN1_TR} will stay in {PN2_TR}'s employ for {NUM_TR} years, will not break the agreement; if he breaks the agreement and leaves, he pays {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Service/employment contract with penalty for breach."
+  },
+  {
+    "id": "penalty_harm_parents",
+    "category": "legal_guarantee",
+    "tl": "su-ma ma-am-man ib-ba-ri-su-nu is-se-er a-bi-im um-mi-im is-al-la mi-ma u-pa-za-ar {AMT_TL} KÙ.BABBAR i-sa-qal",
+    "tr": "If either of them harms the father or mother or conceals anything, he will pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Penalty clause protecting parents from harm or concealment."
+  },
+  {
+    "id": "date_month_eponymy",
+    "category": "legal_verdict",
+    "tl": "ITU.KAM {MONTH_TL} li-mu-um {PN1_TL}",
+    "tr": "Month {MONTH_TR}, eponymy of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Date formula with month name and eponym year."
+  },
+  {
+    "id": "date_month_eponymy_patronymic",
+    "category": "legal_verdict",
+    "tl": "ITU.KAM {MONTH_TL} li-mu-um {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Month {MONTH_TR}, eponymy of {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Date formula with month and eponym with patronymic."
+  },
+  {
+    "id": "date_hamustum_month_eponymy",
+    "category": "legal_verdict",
+    "tl": "is-tu ha-mus-tim sa {PN1_TL} ITU.KAM {MONTH_TL} li-mu-um {PN2_TL}",
+    "tr": "From the week of {PN1_TR}, month {MONTH_TR}, eponymy of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Full date formula with hamustum week, month and eponymy."
+  },
+  {
+    "id": "date_hamustum",
+    "category": "legal_verdict",
+    "tl": "is-tu ha-mus-tim sa {PN1_TL}",
+    "tr": "From the week of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Hamustum week reference, used as starting date for obligations."
+  },
+  {
+    "id": "tithe_collected",
+    "category": "legal_property",
+    "tl": "{AMT_TL} KÙ.BABBAR is-ra-tim {PN1_TL} i-na {PLACE_TL} nu-sa-di",
+    "tr": "{AMT_TR} of silver, the tithe, we collected from {PN1_TR} in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Tithe collection formula."
+  },
+  {
+    "id": "sadduatu_tax",
+    "category": "legal_property",
+    "tl": "{AMT_TL} sa-du-a-tam {PN1_TL} i-na {PLACE_TL} nu-sa-di",
+    "tr": "{AMT_TR}, saddu'atu-tax, we levied from {PN1_TR} in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Transport tariff (saddu'atum) collection formula."
+  },
+  {
+    "id": "under_seals",
+    "category": "legal_property",
+    "tl": "ku-nu-ki-ni {PN1_TL} a-na ka-ri-im i-ni-si",
+    "tr": "Under our seals {PN1_TR} is bringing it to the colony.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Goods being transported under sealed containers."
+  },
+  {
+    "id": "conditional_if_not_come_within",
+    "category": "legal_guarantee",
+    "tl": "su-ma a-di {NUM_TL} u4-me-e {PN1_TL} la i-li-ka-ma a-wa-tam la i-di-nam",
+    "tr": "If {PN1_TR} has not come within {NUM_TR} days and answered me in court,",
+    "slots": [
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Conditional clause with deadline for court appearance."
+  },
+  {
+    "id": "conditional_if_not_come_months",
+    "category": "legal_guarantee",
+    "tl": "su-ma a-di ITU.{NUM_TL}.KAM a-na {PLACE_TL} la ta-li-kam-ma a-wa-tam la ta-di-nam",
+    "tr": "If you have not come to {PLACE_TR} within {NUM_TR} months and answered me in court,",
+    "slots": [
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Conditional clause with month deadline and specific venue."
+  },
+  {
+    "id": "conditional_if_not_pay_within",
+    "category": "legal_guarantee",
+    "tl": "su-ma a-na ITU.{NUM_TL}.KAM la is-qul {AMT_TL} KÙ.BABBAR a-na {PN1_TL} i-sa-qal",
+    "tr": "If he has not paid within {NUM_TR} months, he will pay {AMT_TR} of silver to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment deadline with penalty clause."
+  },
+  {
+    "id": "patronymic_son_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DUMU {PN2_TL}",
+    "tr": "{PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Basic patronymic chain. DUMU = son of."
+  },
+  {
+    "id": "patronymic_grandson",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DUMU {PN2_TL} DUMU {PN3_TL}",
+    "tr": "{PN1_TR} son of {PN2_TR} son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Three-generation patronymic chain."
+  },
+  {
+    "id": "patronymic_daughter_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DUMU.MI {PN2_TL}",
+    "tr": "{PN1_TR} daughter of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Female patronymic. DUMU.MI = daughter of."
+  },
+  {
+    "id": "patronymic_sons_of",
+    "category": "legal_witness",
+    "tl": "DUMU.MES {PN1_TL}",
+    "tr": "the sons of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Collective reference to sons. DUMU.MES = sons of."
+  },
+  {
+    "id": "patronymic_wife_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DAM {PN2_TL}",
+    "tr": "{PN1_TR}, the wife of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Wife designation. DAM = wife of."
+  },
+  {
+    "id": "patronymic_brother_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} a-hu {PN2_TL}",
+    "tr": "{PN1_TR}, brother of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Brother designation."
+  },
+  {
+    "id": "patronymic_with_occupation",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} DUMU {PN2_TL} {OCC_TL}",
+    "tr": "{PN1_TR} son of {PN2_TR}, the {OCC_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "OCC",
+        "type": "occupation",
+        "options": {
+          "values": [
+            "DUB.SAR/scribe",
+            "GUDU4/priest",
+            "SU.HA/barber"
+          ]
+        }
+      }
+    ],
+    "notes": "Patronymic with occupation or title."
+  },
+  {
+    "id": "settled_accounts",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} u {PN2_TL} ni-ka-si i-si-u-ma lu gam-ru-um",
+    "tr": "{PN1_TR} and {PN2_TR} settled accounts with the result that they are fully settled.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Account settlement formula."
+  },
+  {
+    "id": "make_declarations",
+    "category": "legal_verdict",
+    "tl": "{PN1_TL} u {PN2_TL} u4-ma-ma u-za-ku-ru-ma a-sar i-ma-gu5-ru-ni e-ta-wu",
+    "tr": "{PN1_TR} and {PN2_TR} on this very day must make declarations, and they must discuss in order to come to an agreement.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Colony verdict ordering parties to negotiate."
+  },
+  {
+    "id": "speech_said_to",
+    "category": "legal_claim",
+    "tl": "um-ma {PN1_TL}-ma a-na {PN2_TL}-ma",
+    "tr": "{PN1_TR} said to {PN2_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Direct speech introduction in legal proceedings."
+  },
+  {
+    "id": "speech_answered",
+    "category": "legal_claim",
+    "tl": "um-ma {PN1_TL}-ma",
+    "tr": "{PN1_TR} answered:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Response in legal dialogue."
+  },
+  {
+    "id": "speech_i_shall_give",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} DUMU {PN2_TL} a-na-ku a-da-na-kum",
+    "tr": "{PN1_TR} son of {PN2_TR} answered: \"I shall personally give it to you.\"",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Promise to pay personally."
+  },
+  {
+    "id": "speech_i_will_add_interest",
+    "category": "legal_claim",
+    "tl": "um-ma {PN1_TL}-ma u-sa-ab",
+    "tr": "{PN1_TR} answered: \"I will add (the interest).\"",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Agreement to pay interest."
+  },
+  {
+    "id": "speech_they_are_my_seals",
+    "category": "legal_claim",
+    "tl": "um-ma {PN1_TL}-ma ku-nu-ku-a",
+    "tr": "{PN1_TR} answered: \"They are my sealings.\"",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Acknowledgment of seal impressions."
+  },
+  {
+    "id": "speech_yes_took",
+    "category": "legal_claim",
+    "tl": "um-ma {PN1_TL}-ma ke-na sa {PN2_TL} al-qe",
+    "tr": "{PN1_TR} answered: \"Yes, I have taken what belongs to {PN2_TR}.\"",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Admission of having taken property."
+  },
+  {
+    "id": "speech_show_tablet_pay",
+    "category": "legal_claim",
+    "tl": "um-ma {PN1_TL}-ma tup-pa-am ka-li-mi-ma {COMMODITY_TL} a-sa-qal",
+    "tr": "{PN1_TR} answered: \"Show me that tablet then I will pay {COMMODITY_TR}.\"",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "COMMODITY",
+        "type": "commodity",
+        "options": {
+          "values": [
+            "KÙ.BABBAR/silver",
+            "KU.KI/gold"
+          ]
+        }
+      }
+    ],
+    "notes": "Conditional agreement to pay upon seeing evidence."
+  },
+  {
+    "id": "speech_i_act_on_behalf",
+    "category": "legal_claim",
+    "tl": "a-na-ku ki-ma {PN1_TL}",
+    "tr": "I act on behalf of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Declaration of acting as representative."
+  },
+  {
+    "id": "entrusted_to",
+    "category": "legal_property",
+    "tl": "ku-nu-ki sa {PN1_TL} a-na {PN2_TL} u {PN3_TL} ip-qi-du",
+    "tr": "{PN1_TR} entrusted (the goods) under seal to {PN2_TR} and {PN3_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Entrustment of sealed goods to transporters."
+  },
+  {
+    "id": "silver_paid_debt",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na hu-bu-ul a-bi-ku-nu KÙ.BABBAR u-sa-qi-il5",
+    "tr": "I have paid {AMT_TR} of silver for your father's debt.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      }
+    ],
+    "notes": "Claim of having paid someone else's inherited debt."
+  },
+  {
+    "id": "if_not_bring_tablet_pay",
+    "category": "legal_guarantee",
+    "tl": "su-ma a-na ITU.{NUM_TL}.KAM {PN1_TL} tup-pa-am la i-ta-ab-lam {AMT_TL} KÙ.BABBAR a-na {PN2_TL} i-sa-qal",
+    "tr": "If within {NUM_TR} months {PN1_TR} does not bring the tablet, {PN1_TR} will pay {AMT_TR} of silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "NUM",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Penalty for failing to produce evidence within deadline."
+  },
+  {
+    "id": "released_old_tablet",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} tup-pa-am sa {AMT_TL} KÙ.BABBAR a-na {PN2_TL} u-si-ir",
+    "tr": "{PN1_TR} has released the tablet concerning {AMT_TR} of silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Release of a debt tablet. Obligation fulfilled."
+  },
+  {
+    "id": "wrote_debt_note",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} tup-pa-am il5-pu-ut-ma",
+    "tr": "{PN1_TR} has written a debt note.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Creation of a new debt record."
+  },
+  {
+    "id": "book_gold_name",
+    "category": "legal_claim",
+    "tl": "{AMT_TL} KU.GI i-na na-ru-qi-su KI um-me-a-ni-su su-mi {PN1_TL} i-la-pa-at",
+    "tr": "he will book {AMT_TR} of gold in his joint-stock capital together with his investors in the name of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Booking gold in joint-stock capital (naruqqum) in someone's name."
+  },
+  {
+    "id": "oath_settled_agreed_silver",
+    "category": "legal_oath",
+    "tl": "nu-si-ib-ma ni-is A-lim{ki} it-mu-u-ma a-na {AMT_TL} KÙ.BABBAR i-mi-ig-ru",
+    "tr": "We sat down and they swore an oath by the City and agreed on {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Negotiation + oath + agreed amount. Common resolution formula."
+  },
+  {
+    "id": "blood_money_colony_verdict",
+    "category": "legal_verdict",
+    "tl": "ka-ru-um di-nam i-di-in-ma a-di da-mu sa {PN1_TL} i-ka-su-du-ni",
+    "tr": "The colony passed a verdict, to the effect that until they acquire the blood-money for {PN1_TR},",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Colony verdict regarding blood-money. Usually followed by restrictions."
+  },
+  {
+    "id": "penalty_colony_imposed",
+    "category": "legal_guarantee",
+    "tl": "a-na {AMT_TL} URUDU a-na ar-nim ka-ru-um i-di-ni",
+    "tr": "The colony imposed a penalty on me of {AMT_TR} of copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      }
+    ],
+    "notes": "Colony-imposed fine. arnum = penalty/crime. Typically copper."
+  },
+  {
+    "id": "tomb_responsibility",
+    "category": "legal_property",
+    "tl": "a-na qu-bu-ur {PN1_TL} um-mi-su-nu a-na gam-ri-im u hu-bu-ul {PN1_TL} um-mi-su-nu {PN2_TL} i-za-az",
+    "tr": "The tomb of their mother {PN1_TR} and the expenses and debts of their mother {PN1_TR} are the responsibility of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tomb and funeral expenses assigned to specific heir. Inheritance context."
+  },
+  {
+    "id": "house_plot_price",
+    "category": "legal_property",
+    "tl": "{AMT_TL} URUDU si-im qa-qi-ri sa E {PN1_TL} KI {PN2_TL}",
+    "tr": "{AMT_TR} of copper from the price for a house-plot of {PN1_TR} is due from {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "House-plot (qaqirum) price. Real estate transaction."
+  },
+  {
+    "id": "received_silver_proceeds",
+    "category": "legal_property",
+    "tl": "{PN1_TL} DUMU {PN2_TL} {AMT_TL} KÙ.BABBAR sa-ru-pa-am i-na si-im {ITEM_TL} il5-qe",
+    "tr": "{PN1_TR} son of {PN2_TR} has received {AMT_TR} of refined silver from the proceeds of {ITEM_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "ITEM",
+        "type": "item",
+        "options": {}
+      }
+    ],
+    "notes": "Receipt of silver from sale proceeds."
+  },
+  {
+    "id": "will_pay_from_city",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} is-tu A-lim{ki} i-na e-la-i-su a-na {PN2_TL} i-sa-qal",
+    "tr": "{PN1_TR} will pay to {PN2_TR} when he comes up from the City.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment promised upon return from the City of Assur."
+  },
+  {
+    "id": "witness_single_before",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL}",
+    "tr": "Before {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Witness with \"Before\" convention (13x in training)."
+  },
+  {
+    "id": "witness_patronymic_before",
+    "category": "legal_witness",
+    "tl": "IGI {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Before {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Witness with patronymic, \"Before\" convention."
+  },
+  {
+    "id": "joint_liable_ina_short",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na qá-qá-ad šál-mì-šu-nu ra-ki-is {PN1_TL} ù {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "{PN1_TR} and {PN2_TR} are jointly responsible for the silver; they will pay {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}}
+    ],
+    "notes": "Joint liability (i-na variant, short). 'Jointly responsible' convention."
+  },
+  {
+    "id": "joint_liable_ina_keni",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na qá-qá-ad šál-mì-šu-nu ù ke-ni-šu-nu ra-ki-is {PN1_TL} ù {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "{PN1_TR} and {PN2_TR} are jointly liable for the silver; they will pay {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}}
+    ],
+    "notes": "Joint liability (i-na variant, with keni). 'Jointly liable' convention."
+  },
+  {
+    "id": "joint_bound_head_short",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-qá-qá-ad šál-mì-šu-nu ra-ki-is {PN1_TL} ù {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "The silver is bound to the head of their solvent ones; {PN1_TR} and {PN2_TR} will pay {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}}
+    ],
+    "notes": "Joint liability (i- variant, short). 'Bound to the head' convention."
+  },
+  {
+    "id": "joint_bound_head_keni",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-qá-qá-ad šál-mì-šu-nu ù ke-ni-šu-nu ra-ki-is {PN1_TL} ù {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "The silver is bound to the head of their solvent and reliable ones; {PN1_TR} and {PN2_TR} will pay {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}}
+    ],
+    "notes": "Joint liability (i- variant, with keni). 'Bound to the head' convention."
+  },
+  {
+    "id": "joint_responsible_ina_keni",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na qá-qá-ad šál-mì-šu-nu ù ke-ni-šu-nu ra-ki-is {PN1_TL} ù {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "{PN1_TR} and {PN2_TR} are jointly responsible for {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}}
+    ],
+    "notes": "Joint liability (i-na variant, keni). Short 'jointly responsible' convention."
+  },
+  {
+    "id": "joint_liable_i_short",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-qá-qá-ad šál-mì-šu-nu ra-ki-is {PN1_TL} ù {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "{PN1_TR} and {PN2_TR} are jointly liable for {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}}
+    ],
+    "notes": "Joint liability (i- variant, short). Short 'jointly liable' convention."
+  },
+  {
+    "id": "seal_karum",
+    "category": "legal_seal",
+    "tl": "KIŠIB ka-ri-im {PLACE_TL}",
+    "tr": "Seal of the karum {PLACE_TR}.",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama", "Wa-ah-su-sa-na/Wahsusana"]}}
+    ],
+    "notes": "Karum variant of colony seal."
+  },
+  {
+    "id": "karum_proceedings_dagger",
+    "category": "legal_witness",
+    "tl": "a-na a-wa-tim a-ni-a-tim ka-ru-um {PLACE_TL} i-di-ni-a-ti-ma IGI GIR sa A-šur si-bu-ti-ni ni-di-in",
+    "tr": "The karum {PLACE_TR} gave us for these proceedings and we gave our testimony before Aššur's dagger.",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama"]}}
+    ],
+    "notes": "Karum variant of colony proceedings formula."
+  },
+  {
+    "id": "karum_verdict",
+    "category": "legal_verdict",
+    "tl": "ka-ru-um {PLACE_TL} TUR GAL di-nam i-di-in-ma",
+    "tr": "The karum {PLACE_TR}, small and great, passed a verdict:",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama"]}}
+    ],
+    "notes": "Karum variant of colony verdict."
+  },
+  {
+    "id": "messenger_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} ší-ip-ri {PN2_TL}",
+    "tr": "{PN1_TR}, messenger of {PN2_TR}.",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}}
+    ],
+    "notes": "Messenger (siprum) variant of representative."
+  },
+  {
+    "id": "agent_of",
+    "category": "legal_witness",
+    "tl": "{PN1_TL} ša-zu-úz-tí {PN2_TL}",
+    "tr": "{PN1_TR}, agent of {PN2_TR}.",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}}
+    ],
+    "notes": "Agent (sazuztum) variant of representative."
+  },
+  {
+    "id": "colony_judgment",
+    "category": "legal_verdict",
+    "tl": "ka-ru-um {PLACE_TL} TUR GAL di-nam i-di-in-ma",
+    "tr": "The colony of {PLACE_TR}, small and great, passed a judgment:",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama"]}}
+    ],
+    "notes": "Judgment variant of colony verdict."
+  },
+  {
+    "id": "colony_decision",
+    "category": "legal_verdict",
+    "tl": "ka-ru-um {PLACE_TL} TUR GAL di-nam i-di-in-ma",
+    "tr": "The colony of {PLACE_TR}, small and great, passed a decision:",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama"]}}
+    ],
+    "notes": "Decision variant of colony verdict."
+  },
+  {
+    "id": "sealed_by_patronymic",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Sealed by {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}}
+    ],
+    "notes": "Sealed by variant with patronymic."
+  },
+  {
+    "id": "sealed_by_double",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL}",
+    "tr": "Sealed by {PN1_TR} son of {PN2_TR}, sealed by {PN3_TR} son of {PN4_TR}.",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}},
+      {"name": "PN4", "type": "name", "options": {}}
+    ],
+    "notes": "Sealed by variant, two impressions."
+  },
+  {
+    "id": "sealed_by_triple",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL} KIŠIB {PN5_TL} DUMU {PN6_TL}",
+    "tr": "Sealed by {PN1_TR} son of {PN2_TR}, sealed by {PN3_TR} son of {PN4_TR}, sealed by {PN5_TR} son of {PN6_TR}.",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}},
+      {"name": "PN3", "type": "name", "options": {}},
+      {"name": "PN4", "type": "name", "options": {}},
+      {"name": "PN5", "type": "name", "options": {}},
+      {"name": "PN6", "type": "name", "options": {}}
+    ],
+    "notes": "Sealed by variant, three impressions."
+  },
+  {
+    "id": "sealed_by_colony",
+    "category": "legal_seal",
+    "tl": "KIŠIB ka-ri-im {PLACE_TL}",
+    "tr": "Sealed by the {PLACE_TR} colony.",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama", "Wa-ah-su-sa-na/Wahsusana"]}}
+    ],
+    "notes": "Sealed by variant of colony seal."
+  },
+  {
+    "id": "sealed_by_scribe",
+    "category": "legal_seal",
+    "tl": "KIŠIB {PN1_TL} DUB.SAR",
+    "tr": "Sealed by {PN1_TR}, scribe.",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}}
+    ],
+    "notes": "Sealed by variant for scribe seal."
+  },
+  {
+    "id": "firm_father",
+    "category": "legal_guarantee",
+    "tl": "E a-bi-ni sa {PLACE_TL} a-na {PN1_TL} qa-tá-tum",
+    "tr": "Our father's firm in {PLACE_TR} is security for {PN1_TR}.",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {}},
+      {"name": "PN1", "type": "name", "options": {}}
+    ],
+    "notes": "E = firm when with father/merchant reference."
+  },
+  {
+    "id": "firm_of_person",
+    "category": "legal_property",
+    "tl": "E-tu sa {PLACE_TL} u u-tu-up-tum sa {PN1_TL} {PN2_TL} la ta-hu",
+    "tr": "The firm in {PLACE_TR} and its furniture belong to {PN1_TR}, {PN2_TR} is not entitled to it.",
+    "slots": [
+      {"name": "PLACE", "type": "place", "options": {}},
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}}
+    ],
+    "notes": "Firm variant of house_belongs_to."
+  },
+  {
+    "id": "office_colony",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na E ka-ri-im {PLACE_TL} na-di",
+    "tr": "{AMT_TR} of silver is deposited in the office of the {PLACE_TR} colony.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PLACE", "type": "place", "options": {"values": ["Ka-ni-is/Kanesh", "Dur4-hu-mi-it/Durhumit", "Hu-ra-ma/Hurama"]}}
+    ],
+    "notes": "E karim = office of the colony."
+  },
+  {
+    "id": "office_city",
+    "category": "legal_guarantee",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na E a-lim{ki} a-na {PN1_TL} a-di-in",
+    "tr": "I gave {AMT_TR} of silver to {PN1_TR} in the office of the City.",
+    "slots": [
+      {"name": "AMT", "type": "amount", "options": {"commodity": "silver"}},
+      {"name": "PN1", "type": "name", "options": {}}
+    ],
+    "notes": "E alim = office of the City."
+  },
+  {
+    "id": "spoke_to_qabi",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} a-na {PN2_TL} iq-bi um-ma šu-ut-ma",
+    "tr": "{PN1_TR} spoke to {PN2_TR} as follows:",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}}
+    ],
+    "notes": "Spoke to (qabum verb iq-bi) variant of said to."
+  },
+  {
+    "id": "spoke_to_atawu",
+    "category": "legal_claim",
+    "tl": "{PN1_TL} a-na {PN2_TL} a-ta-ú-šu um-ma šu-ut-ma",
+    "tr": "{PN1_TR} spoke to {PN2_TR} and said:",
+    "slots": [
+      {"name": "PN1", "type": "name", "options": {}},
+      {"name": "PN2", "type": "name", "options": {}}
+    ],
+    "notes": "Spoke to (awum verb a-ta-u) variant of said to."
+  }
+]

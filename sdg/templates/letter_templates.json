@@ -1,0 +1,2143 @@
+[
+  {
+    "id": "opening_to_from",
+    "category": "letter_opening",
+    "tl": "a-na {PN1_TL} qi-bi-ma um-ma {PN2_TL}-ma",
+    "tr": "To {PN1_TR} from {PN2_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      }
+    ],
+    "notes": "Most common letter opening (427+ matches). Recipient first, then sender. TL always ends sender name with -ma enclitic."
+  },
+  {
+    "id": "opening_to_from_2recip",
+    "category": "letter_opening",
+    "tl": "a-na {PN1_TL} u {PN2_TL} qi-bi-ma um-ma {PN3_TL}-ma",
+    "tr": "To {PN1_TR} and {PN2_TR} from {PN3_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      }
+    ],
+    "notes": "Opening with two recipients joined by u (and)."
+  },
+  {
+    "id": "opening_to_from_3recip",
+    "category": "letter_opening",
+    "tl": "a-na {PN1_TL} {PN2_TL} u {PN3_TL} qi-bi-ma um-ma {PN4_TL}-ma",
+    "tr": "To {PN1_TR}, {PN2_TR} and {PN3_TR} from {PN4_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      }
+    ],
+    "notes": "Opening with three recipients. Last two joined by u."
+  },
+  {
+    "id": "opening_from_to",
+    "category": "letter_opening",
+    "tl": "um-ma {PN1_TL}-ma a-na {PN2_TL} qi-bi-ma",
+    "tr": "From {PN1_TR} to {PN2_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "Alternative opening (353+ matches). Sender first with um-ma...ma, then recipient."
+  },
+  {
+    "id": "opening_from_to_2recip",
+    "category": "letter_opening",
+    "tl": "um-ma {PN1_TL}-ma a-na {PN2_TL} u {PN3_TL} qi-bi-ma",
+    "tr": "From {PN1_TR} to {PN2_TR} and {PN3_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "From-to opening with two recipients."
+  },
+  {
+    "id": "opening_from_to_3recip",
+    "category": "letter_opening",
+    "tl": "um-ma {PN1_TL}-ma a-na {PN2_TL} {PN3_TL} u {PN4_TL} qi-bi-ma",
+    "tr": "From {PN1_TR} to {PN2_TR}, {PN3_TR} and {PN4_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "From-to opening with three recipients."
+  },
+  {
+    "id": "opening_thus_say_to",
+    "category": "letter_opening",
+    "tl": "um-ma {PN1_TL}-ma a-na {PN2_TL} qi-bi4-ma",
+    "tr": "Thus {PN1_TR}, say to {PN2_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "Formal opening with qi-bi4-ma (72 matches). Same TL structure as from_to but translated as 'Thus X, say to Y'."
+  },
+  {
+    "id": "opening_thus_say_to_2recip",
+    "category": "letter_opening",
+    "tl": "um-ma {PN1_TL}-ma a-na {PN2_TL} u {PN3_TL} qi-bi4-ma",
+    "tr": "Thus {PN1_TR}, say to {PN2_TR} and {PN3_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "Thus-say-to opening with two recipients."
+  },
+  {
+    "id": "opening_say_to_thus",
+    "category": "letter_opening",
+    "tl": "a-na {PN1_TL} qi-bi-ma um-ma {PN2_TL}-ma",
+    "tr": "Say to {PN1_TR}, thus {PN2_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      }
+    ],
+    "notes": "76 matches. Same TL as opening_to_from but translated as 'Say to X, thus Y'."
+  },
+  {
+    "id": "opening_specifically_to",
+    "category": "letter_opening",
+    "tl": "a-na {PN1_TL} qi-bi-ma",
+    "tr": "specifically to {PN1_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "Used after multi-recipient opening to single out one person (78 matches)."
+  },
+  {
+    "id": "opening_from_2senders",
+    "category": "letter_opening",
+    "tl": "um-ma {PN1_TL} u {PN2_TL}-ma a-na {PN3_TL} qi-bi-ma",
+    "tr": "From {PN1_TR} and {PN2_TR} to {PN3_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "Opening with two senders."
+  },
+  {
+    "id": "opening_to_son_of",
+    "category": "letter_opening",
+    "tl": "a-na {PN1_TL} DUMU {PN2_TL} qi-bi-ma um-ma {PN3_TL}-ma",
+    "tr": "To {PN1_TR} son of {PN2_TR} from {PN3_TR}:",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "patron"
+        }
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {
+          "role": "sender"
+        }
+      }
+    ],
+    "notes": "Opening with patronymic for recipient."
+  },
+  {
+    "id": "cargo_brings_under_seal",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} ku-nu-ki-a {PN1_TL} na-as-a-kum",
+    "tr": "{PN1_TR} brings you {AMT_TR} of {COMM_TR} under my seal.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Cargo manifest with carrier and sealed goods (56 matches). ku-nu-ki-a = under my seal."
+  },
+  {
+    "id": "cargo_brings_under_seal_son_of",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} ku-nu-ki-a {PN1_TL} DUMU {PN2_TL} na-as-a-kum",
+    "tr": "{PN1_TR} son of {PN2_TR} brings you {AMT_TR} of {COMM_TR} under my seal.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "patron"
+        }
+      }
+    ],
+    "notes": "Cargo manifest with patronymic carrier."
+  },
+  {
+    "id": "cargo_brings_under_our_seal",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} ku-nu-ki-ni {PN1_TL} na-as-a-kum",
+    "tr": "{PN1_TR} brings you {AMT_TR} of {COMM_TR} under our seals.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Cargo under our (plural) seal. ku-nu-ki-ni = under our seals."
+  },
+  {
+    "id": "cargo_brings_no_seal",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} {PN1_TL} na-as-a-kum",
+    "tr": "{PN1_TR} brings you {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Cargo without seal mention (30 matches)."
+  },
+  {
+    "id": "cargo_all_this_brings",
+    "category": "letter_commercial",
+    "tl": "mi-ma a-nim {PN1_TL} na-as-a-kum",
+    "tr": "All this {PN1_TR} brings to you.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Summary line after a cargo list (12 matches). mi-ma a-nim = all this."
+  },
+  {
+    "id": "cargo_all_this_leads",
+    "category": "letter_commercial",
+    "tl": "mi-ma a-nim {PN1_TL} i-ra-di-a-kum",
+    "tr": "All this {PN1_TR} leads to you.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Variant with i-ra-di (leads) instead of na-as (brings). Used with donkey caravans."
+  },
+  {
+    "id": "cargo_all_this_entrusted",
+    "category": "letter_commercial",
+    "tl": "mi-ma a-nim a-na {PN1_TL} ap-qi-id",
+    "tr": "all this I entrusted to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Entrusting goods to carrier."
+  },
+  {
+    "id": "cargo_we_entrusted",
+    "category": "letter_commercial",
+    "tl": "mi-ma a-nim a-na {PN1_TL} ni-ip-qi-id-ma na-as-a-kum",
+    "tr": "All this we entrusted to {PN1_TR} and he brings it to you.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Combined entrusting and bringing."
+  },
+  {
+    "id": "cargo_textiles_belonging_to",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} TUG.HI.A sa {PN1_TL}",
+    "tr": "{AMT_TR} textiles belonging to {PN1_TR}",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "textiles"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "owner"
+        }
+      }
+    ],
+    "notes": "Textile ownership within cargo list (139 matches)."
+  },
+  {
+    "id": "cargo_working_capital",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} ku-ta-nu sa be-u-la-at {PN1_TL}",
+    "tr": "{AMT_TR} kutanu being the working capital of {PN1_TR}",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "textiles"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "investor"
+        }
+      }
+    ],
+    "notes": "Working capital (be'ulat) assignment (48 matches)."
+  },
+  {
+    "id": "cargo_black_donkeys",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} ANSE.HI.A sa-la-mu",
+    "tr": "{AMT_TR} black donkeys",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "donkeys"
+        }
+      }
+    ],
+    "notes": "Black donkeys in cargo list (70 matches). Standard transport animal."
+  },
+  {
+    "id": "cargo_tin_sealed_and_loose",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} AN.NA ku-nu-ku {AMT2_TL} AN.NA qa-tim",
+    "tr": "{AMT_TR} of tin under seals; {AMT2_TR} loose tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      }
+    ],
+    "notes": "Tin cargo split between sealed and loose (expense) tin."
+  },
+  {
+    "id": "cargo_import_duty_transport",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR sa-ru-pa-am ni-is-ha-su DIRI sa-du-a-su sa-bu-u",
+    "tr": "{AMT_TR} of refined silver, its import duty added, its transport tariff paid",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Silver with tax status (39 matches). ni-is-ha = import duty, sa-du-a = transport tariff."
+  },
+  {
+    "id": "instruct_send_me",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} se-bi4-lam",
+    "tr": "Send me {COMM_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Basic send instruction. se-bi4-lam = send to me (singular)."
+  },
+  {
+    "id": "instruct_send_us",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} se-bi4-la-nim",
+    "tr": "Send us {COMM_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Send to us (plural). se-bi4-la-nim = send to us."
+  },
+  {
+    "id": "instruct_sell_send_silver",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} di-na-ma KÙ.BABBAR se-bi4-la-nim",
+    "tr": "Sell {COMM_TR} and send the silver.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Core trade instruction (78 matches). di-na = sell, se-bi4-la-nim = send."
+  },
+  {
+    "id": "instruct_sell_send_with_carrier",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} di-na-ma KÙ.BABBAR is-ti {PN1_TL} se-bi4-la-nim",
+    "tr": "Sell {COMM_TR} and send the silver with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Sell and send via named carrier."
+  },
+  {
+    "id": "instruct_buy_send",
+    "category": "letter_instruction",
+    "tl": "{AMT_TL} {COMM_TL} sa-am-ma se-bi4-lam",
+    "tr": "Buy {AMT_TR} {COMM_TR} and send them to me.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "textiles"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Purchase instruction (10+ matches). sa-am = buy."
+  },
+  {
+    "id": "instruct_buy_strong_textiles",
+    "category": "letter_instruction",
+    "tl": "{AMT_TL} TUG.HI.A da-nu-tim sa-a-ma se-bi4-lam",
+    "tr": "buy {AMT_TR} strong textiles and send them to me.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "textiles"
+        }
+      }
+    ],
+    "notes": "Buy textiles of specific quality. da-nu-tim = strong/heavy."
+  },
+  {
+    "id": "instruct_seal_amt_send",
+    "category": "letter_instruction",
+    "tl": "{AMT_TL} KÙ.BABBAR ku-un-ka-ma se-bi4-lam",
+    "tr": "Seal {AMT_TR} of silver and send it to me.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Seal specific amount and send."
+  },
+  {
+    "id": "instruct_send_first_transport",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} is-ti a-li-ki-im pa-ni-e-ma se-bi4-la-nim",
+    "tr": "Send {COMM_TR} with the very first transport.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Send goods with next caravan. is-ti a-li-ki-im pa-ni-e-ma = with the first transport."
+  },
+  {
+    "id": "instruct_entrust_bring",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} a-na {PN1_TL} pi-qi-id-ma lu-ub-lam",
+    "tr": "entrust {COMM_TR} to {PN1_TR} so he may bring it here.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      }
+    ],
+    "notes": "Entrust goods to named carrier (112 matches). pi-qi-id = entrust."
+  },
+  {
+    "id": "instruct_give_to",
+    "category": "letter_instruction",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} di-in",
+    "tr": "Give {AMT_TR} of {COMM_TR} to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "recipient"
+        }
+      }
+    ],
+    "notes": "Instruction to give goods/silver to someone."
+  },
+  {
+    "id": "instruct_seize_make_pay",
+    "category": "letter_instruction",
+    "tl": "{PN1_TL} sa-ab-ta-su-ma KÙ.BABBAR sa-as-qi-la-su",
+    "tr": "Seize {PN1_TR} and make him pay the silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Forceful debt collection (24 matches). sa-ab-ta = seize."
+  },
+  {
+    "id": "instruct_open_tablet_coffer",
+    "category": "letter_instruction",
+    "tl": "ta-ma-la-ki sa tup-pe-a pi-ti-a-ma tup-pa-am sa hu-bu-ul {PN1_TL} se-li-a-ma",
+    "tr": "open my tablet coffer and take out the tablet of {PN1_TR}'s debt",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Instruction to retrieve debt tablet from storage (19 matches)."
+  },
+  {
+    "id": "instruct_open_tablets_send",
+    "category": "letter_instruction",
+    "tl": "tup-pe-a pe-te-a-ma ta-ah-si-sa-tim sa su-mi {PN1_TL} la-ap-tu se-bi4-la-nim",
+    "tr": "open my tablets and send me the memoranda written in the name of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Instruction to find and send specific memoranda."
+  },
+  {
+    "id": "prohibit_sell_less_than",
+    "category": "letter_instruction",
+    "tl": "a-na sa-ha-at {AMT_TL} GIN la ta-di-in",
+    "tr": "Do not sell for less than {AMT_TR} shekels.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Price floor instruction. sa-ha-at = below/less than."
+  },
+  {
+    "id": "prohibit_do_not_give",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} la ta-di-in",
+    "tr": "Do not give {COMM_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Prohibition against giving away goods."
+  },
+  {
+    "id": "commercial_sell_at_rate",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} GÍN.TA ta-di-in",
+    "tr": "Sell at the rate of {AMT_TR} to 1.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Tin-to-silver exchange rate instruction (67 matches)."
+  },
+  {
+    "id": "commercial_rate_below",
+    "category": "letter_commercial",
+    "tl": "i-na {AMT_TL} GÍN.TA ba-ti-iq",
+    "tr": "if the rate is less than {AMT_TR} shekels to 1",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Rate threshold condition."
+  },
+  {
+    "id": "commercial_price_of",
+    "category": "letter_commercial",
+    "tl": "si-im {COMM_TL}",
+    "tr": "the price of {COMM_TR}",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Price reference (127 matches). si-im = price/proceeds."
+  },
+  {
+    "id": "commercial_proceeds_from",
+    "category": "letter_commercial",
+    "tl": "si-im {AMT_TL} {COMM_TL}",
+    "tr": "the proceeds from {AMT_TR} {COMM_TR}",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Proceeds from specific quantity (94 matches)."
+  },
+  {
+    "id": "commercial_votive_offerings",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} AN.NA ik-ri-bu sa A-šur",
+    "tr": "{AMT_TR} of tin are votive offerings for Aššur",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      }
+    ],
+    "notes": "Religious trade obligation (56 matches). ik-ri-bu = votive offerings."
+  },
+  {
+    "id": "commercial_expense_tin",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} AN.NA qa-tim",
+    "tr": "{AMT_TR} loose/expense tin",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      }
+    ],
+    "notes": "Tin for travel expenses (41 matches). qa-tim = hand (loose/available)."
+  },
+  {
+    "id": "commercial_smuggling",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} pa-zu-ur-tim",
+    "tr": "{AMT_TR} smuggled {COMM_TR}",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "textiles"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Goods smuggled past customs (27 matches). pa-zu-ur-tim = smuggled."
+  },
+  {
+    "id": "commercial_total",
+    "category": "letter_commercial",
+    "tl": "SUNIGIN {AMT_TL} {COMM_TL}",
+    "tr": "In all {AMT_TR} {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Summation line (40 matches). SUNIGIN = total."
+  },
+  {
+    "id": "commercial_thereof",
+    "category": "letter_commercial",
+    "tl": "SA.BA {AMT_TL} {COMM_TL}",
+    "tr": "Thereof {AMT_TR} {COMM_TR}",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Breakdown from total (99 matches). SA.BA = of that/thereof."
+  },
+  {
+    "id": "debt_owes_silver",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR {PN1_TL} ha-bu-lam",
+    "tr": "{PN1_TR} owes me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Debt statement (80 matches). ha-bu-lam = owes."
+  },
+  {
+    "id": "debt_owes_silver_son_of",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR {PN1_TL} DUMU {PN2_TL} ha-bu-lam",
+    "tr": "{PN1_TR} son of {PN2_TR} owes me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "patron"
+        }
+      }
+    ],
+    "notes": "Debt statement with patronymic."
+  },
+  {
+    "id": "debt_you_owe",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR ha-bu-la-ti-ma",
+    "tr": "You owe {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Second-person debt statement (25 matches)."
+  },
+  {
+    "id": "debt_deposit",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR mas-ka-tam {PN1_TL} ha-bu-lam",
+    "tr": "{PN1_TR} owes me a deposit of {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Deposit-type debt. mas-ka-tam = deposit."
+  },
+  {
+    "id": "debt_interest_rate",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} GÍN.TA i-na ITU.1.KAM-im a-na 1 ma-na-im si-ib-tam u-sa-ab",
+    "tr": "he will pay interest at the rate of {AMT_TR} shekel per mina per month.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest rate clause (33 matches). Standard rates: 1, 5/6, 1 1/2, 3 shekels."
+  },
+  {
+    "id": "debt_if_not_pay_interest",
+    "category": "letter_commercial",
+    "tl": "su-ma la is-qul {AMT_TL} GÍN.TA i ITU.KAM u-sa-ab",
+    "tr": "If he does not pay, he will add {AMT_TR} shekels interest per month.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Conditional interest penalty."
+  },
+  {
+    "id": "debt_tablet_concerning",
+    "category": "letter_commercial",
+    "tl": "tup-pa-am sa hu-bu-ul {PN1_TL}",
+    "tr": "the tablet concerning {PN1_TR}'s debt",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Reference to debt tablet (38 matches)."
+  },
+  {
+    "id": "debt_terms_overdue",
+    "category": "letter_commercial",
+    "tl": "u4-mu-su {AMT_TL} ITU.KAM e-ti-qu",
+    "tr": "His terms are overdue by {AMT_TR} months.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Overdue payment notice (19 matches)."
+  },
+  {
+    "id": "debt_i_paid",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} a-na {PN1_TL} as-qu-ul",
+    "tr": "I paid {AMT_TR} to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "payee"
+        }
+      }
+    ],
+    "notes": "Payment record (21 matches). as-qu-ul = I paid."
+  },
+  {
+    "id": "debt_i_gave",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} a-di-in",
+    "tr": "I gave {AMT_TR} of {COMM_TR} to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "payee"
+        }
+      }
+    ],
+    "notes": "Gift/payment record (50 matches). a-di-in = I gave."
+  },
+  {
+    "id": "debt_i_deducted",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} u-sa-hi-ir-ma",
+    "tr": "I deducted {AMT_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Deduction from balance (55 matches). u-sa-hi-ir = I deducted."
+  },
+  {
+    "id": "debt_left_with_in",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} a-na {PN1_TL} i-na {PLACE_TL} e-zi-ib",
+    "tr": "I left {AMT_TR} of {COMM_TR} with {PN1_TR} in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "custodian"
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Deposit at remote location (45 matches). e-zi-ib = I left."
+  },
+  {
+    "id": "debt_lent_interest",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR sa-ru-pa-am a-na si-ib-tim a-di-na-kum-ma",
+    "tr": "I lent you {AMT_TR} of refined silver against interest.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Formal loan statement (8 matches)."
+  },
+  {
+    "id": "debt_lent_dated",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} KÙ.BABBAR sa-ru-pa-am is-tu ha-mus-tim sa {PN1_TL} ITU.1.KAM {MONTH_TL} li-mi-im {EPONYM_TL} a-na si-ib-tim a-di-na-kum-ma",
+    "tr": "I lent you {AMT_TR} of refined silver against interest, from the week of {PN1_TR}, month {MONTH_TR}, eponymy {EPONYM_TR},",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "week_official"
+        }
+      },
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Full dated loan formula with week, month, and eponymy."
+  },
+  {
+    "id": "complaint_terms_overdue",
+    "category": "letter_request",
+    "tl": "u4-mu-ka {AMT_TL} ITU.KAM e-ti-qu",
+    "tr": "Your terms are overdue by {AMT_TR} months.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Overdue complaint directed at addressee."
+  },
+  {
+    "id": "complaint_do_not_bother",
+    "category": "letter_request",
+    "tl": "{AMT_TL} u4-me-e la ta-ha-ta-ra-ni",
+    "tr": "Do not bother me for {AMT_TR} days.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Request for time/space."
+  },
+  {
+    "id": "reference_knows_matter",
+    "category": "letter_request",
+    "tl": "{PN1_TL} ku-ul a-wa-tim i-de8",
+    "tr": "{PN1_TR} knows the entire business.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "witness"
+        }
+      }
+    ],
+    "notes": "Naming someone who can testify about a matter."
+  },
+  {
+    "id": "conditional_if_present",
+    "category": "letter_instruction",
+    "tl": "su-ma {PN1_TL} wa-sa-ab",
+    "tr": "if {PN1_TR} is present",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Conditional on person being present."
+  },
+  {
+    "id": "reporting_seized_made_pay",
+    "category": "letter_commercial",
+    "tl": "a-na-kam {PN1_TL} as-ba-at-ma {AMT_TL} KÙ.BABBAR u-sa-as-qi-il5-su",
+    "tr": "Here I seized {PN1_TR} and made him pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Report of completed debt collection."
+  },
+  {
+    "id": "reporting_he_sold",
+    "category": "letter_commercial",
+    "tl": "{PN1_TL} {AMT_TL} {COMM_TL} i-di-in-ma",
+    "tr": "{PN1_TR} sold {AMT_TR} {COMM_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "seller"
+        }
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Report of completed sale."
+  },
+  {
+    "id": "reporting_he_brought",
+    "category": "letter_commercial",
+    "tl": "{PN1_TL} {AMT_TL} {COMM_TL} ub-la-ni",
+    "tr": "{PN1_TR} brought {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "carrier"
+        }
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Report of goods delivery. ub-la-ni = brought to me."
+  },
+  {
+    "id": "reporting_he_took",
+    "category": "letter_commercial",
+    "tl": "{PN1_TL} {AMT_TL} {COMM_TL} il5-qe",
+    "tr": "{PN1_TR} took {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "taker"
+        }
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Report of goods taken."
+  },
+  {
+    "id": "reporting_holding",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} uk-ta-al",
+    "tr": "I am holding {AMT_TR} of {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      }
+    ],
+    "notes": "Report of goods in custody."
+  },
+  {
+    "id": "reporting_owed_by",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} KI {PN1_TL}",
+    "tr": "{AMT_TR} of {COMM_TR} is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "debtor"
+        }
+      }
+    ],
+    "notes": "Debt owed by named person. KI = with/owed by."
+  },
+  {
+    "id": "reporting_is_with",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} is-ti {PN1_TL}",
+    "tr": "{AMT_TR} of {COMM_TR} is with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "holder"
+        }
+      }
+    ],
+    "notes": "Goods in someone's possession."
+  },
+  {
+    "id": "reporting_he_said_will_send",
+    "category": "letter_commercial",
+    "tl": "um-ma su-ut-ma {AMT_TL} KÙ.BABBAR u-se-ba-al",
+    "tr": "He said: \"I shall send {AMT_TR} of silver.\"",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Reported promise of payment."
+  },
+  {
+    "id": "legal_witness",
+    "category": "letter_commercial",
+    "tl": "IGI {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Witness: {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "witness"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "patron"
+        }
+      }
+    ],
+    "notes": "Witness entry. IGI = before/witness."
+  },
+  {
+    "id": "legal_seal_of",
+    "category": "letter_commercial",
+    "tl": "KISIB {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Seal of {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "sealer"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "patron"
+        }
+      }
+    ],
+    "notes": "Seal impression. KISIB = seal."
+  },
+  {
+    "id": "legal_penalty_copper",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} URUDU a-na ar-nim ka-ru-um i-di-ni",
+    "tr": "The colony imposed a penalty of {AMT_TR} of copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      }
+    ],
+    "notes": "Colony penalty."
+  },
+  {
+    "id": "time_eponymy",
+    "category": "letter_commercial",
+    "tl": "li-mi-im {EPONYM_TL}",
+    "tr": "eponymy {EPONYM_TR}",
+    "slots": [
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Date by eponym year (54 matches)."
+  },
+  {
+    "id": "time_eponymy_son_of",
+    "category": "letter_commercial",
+    "tl": "li-mu-um {EPONYM_TL} DUMU {PN1_TL}",
+    "tr": "the eponymy of {EPONYM_TR} son of {PN1_TR}",
+    "slots": [
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "patron"
+        }
+      }
+    ],
+    "notes": "Eponymy with patronymic."
+  },
+  {
+    "id": "time_from_week_month",
+    "category": "letter_commercial",
+    "tl": "is-tu ha-mus-tim sa {PN1_TL} ITU.1.KAM {MONTH_TL}",
+    "tr": "from the week of {PN1_TR}, month {MONTH_TR}",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "week_official"
+        }
+      },
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      }
+    ],
+    "notes": "Date formula with week and month (8 matches)."
+  },
+  {
+    "id": "time_within_days",
+    "category": "letter_commercial",
+    "tl": "a-di {AMT_TL} u4-me-e",
+    "tr": "within {AMT_TR} days",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Time limit in days (42 matches)."
+  },
+  {
+    "id": "time_within_months",
+    "category": "letter_commercial",
+    "tl": "a-di {AMT_TL} ITU.KAM",
+    "tr": "within {AMT_TR} months",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Time limit in months."
+  },
+  {
+    "id": "time_since_months",
+    "category": "letter_commercial",
+    "tl": "is-tu {AMT_TL} ITU.KAM",
+    "tr": "since {AMT_TR} months",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Time elapsed (36 matches)."
+  },
+  {
+    "id": "time_will_pay_in",
+    "category": "letter_commercial",
+    "tl": "a-na {AMT_TL} ITU.KAM i-sa-qal",
+    "tr": "He will pay in {AMT_TR} months.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Payment deadline."
+  },
+  {
+    "id": "place_in_house",
+    "category": "letter_commercial",
+    "tl": "i-na E {PN1_TL}",
+    "tr": "in {PN1_TR}'s house",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "householder"
+        }
+      }
+    ],
+    "notes": "Location by house (118 matches)."
+  },
+  {
+    "id": "place_in_generic",
+    "category": "letter_commercial",
+    "tl": "i-na {PLACE_TL}",
+    "tr": "in {PLACE_TR}",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Generic place reference."
+  },
+  {
+    "id": "kinship_son_of",
+    "category": "letter_commercial",
+    "tl": "{PN1_TL} DUMU {PN2_TL}",
+    "tr": "{PN1_TR} son of {PN2_TR}",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "person"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {
+          "role": "father"
+        }
+      }
+    ],
+    "notes": "Patronymic filiation (359 matches). DUMU = son."
+  },
+  {
+    "id": "kinship_daughter_of",
+    "category": "letter_commercial",
+    "tl": "DUMU.MI {PN1_TL}",
+    "tr": "{PN1_TR}'s daughter",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "father"
+        }
+      }
+    ],
+    "notes": "Daughter reference."
+  },
+  {
+    "id": "kinship_wife_of",
+    "category": "letter_commercial",
+    "tl": "a-sa-at {PN1_TL}",
+    "tr": "wife of {PN1_TR}",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "husband"
+        }
+      }
+    ],
+    "notes": "Wife reference."
+  },
+  {
+    "id": "kinship_representative",
+    "category": "letter_commercial",
+    "tl": "sa ki-ma {PN1_TL}",
+    "tr": "{PN1_TR}'s representative",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {
+          "role": "principal"
+        }
+      }
+    ],
+    "notes": "Business representative (145 matches)."
+  },
+  {
+    "id": "greeting_you_are_brother",
+    "category": "letter_opening",
+    "tl": "a-hi a-ta {AMT_TL} KÙ.BABBAR šé-bi4-lam",
+    "tr": "You are my brother. Send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Kinship greeting + request. Literal 'You are my brother' convention."
+  },
+  {
+    "id": "greeting_dear_brother",
+    "category": "letter_opening",
+    "tl": "a-hi a-ta {AMT_TL} KÙ.BABBAR šé-bi4-lam",
+    "tr": "My dear brother, send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Kinship greeting + request. Idiomatic 'My dear brother' convention."
+  },
+  {
+    "id": "greeting_father_lord",
+    "category": "letter_opening",
+    "tl": "a-bi a-ta be-lí a-ta {AMT_TL} KÙ.BABBAR šé-bi4-lam",
+    "tr": "You are my father, you are my lord. Send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Filial+lord greeting. Literal convention."
+  },
+  {
+    "id": "greeting_dear_father_lord",
+    "category": "letter_opening",
+    "tl": "a-bi a-ta be-lí a-ta {AMT_TL} KÙ.BABBAR šé-bi4-lam",
+    "tr": "My dear father, my dear lord, send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Filial+lord greeting. Idiomatic convention."
+  },
+  {
+    "id": "greeting_brothers_plural",
+    "category": "letter_opening",
+    "tl": "a-hu-ú-a a-tù-nu {AMT_TL} KÙ.BABBAR šé-bi4-lá-nim",
+    "tr": "You are my brothers. Send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Plural kinship greeting. Literal convention."
+  },
+  {
+    "id": "greeting_dear_brothers",
+    "category": "letter_opening",
+    "tl": "a-hu-ú-a a-tù-nu {AMT_TL} KÙ.BABBAR šé-bi4-lá-nim",
+    "tr": "My dear brothers, send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Plural kinship greeting. Idiomatic convention."
+  },
+  {
+    "id": "greeting_brother_lord",
+    "category": "letter_opening",
+    "tl": "a-hi a-ta be-lí a-ta {AMT_TL} KÙ.BABBAR šé-bi4-lam",
+    "tr": "You are my brother, you are my lord. Send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Brother+lord greeting. Literal convention."
+  },
+  {
+    "id": "greeting_dear_brother_lord",
+    "category": "letter_opening",
+    "tl": "a-hi a-ta be-lí a-ta {AMT_TL} KÙ.BABBAR šé-bi4-lam",
+    "tr": "My dear brother, my dear lord, send me {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Brother+lord greeting. Idiomatic convention."
+  },
+  {
+    "id": "messenger_our",
+    "category": "letter_commercial",
+    "tl": "ší-ip-ra-ni {PN1_TL} ú-bi-il5",
+    "tr": "Our messenger {PN1_TR} brought it.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Messenger (siprum) variant in letter context."
+  },
+  {
+    "id": "agent_my",
+    "category": "letter_commercial",
+    "tl": "ša-zu-úz-tí-a {PN1_TL}",
+    "tr": "My agent {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Agent (sazuztum) variant in letter context."
+  },
+  {
+    "id": "send_me_ventive",
+    "category": "letter_instruction",
+    "tl": "{AMT_TL} {COMM_TL} šé-bi4-lam",
+    "tr": "Send me {AMT_TR} {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Ventive -lam = toward speaker. Attested: '3 šé-né-en ša si-ni-iš-tim SIG5 šé-bi4-lam' → 'Send me 3 pairs of good women's shoes.'"
+  },
+  {
+    "id": "send_away_to_person",
+    "category": "letter_instruction",
+    "tl": "a-na {PN1_TL} šé-bi4-il5",
+    "tr": "Send it to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Non-ventive šé-bi4-il5 = send AWAY. Contrast with šé-bi4-lam (to me). Attested: 'a-na a-bi4-ni šé-bi4-il5' → 'Send it to our father.'"
+  },
+  {
+    "id": "send_away_to_place",
+    "category": "letter_instruction",
+    "tl": "{COMM_TL} a-na {PLACE_TL} šé-bi4-il5",
+    "tr": "Send the {COMM_TR} to {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Non-ventive send to place. Attested: 'KÙ.BABBAR lá-ak-nu-uk-ma a-na a-lim{ki} lu-šé-bi4-il5' → 'send (it) to the city.'"
+  },
+  {
+    "id": "bring_here_let_person",
+    "category": "letter_instruction",
+    "tl": "{PN1_TL} lu-ub-lam",
+    "tr": "Let {PN1_TR} bring it here.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Ventive lu-ub-lam = bring HERE. Attested: 'Ku-li-a i-pá-ni-šu lu-ub-lam' → 'Let Kuliya personally bring it here.'"
+  },
+  {
+    "id": "brings_you_sealed",
+    "category": "letter_commercial",
+    "tl": "{AMT_TL} {COMM_TL} ku-nu-ki-a {PN1_TL} na-áš-a-kum",
+    "tr": "{PN1_TR} brings you {AMT_TR} of {COMM_TR} under my seal.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": true
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "weight_only": true
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "na-áš-a-kum = brings to you (ventive toward addressee). Attested: 'lu-ub-lam 4 ma-na AN.NA ku-nu-ki-a Ú-ku na-ší' → 'Uku brings 4 minas of tin under my seal.'"
+  }
+]

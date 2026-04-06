@@ -77,6 +77,8 @@ pip install pandas requests PyMuPDF rapidfuzz
 ```bash
 cp .env.example .env
 # Edit .env and add your NVIDIA API key
+# AKKADIAN_KEY — used by extraction pipeline (scripts/)
+# INFERENCE_NVIDIA_API_KEY — used by synthetic data generation (sdg/)
 ```
 
 ### Running the Full Pipeline
@@ -164,4 +166,27 @@ accelerate launch code/train_baseline.py --config-name=conf_baseline_continue_xl
 
 ```bash
 accelerate launch code/train_reward.py
+```
+
+## Synthetic Data Generation
+
+Scripts for generating synthetic training data to teach OA fundamentals.
+
+| Drill Type | Script | Description |
+|------------|--------|-------------|
+| Grammar | `sdg/grammar_transform.py` | Apply grammar rules to seed sentences via LLM |
+| Slot-Fill Templates | `sdg/fill_engine.py` | Programmatic template filling (no API needed) |
+| CAD Vocab  | `sdg/generate_cad_drills.py` | Generate sentence pairs per (lemma, gloss) via LLM |
+
+### Running
+
+```bash
+# Grammar drills
+python sdg/grammar_transform.py --config sdg/conf/conf_transform.yaml
+
+# CAD drills
+python sdg/generate_cad_drills.py --config sdg/conf/conf_cad_drill.yaml
+
+# Template slot-fill
+python -c "from sdg.fill_engine import generate; generate()"
 ```

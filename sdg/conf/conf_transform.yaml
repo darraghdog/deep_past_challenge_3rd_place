@@ -1,0 +1,19 @@
+n_seeds: 2000
+output_path: data/goa/drill_pairs_sonnet
+
+datasets:
+  dpc: "conjuring92/dpc-mix-gold-b2"
+
+rules_path: data/goa/all_rules_clean.json
+morph_path: contexts/helpers/morphological_annotations_compact.md
+
+agent:
+  n_rules: 16
+  max_tool_calls: 24
+
+api:
+  model: "aws/anthropic/aws/anthropic/bedrock-claude-sonnet-4-5-v1"
+  base_url: "https://inference-api.nvidia.com"
+  max_retries: 10
+
+# python sdg/grammar_transform.py --config sdg/conf/conf_transform.yaml 2>&1 | tee sdg/logs/run_gpt54.log

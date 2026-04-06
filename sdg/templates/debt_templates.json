@@ -1,0 +1,4427 @@
+[
+  {
+    "id": "debt_iser_silver_refined",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of refined silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Standard debt formula: AMT silver i-ser PN1 PN2 isu. Debtor before creditor. Most common debt pattern."
+  },
+  {
+    "id": "debt_iser_silver_refined_patronymic",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} DUMU {PN2_TL} {PN3_TL} i-šu",
+    "tr": "{PN1_TR} son of {PN2_TR} owes {AMT_TR} of refined silver to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt with debtor patronymic. Debtor identified as PN1 son of PN2."
+  },
+  {
+    "id": "debt_iser_silver_plain",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Standard debt without refined qualifier."
+  },
+  {
+    "id": "debt_iser_silver_tishu",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} {PN2_TL} tí-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of refined silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt formula with ti-su (feminine creditor or variant) instead of i-su."
+  },
+  {
+    "id": "debt_ilibi_silver",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-li-bi {PN1_TL}",
+    "tr": "{AMT_TR} of silver is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt using i-li-bi (in the charge of). No explicit creditor."
+  },
+  {
+    "id": "debt_ilibi_silver_creditor",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i li-bi {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt using i li-bi with explicit creditor."
+  },
+  {
+    "id": "debt_ina_libi_silver",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na li-bi4 {PN1_TL}",
+    "tr": "{AMT_TR} of silver is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt using i-na li-bi variant."
+  },
+  {
+    "id": "debt_ina_libi_patronymic",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-na li-bi4 {PN1_TL} DUMU {PN2_TL}",
+    "tr": "{AMT_TR} of silver is owed by {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt using i-na li-bi with patronymic."
+  },
+  {
+    "id": "debt_ki_silver",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR KI {PN1_TL}",
+    "tr": "{AMT_TR} of silver is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt using KI (with/owed by)."
+  },
+  {
+    "id": "debt_ki_occupation",
+    "category": "debt",
+    "tl": "{AMT_TL} AN.NA KI {PN1_TL} {OCC_TL}",
+    "tr": "{AMT_TR} of tin owed by {PN1_TR}, the {OCC_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "OCC",
+        "type": "occupation",
+        "options": {}
+      }
+    ],
+    "notes": "Debt with debtor identified by occupation."
+  },
+  {
+    "id": "debt_iser_copper",
+    "category": "debt",
+    "tl": "{AMT_TL} URUDU i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of copper to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Copper debt, standard i-ser formula."
+  },
+  {
+    "id": "debt_iser_copper_washed",
+    "category": "debt",
+    "tl": "{AMT_TL} URUDU ma-sí-am i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of washed copper to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Washed copper debt."
+  },
+  {
+    "id": "debt_iser_copper_good",
+    "category": "debt",
+    "tl": "{AMT_TL} URUDU SIG5 i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of good copper to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Good-quality copper debt."
+  },
+  {
+    "id": "debt_iser_copper_sikku",
+    "category": "debt",
+    "tl": "{AMT_TL} URUDU ší-ku-um i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of sikku copper to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Sikku-grade copper debt."
+  },
+  {
+    "id": "debt_iser_tin",
+    "category": "debt",
+    "tl": "{AMT_TL} AN.NA i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of tin to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tin debt."
+  },
+  {
+    "id": "debt_iser_gold",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.GI i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of gold to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Gold debt."
+  },
+  {
+    "id": "debt_iser_gold_pasallum",
+    "category": "debt",
+    "tl": "{AMT_TL} GUŠKIN pá-ša-la-am i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of pasallum gold to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Pasallum-grade gold debt."
+  },
+  {
+    "id": "debt_refined_isti",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pu-um iš-tí {PN1_TL}",
+    "tr": "{AMT_TR} of refined silver is with {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt expressed as 'is with PN' using isti."
+  },
+  {
+    "id": "debt_refined_isti_niaam",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pu-um iš-tí {PN1_TL} ni-a-im",
+    "tr": "{AMT_TR} of refined silver is owed by our own {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt from own business partner. ni-a-im = our own."
+  },
+  {
+    "id": "debt_habul_silver",
+    "category": "debt",
+    "tl": "ša hu-bu-ul {PN1_TL} {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am",
+    "tr": "Concerning {PN1_TR}'s debt of {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Debt reference using hubul (debt) + genitive. Common as preamble."
+  },
+  {
+    "id": "debt_habul_reference",
+    "category": "debt",
+    "tl": "ša hu-bu-ul {PN1_TL}",
+    "tr": "Concerning {PN1_TR}'s debt.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Short debt reference without specifying the amount."
+  },
+  {
+    "id": "debt_two_debtors",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-ṣé-er {PN1_TL} ù {PN2_TL} {PN3_TL} i-šu",
+    "tr": "{PN1_TR} and {PN2_TR} owe {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Two co-debtors."
+  },
+  {
+    "id": "debt_debtor_and_wife",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-ṣé-er {PN1_TL} ù a-ší-tí-šu {PN2_TL} i-šu",
+    "tr": "{PN1_TR} and his wife owe {AMT_TR} of silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debtor and his wife as joint debtors."
+  },
+  {
+    "id": "debt_debtor_wife_son",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-ṣé-er {PN1_TL} {PN2_TL} a-ší-tí-šu ú {PN3_TL} me-er-i-šu {PN4_TL} i-šu",
+    "tr": "{AMT_TR} of silver {PN1_TR}, {PN2_TR} his wife, and {PN3_TR} his son owe to {PN4_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Family debt: debtor, wife, and son. Anatolian debt where whole family is liable."
+  },
+  {
+    "id": "debt_iser_two_creditors",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} {PN2_TL} ú {PN3_TL} i-šu-ú",
+    "tr": "{PN1_TR} owes {AMT_TR} of refined silver to {PN2_TR} and {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt to two creditors."
+  },
+  {
+    "id": "debt_first_person",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i li-bi-a",
+    "tr": "I owe {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "First-person debt: i li-bi-a = in my charge."
+  },
+  {
+    "id": "debt_price_of_donkey",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im ANŠE i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of silver, the price of a donkey, to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Price-of-donkey debt. Very common commodity price-debt."
+  },
+  {
+    "id": "debt_price_of_donkey_first_person",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im ANŠE i li-bi-a",
+    "tr": "I owe {AMT_TR} of silver, the price of a donkey.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "First-person donkey-price debt."
+  },
+  {
+    "id": "debt_price_of_sheep",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ša ší-im UDU iš-tí {PN1_TL}",
+    "tr": "{AMT_TR} of silver from the price of sheep is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Price-of-sheep debt."
+  },
+  {
+    "id": "debt_price_of_copper",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im URUDU i-na li-bi4 {PN1_TL}",
+    "tr": "{AMT_TR} of silver, the price of copper, is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt from price of copper."
+  },
+  {
+    "id": "debt_price_of_textile",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im {COMM_TL} i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN1_TR} owes {AMT_TR} of silver, the price of {COMM_TR}, to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {
+          "values": [
+            "TÚG/textiles",
+            "ku-ta-nu/kutānu-textiles"
+          ]
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt from price of a commodity (textile, wool, etc.)."
+  },
+  {
+    "id": "debt_grain_sacks",
+    "category": "debt",
+    "tl": "{AMT_TL} na-ru-uq ŠE.TA mì-iš-lam GIG mì-iš-lam ŠE-am iš-tí {PN1_TL}",
+    "tr": "{AMT_TR} sacks of grain, half wheat half barley, is owed by {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "grain"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Grain debt in sacks, half wheat half barley."
+  },
+  {
+    "id": "debt_grain_harvest",
+    "category": "debt",
+    "tl": "{AMT_TL} na-ru-uq mì-iš-lam ŠE-um mì-iš-lam5 ar-ša-tum i-na ha-ar-pé-e i-ma-da-ad",
+    "tr": "He will measure out {AMT_TR} sacks (of grain), half barley, half wheat at harvest time.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "grain"
+        }
+      }
+    ],
+    "notes": "Grain obligation payable at harvest."
+  },
+  {
+    "id": "debt_fleeces",
+    "category": "debt",
+    "tl": "{AMT_TL} maš-ki ša-pá-tim ṣa-ru-pu-tim ha-bu-ul",
+    "tr": "He (also) owes {AMT_TR} colored woolen fleeces.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "fleece"
+        }
+      }
+    ],
+    "notes": "Fleece debt using habul."
+  },
+  {
+    "id": "debt_textile_owed",
+    "category": "debt",
+    "tl": "1 TÚG lu-bu-šu-um i-li-bi4 {PN1_TL} DUMU {PN2_TL}",
+    "tr": "1 textile, a dress, is owed by {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Single textile debt."
+  },
+  {
+    "id": "interest_colony_rate_v2",
+    "category": "interest",
+    "tl": "šu-ma lá iš-qú-ul ki-ma a-wa-at kà-ri-im {PLACE_TL} ṣí-ib-ta-am ú-ṣa-áb",
+    "tr": "If he does not pay when his term is up, he will add interest in accordance with the rule of the {PLACE_TR} colony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Colony rate with named colony."
+  },
+  {
+    "id": "interest_from_week",
+    "category": "interest",
+    "tl": "iš-tù ha-muš-tim ša {PN1_TL} {RATE_TL} GÍN.TA ṣí-ib-tám i-na ITU.KAM ú-ṣa-áb",
+    "tr": "From the week of {PN1_TR} he will add {RATE_TR} shekel of silver as interest per month.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "RATE",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest with week start date."
+  },
+  {
+    "id": "interest_from_week_colony",
+    "category": "interest",
+    "tl": "iš-tù ha-muš-tim ša {PN1_TL} DUMU {PN2_TL} ki-ma a-wa-at kà-ri-im ṣí-ib-tám ú-ṣa-áb",
+    "tr": "Reckoned from the week of {PN1_TR} son of {PN2_TR} he will add interest in accordance with the rule of the colony.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Interest start date + colony rate."
+  },
+  {
+    "id": "interest_accrued_satisfied",
+    "category": "interest",
+    "tl": "KÙ.BABBAR ù ṣí-ba-sú {PN1_TL} ša-bu",
+    "tr": "{PN1_TR} is satisfied with the silver and its interest.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Creditor satisfied with principal and accrued interest."
+  },
+  {
+    "id": "interest_earlier_interest",
+    "category": "interest",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣí-ib-tum pá-ni-tum",
+    "tr": "{AMT_TR} of silver, an earlier interest.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Reference to previously accumulated interest."
+  },
+  {
+    "id": "pay_weeks",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "He will pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Payment deadline in weeks (hamushtum)."
+  },
+  {
+    "id": "pay_weeks_silver",
+    "category": "payment",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "He will pay {AMT_TR} of silver within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Amount + deadline in weeks."
+  },
+  {
+    "id": "pay_months",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ITI.KAM i-ša-qal",
+    "tr": "He is to pay within {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Payment deadline in months."
+  },
+  {
+    "id": "pay_silver_months",
+    "category": "payment",
+    "tl": "KÙ.BABBAR a-na ITI.{DEADLINE_TL}.KAM i-ša-qal",
+    "tr": "He will pay the silver in {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Silver payment, month deadline."
+  },
+  {
+    "id": "pay_years",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ša-na-tim i-ša-qal",
+    "tr": "He will pay in {DEADLINE_TR} years.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "years"
+        }
+      }
+    ],
+    "notes": "Multi-year deadline."
+  },
+  {
+    "id": "pay_from_week_to_weeks",
+    "category": "payment",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "Reckoned from the week of {PN1_TR} he will pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Week start + week deadline. Very common payment formula."
+  },
+  {
+    "id": "pay_from_week_two_names",
+    "category": "payment",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} ú {PN2_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "Reckoned from the week of {PN1_TR} and {PN2_TR} he will pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Week start with two weekly officials + week deadline."
+  },
+  {
+    "id": "pay_from_week_patronymic",
+    "category": "payment",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} DUMU {PN2_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "Reckoned from the week of {PN1_TR} son of {PN2_TR} he is to pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Week start with patronymic + deadline."
+  },
+  {
+    "id": "pay_from_week_to_month",
+    "category": "payment",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} a-na ITU.KAM i-ša-qal",
+    "tr": "Reckoned from the week of {PN1_TR} he will pay within a month.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Week start + 1 month deadline."
+  },
+  {
+    "id": "pay_from_month_to_months",
+    "category": "payment",
+    "tl": "iš-tù ITU.KAM {MONTH_TL} a-na {DEADLINE_TL} ITI.KAM i-ša-qal",
+    "tr": "From month {MONTH_TR} he will pay within {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Month start + month deadline."
+  },
+  {
+    "id": "pay_from_month_eponymy",
+    "category": "payment",
+    "tl": "iš-tù ITU.KAM {MONTH_TL} li-mì-im {EPONYM_TL} a-na ITU.{DEADLINE_TL}.KAM i-ša-qal",
+    "tr": "From month {MONTH_TR}, eponymy of {EPONYM_TR} he will pay within {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Full start date (month + eponymy) + month deadline."
+  },
+  {
+    "id": "pay_from_week_to_months",
+    "category": "payment",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} a-na {DEADLINE_TL} ITI.KAM i-ša-qal",
+    "tr": "From the week of {PN1_TR} he will pay within {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Week start + month deadline."
+  },
+  {
+    "id": "pay_when_harvest",
+    "category": "payment",
+    "tl": "i-nu-mì e-ṣí-du-ni ú {AMT_TL} KÙ.BABBAR i-ša-qú-lu",
+    "tr": "When they have harvested, then they will pay the {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Payment triggered by harvest."
+  },
+  {
+    "id": "pay_festival",
+    "category": "payment",
+    "tl": "i-na ša {FEST_TL} i-ša-qal",
+    "tr": "He will pay at the {FEST_TR}.",
+    "slots": [
+      {
+        "name": "FEST",
+        "type": "festival",
+        "options": {}
+      }
+    ],
+    "notes": "Payment at a named festival."
+  },
+  {
+    "id": "pay_in_place",
+    "category": "payment",
+    "tl": "i-na {PLACE_TL} a-na {PN1_TL} i-ša-qal",
+    "tr": "He will pay to {PN1_TR} in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment at a named location."
+  },
+  {
+    "id": "pay_send_from_place",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ITI.KAM a-{PLACE_TL} ú-šé-ba-lam",
+    "tr": "he will send me the silver to {PLACE_TR} in {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Obligation to send silver to a location."
+  },
+  {
+    "id": "pay_from_kuburnat",
+    "category": "payment",
+    "tl": "lu iš-tù {PLACE_TL} ú-šé-ba-lam lu i-na ba-a-áb-tí-šu a-lá-qé",
+    "tr": "he will send it me from {PLACE_TR} or I will take it from his outstanding claims.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Alternative payment: send from place or take from claims."
+  },
+  {
+    "id": "date_month_eponymy",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL}",
+    "tr": "Month {MONTH_TR}, eponymy {EPONYM_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Standard date formula: month + eponymy."
+  },
+  {
+    "id": "date_month_eponymy_patronymic",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL} DUMU {PN1_TL}",
+    "tr": "Month {MONTH_TR}, eponymy of {EPONYM_TR} son of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Date with eponym patronymic."
+  },
+  {
+    "id": "date_month_eponymy_successor",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um ša qá-té {EPONYM_TL}",
+    "tr": "Month {MONTH_TR}, eponymy of the successor of {EPONYM_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Date with successor eponym. sha qate = successor."
+  },
+  {
+    "id": "date_month_eponymy_successor_patronymic",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um ša qá-té {EPONYM_TL} DUMU {PN1_TL}",
+    "tr": "Month {MONTH_TR}, eponymy of the successor of {EPONYM_TR}, son of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Successor eponym with patronymic."
+  },
+  {
+    "id": "date_year_eponymy",
+    "category": "dating",
+    "tl": "li-mu-um {EPONYM_TL}",
+    "tr": "Year eponymy of {EPONYM_TR}.",
+    "slots": [
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Year-only date (no month)."
+  },
+  {
+    "id": "date_eponymy_after",
+    "category": "dating",
+    "tl": "li-mu-um ša qá-ti {EPONYM_TL} DUMU {PN1_TL}",
+    "tr": "Eponymy after that of {EPONYM_TR} son of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Successor eponym formula."
+  },
+  {
+    "id": "date_month_contracted",
+    "category": "dating",
+    "tl": "ITU.KAM {MONTH_TL}",
+    "tr": "Contracted in month {MONTH_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      }
+    ],
+    "notes": "Month-only date."
+  },
+  {
+    "id": "date_full_week_month_eponymy",
+    "category": "dating",
+    "tl": "iš-tù ha-muš-tim ša {PN1_TL} ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL}",
+    "tr": "From the week of {PN1_TR}, month {MONTH_TR}, eponymy of {EPONYM_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Full date: week + month + eponymy."
+  },
+  {
+    "id": "date_silver_collected_eponymy",
+    "category": "dating",
+    "tl": "KÙ.BABBAR i-na li-mì-im {EPONYM_TL} ITU.KAM {MONTH_TL} il5-qé",
+    "tr": "He collected the silver during the eponymy of {EPONYM_TR}, in month {MONTH_TR}.",
+    "slots": [
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      }
+    ],
+    "notes": "Collection date reference."
+  },
+  {
+    "id": "date_eponymy_title",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL} sà-an-guṣ-um",
+    "tr": "Month {MONTH_TR}, eponymy {EPONYM_TR}, the high priest.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Eponym with title (high priest/sangum)."
+  },
+  {
+    "id": "guarantor_clearing",
+    "category": "debt",
+    "tl": "šu-ma {PN1_TL} a-na {PN2_TL} i-tù-wa-ar {PN3_TL} ú-ba-áb-šu",
+    "tr": "If {PN1_TR} raises a claim against {PN2_TR}, {PN3_TR} will clear him.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Guarantor clause: if PN1 claims from PN2, PN3 guarantees."
+  },
+  {
+    "id": "guarantor_sons_clearing",
+    "category": "debt",
+    "tl": "šu-ma me-er-ú {PN1_TL} a-na {PN2_TL} i-tù-ru-ú {PN3_TL} ú-ba-áb-šu",
+    "tr": "If the sons of {PN1_TR} raise a claim against {PN2_TR}, {PN3_TR} will clear him.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Guarantor against sons-of claimants."
+  },
+  {
+    "id": "guarantor_representatives",
+    "category": "debt",
+    "tl": "šu-ma ša ki-ma {PN1_TL} a-na {PN2_TL} i-tù-ru-ú {PN3_TL} ú-ba-áb-šu",
+    "tr": "If {PN1_TR}'s representatives claim from {PN2_TR}, {PN3_TR} will clear him.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Guarantor against representatives."
+  },
+  {
+    "id": "debtor_satisfied",
+    "category": "debt",
+    "tl": "šu-ma {PN1_TL} DUMU {PN2_TL} ša-bu",
+    "tr": "If {PN1_TR}, son of {PN2_TR}, has already been satisfied.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Creditor satisfied / debt cleared condition."
+  },
+  {
+    "id": "creditor_paid_silver_interest",
+    "category": "debt",
+    "tl": "KÙ.BABBAR ú ṣí-ba-sú {PN1_TL} ša-bu",
+    "tr": "{PN1_TR} has been paid in full the silver and its accrued interest.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Full satisfaction of principal + interest."
+  },
+  {
+    "id": "debt_paid_part",
+    "category": "payment",
+    "tl": "{AMT_TL} KÙ.BABBAR šu-ku-bu-um ni-a-um i-na ša li-bi4 hu-bu-li-šu iš-qú-lam",
+    "tr": "Our own Šu-Kūbum paid me {AMT_TR} of silver as part of his debt.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Partial debt payment. Fixed debtor name but pattern is useful."
+  },
+  {
+    "id": "tablet_dead",
+    "category": "debt",
+    "tl": "šu-ma lá iš-qú-ul ṭup-pu-um a-num i-mu-at-ma {AMT_TL} {PN1_TL} i-ša-qal",
+    "tr": "But if he has not paid, then this tablet is dead, and {PN1_TR} will have to pay {AMT_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tablet death clause: if debtor fails, tablet voided and penalty amount due."
+  },
+  {
+    "id": "tablet_invalid",
+    "category": "debt",
+    "tl": "ṭup-pu-um ha-ar-mu-um ša hu-bu-ul {PN1_TL} DUMU {PN2_TL} ša e-li-a-ni sà-ar",
+    "tr": "A certified tablet concerning the debt of {PN1_TR} son of {PN2_TR} that may appear will be invalid.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Old debt tablet invalidation. Used when debt is settled or transferred."
+  },
+  {
+    "id": "tablet_encased_debt",
+    "category": "debt",
+    "tl": "ṭup-pá-am ha-ar-ma-am ša {AMT_TL} KÙ.BABBAR ša hu-bu-ul {PN1_TL}",
+    "tr": "an encased tablet of {AMT_TR} of silver, being the debt of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Encased (certified) tablet reference."
+  },
+  {
+    "id": "tablet_entrusted",
+    "category": "debt",
+    "tl": "ṭup-pá-am ša {AMT_TL} KÙ.BABBAR ša hu-bu-ul {PN1_TL} a-na {PN2_TL} DUMU {PN3_TL} pá-qí-id",
+    "tr": "A tablet concerning {AMT_TR} of silver, the debt of {PN1_TR}, has been entrusted to {PN2_TR} son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt tablet entrusted to third party."
+  },
+  {
+    "id": "tablet_show_day",
+    "category": "debt",
+    "tl": "i-na u4-mi-im ša ṭup-pá-am ša hu-bu-ul {PN1_TL} a-na ša ki-ma {PN2_TL} ú-kà-lu-mu-ni",
+    "tr": "On the day that they show the tablet concerning {PN1_TR}'s debt to {PN2_TR}'s representatives.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Conditional: on the day the debt tablet is presented."
+  },
+  {
+    "id": "receipt_silver",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR {PN1_TL} il5-qé",
+    "tr": "{PN1_TR} received {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Simple receipt: PN received silver."
+  },
+  {
+    "id": "receipt_silver_also",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR šu-ut-ma il5-qé",
+    "tr": "He also received {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Additional receipt with shutma (also)."
+  },
+  {
+    "id": "receipt_refined_proceeds",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-na ší-im SÍG.HI.A ša {PN1_TL} {PN2_TL} DUMU {PN3_TL} il5-qé",
+    "tr": "{PN2_TR} son of {PN3_TR} has received {AMT_TR} of refined silver from the proceeds of {PN1_TR}'s wool.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Receipt of silver from wool proceeds."
+  },
+  {
+    "id": "receipt_paid",
+    "category": "receipt",
+    "tl": "mì-ma a-nim {PN1_TL} iš-qú-ul",
+    "tr": "all this {PN1_TR} paid.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Third person payment confirmation."
+  },
+  {
+    "id": "receipt_gave_silver",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {PN1_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} of silver to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "First person: I gave silver to PN."
+  },
+  {
+    "id": "receipt_gave_tin",
+    "category": "receipt",
+    "tl": "{AMT_TL} AN.NA i-na li-bi4 {PN1_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} of tin to {PN1_TR}'s possession.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "First person: I gave tin."
+  },
+  {
+    "id": "receipt_paid_salt",
+    "category": "receipt",
+    "tl": "{AMT_TL} GÍN ṭá-áb-tí áš-qú-ul",
+    "tr": "I paid {AMT_TR} shekels of salt.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Payment in salt. GÍN unit is embedded in TL; bare_number prevents doubled unit."
+  },
+  {
+    "id": "receipt_paid_on_behalf",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR a-šu-mì {PN1_TL} DUMU {PN2_TL} a-na {PN3_TL} DUMU {PN4_TL} áš-qúl",
+    "tr": "{AMT_TR} of silver on behalf of {PN1_TR}, son of {PN2_TR}, I paid to {PN3_TR} son of {PN4_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment on behalf of someone."
+  },
+  {
+    "id": "receipt_thereof",
+    "category": "receipt",
+    "tl": "ŠÀ.BA {AMT_TL} a-na {PN1_TL} a-dí-in",
+    "tr": "Thereof I gave {AMT_TR} to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Subtraction from a larger sum. SHABA = thereof."
+  },
+  {
+    "id": "receipt_copper_pn",
+    "category": "receipt",
+    "tl": "IGI {PN1_TL} {PN2_TL} URUDU a-na {PN3_TL} iš-qú-ul",
+    "tr": "In the presence of {PN1_TR}, {PN2_TR} paid the copper to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Copper payment before a witness."
+  },
+  {
+    "id": "receipt_silver_gave_this",
+    "category": "receipt",
+    "tl": "KÙ.BABBAR a-ni-am {PN1_TL} i-di-in",
+    "tr": "{PN1_TR} gave this silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "PN gave this silver (demonstrative)."
+  },
+  {
+    "id": "working_capital",
+    "category": "debt",
+    "tl": "ša {AMT_TL} KÙ.BABBAR be-ú-lá-at {PN1_TL}",
+    "tr": "concerning {AMT_TR} of silver, the working capital of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Working capital (be'ulatim) reference."
+  },
+  {
+    "id": "working_capital_gave",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na bé-a-lim a-na {PN1_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} of silver for a working-capital to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Giving silver as working capital."
+  },
+  {
+    "id": "working_capital_dust_silver",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR SAHAR.BA be-ú-lá-at {PN1_TL} DUMU {PN2_TL}",
+    "tr": "{AMT_TR} of 'dust silver' the capital of {PN1_TR}, son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Dust silver (low-quality) working capital."
+  },
+  {
+    "id": "tax_import_palace",
+    "category": "debt",
+    "tl": "{AMT_TL} AN.NA ni-is-ha-tum ša É.GAL",
+    "tr": "{AMT_TR} of tin: the import duty of the palace.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      }
+    ],
+    "notes": "Palace import duty (nishatum). Common tax notation."
+  },
+  {
+    "id": "tax_excise_transport",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ší-im {AMT2_TL} AN.NA ni-is-ha-at {AMT3_TL} šu-uq-lá-tí-šu ša šé-ep {PN1_TL} áš-qúl",
+    "tr": "I paid {AMT_TR} silver, the price of {AMT2_TR} tin, the excise tax of his {AMT3_TR} containers, under the transport of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "AMT3",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Complex tax payment with transport."
+  },
+  {
+    "id": "penalty_send_or_pay",
+    "category": "debt",
+    "tl": "šu-ma lá ú-šé-bi4-lam {AMT_TL} KÙ.BABBAR i-ša-qá-lam",
+    "tr": "If he has not sent it he is to pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Penalty for failure to send goods."
+  },
+  {
+    "id": "penalty_confirm_liability",
+    "category": "debt",
+    "tl": "šu-ma lá uk-ta-in-šu-nu {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am a-na {PN1_TL} {PN2_TL} i-ša-qal",
+    "tr": "If he does not confirm their liability {PN2_TR} will pay to {PN1_TR} {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Penalty for failure to confirm liability."
+  },
+  {
+    "id": "penalty_confirm_illibi",
+    "category": "debt",
+    "tl": "i-li-bi {PN1_TL} lá uk-ta-in KÙ.BABBAR ù ṣí-ba-sú {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "he does not confirm that {PN1_TR} has it, {PN2_TR} will pay the silver and its interest to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "If debtor doesn't confirm, guarantor pays principal + interest."
+  },
+  {
+    "id": "penalty_take_person",
+    "category": "debt",
+    "tl": "šu-ma lá ú-ša-bu-ú {PN1_TL} i-ta-ru",
+    "tr": "If they do not satisfy (the creditor) he will take {PN1_TR} along.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "If debtors fail to pay, creditor takes a person (hostage/surety)."
+  },
+  {
+    "id": "penalty_deducted_tablet",
+    "category": "debt",
+    "tl": "šu-ma KÙ.BABBAR a-na A-lim{ki} lá uš-ta-ak-ší-sú-um {AMT_TL} KÙ.BABBAR i-na ṭup-pí-a i-ṣa-he-er",
+    "tr": "If he has not let the silver reach him in the City, {AMT_TR} of silver will be deducted from my tablet.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Penalty deduction from tablet if silver not delivered."
+  },
+  {
+    "id": "bearer_is_creditor",
+    "category": "debt",
+    "tl": "DAM.GÀR a-mu-tum i-na-dí-in-ma {AMT_TL} KÙ.BABBAR {PN1_TL} i-lá-qé",
+    "tr": "The iron will be sold and {PN1_TR} will receive {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Named creditor receives proceeds from sale."
+  },
+  {
+    "id": "creditor_merchant_named",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ša {PN1_TL} a-na DAM.GÀR-ri-im ha-bu-lu-ma šu-mì DAM.GÀR wa-du-ú {PN2_TL}",
+    "tr": "for the {AMT_TR} of silver that {PN1_TR} owes to a merchant, the name of the merchant has been announced: {PN2_TR} is the merchant.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Bearer = creditor: creditor merchant named explicitly."
+  },
+  {
+    "id": "silver_remains",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR a-hu-ur",
+    "tr": "{AMT_TR} of silver still remains.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Outstanding balance."
+  },
+  {
+    "id": "silver_belongs_to",
+    "category": "debt",
+    "tl": "i-na KÙ a-nim {AMT_TL} ša {PN1_TL}",
+    "tr": "Of this silver {AMT_TR} belong to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Share of silver belonging to a person."
+  },
+  {
+    "id": "silver_give_claim",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-da-na-ma qá-tí a-ša-kà-an",
+    "tr": "He will give me {AMT_TR} of silver and I shall lay claim to that.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Promise to pay + claim establishment."
+  },
+  {
+    "id": "silver_weighed_out",
+    "category": "receipt",
+    "tl": "KÙ.BABBAR ŠU.NIGIN {AMT_TL} KÙ.BABBAR {PN1_TL} is-ni-iq-ni-a-tí",
+    "tr": "In all {AMT_TR} of silver {PN1_TR} weighed out to us.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver weighed out (isniqu) to us."
+  },
+  {
+    "id": "silver_entrusted",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR ku-nu-ki ša {PN1_TL} a-na {PN2_TL} DUMU {PN3_TL} ni-ip-qí-id",
+    "tr": "{AMT_TR} of silver sealed by {PN1_TR} we entrusted to {PN2_TR} son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Sealed silver entrusted to a transporter."
+  },
+  {
+    "id": "silver_entrusted_instructions",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR ku-nu-ku ša {PN1_TL} a ma-lá tí-ir-tí-šu a-na me-er-e {PN2_TL} ni-ip-qí-id",
+    "tr": "{AMT_TR} of silver sealed by {PN1_TR} we entrusted to {PN2_TR}'s sons in accordance with his instructions.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Sealed silver entrusted per instructions."
+  },
+  {
+    "id": "creditor_hand_pledge",
+    "category": "debt",
+    "tl": "i-na {AMT_TL} {COMM_TL} qá-tum ša DAM.GÀR ša-ak-na-at",
+    "tr": "The hand of the creditor rests on {AMT_TR} {COMM_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      }
+    ],
+    "notes": "Creditor's lien/pledge on goods."
+  },
+  {
+    "id": "house_pledge",
+    "category": "debt",
+    "tl": "KÙ.BABBAR a-na È-tí-šu-nu ša {PLACE_TL} iš-qú-lu È-tù e-ru-ba-tù-a",
+    "tr": "The silver they paid for their house in {PLACE_TR}, (which) house serves as my pledge.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "House used as pledge/security for debt."
+  },
+  {
+    "id": "book_gold_name",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.GI šu-mì {PN1_TL} i-lá-pá-at",
+    "tr": "he must book {AMT_TR} of gold in the name of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Book gold (penalty) in someone's name. ilappat = write/book."
+  },
+  {
+    "id": "book_gold_if_tablet",
+    "category": "debt",
+    "tl": "šu-ma ṭup-pu-šu i-lá-pu-tù {AMT_TL} KÙ.GI šu-mì {PN1_TL} i-lá-pá-at",
+    "tr": "If they write his tablet, he must book {AMT_TR} of gold in the name of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Gold penalty if joint-stock tablet written."
+  },
+  {
+    "id": "goods_not_return_pay",
+    "category": "debt",
+    "tl": "šu-ma lu-qú-tum a-na ša {PN1_TL} ù {PN2_TL} lá i-tù-ar ší-im-šu-nu KÙ.BABBAR {PN2_TL} a-na {PN3_TL} i-ša-qá-al",
+    "tr": "If the goods do not become the property of {PN1_TR} and {PN2_TR}, he must pay the proceeds from their sale in silver to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Conditional: if goods don't sell, pay silver instead."
+  },
+  {
+    "id": "hold_as_pledge",
+    "category": "debt",
+    "tl": "ṭup-pá-am ha-ar-ma-am ša {AMT_TL} KÙ.BABBAR ša hu-bu-ul {PN1_TL} a-ša-par-tim ú-kà-al",
+    "tr": "an encased tablet of {AMT_TR} of silver, being the debt of {PN1_TR}, I hold as pledge.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Holding debt tablet as pledge/security."
+  },
+  {
+    "id": "silver_hold",
+    "category": "receipt",
+    "tl": "a-{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am uk-ta-al",
+    "tr": "I am holding {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Holding silver (custody/credit)."
+  },
+  {
+    "id": "copper_received_sons",
+    "category": "receipt",
+    "tl": "{AMT_TL} URUDU ša i-ṣé-er {PN1_TL} ù {PN2_TL} DUMU me-er-e {PN3_TL} {PN4_TL} i-šu-ú URUDU ki-ma {PN4_TL} {PN5_TL} me-ra-šu il5-qé",
+    "tr": "{AMT_TR} of copper that {PN1_TR} and {PN2_TR} sons of {PN3_TR} owe to {PN4_TR} – on behalf of {PN4_TR} his son {PN5_TR} has received the copper.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Copper debt collected by creditor's son on behalf."
+  },
+  {
+    "id": "paid_after_death",
+    "category": "receipt",
+    "tl": "iš-tù {PN1_TL} me-tù-ú {AMT_TL} KÙ.BABBAR {PN2_TL} ra-bi-ṣú-um il5-qé",
+    "tr": "After {PN1_TR} died the attorney {PN2_TR} received {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment collected by attorney after debtor death."
+  },
+  {
+    "id": "gave_at_marriage",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-nu-mì {PN1_TL} a-ša-sú e-hu-zu a-dí-in",
+    "tr": "I gave {AMT_TR} of silver when {PN1_TR} married his wife.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Marriage-related silver payment."
+  },
+  {
+    "id": "votive_tin_purchase",
+    "category": "receipt",
+    "tl": "{AMT_TL} AN.NA ša ik-ri-bi4-a a-na ší-a-ma-tim a-na {PN1_TL} IGI {PN2_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} of tin from my votive offering for purchases to {PN1_TR} with {PN2_TR} as witness.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Votive tin given for purchasing."
+  },
+  {
+    "id": "total_gold_silver",
+    "category": "receipt",
+    "tl": "ŠU.NIGIN {AMT_TL} KÙ.GI ù {AMT2_TL} KÙ.BABBAR",
+    "tr": "In all {AMT_TR} of gold and {AMT2_TR} of silver.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Total sum in gold and silver."
+  },
+  {
+    "id": "silver_deducted",
+    "category": "receipt",
+    "tl": "a-dí ší-ip-kà-at {PN1_TL} a-bi-šu KÙ.BABBAR i-na ší-ip-kà-tí-šu ú-ṣa-hi-ir",
+    "tr": "As for the investments of his father {PN1_TR}, I deducted it from his investments.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Deduction from investments."
+  },
+  {
+    "id": "borrow_at_interest",
+    "category": "debt",
+    "tl": "ší-tí KÙ.BABBAR a-na ṣí-ib-tim a-la-qé-ma KÙ.BABBAR ù ṣí-ba-sú {PN1_TL} ú-ma-lá",
+    "tr": "The rest of the silver I will (then) borrow at interest and the silver and the interest on it {PN1_TR} will compensate.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Borrowing remainder at interest with compensation."
+  },
+  {
+    "id": "concerning_pn",
+    "category": "debt",
+    "tl": "ša {PN1_TL} ù {PN2_TL}",
+    "tr": "Concerning {PN1_TR} and {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Short reference to two parties involved."
+  },
+  {
+    "id": "concerning_pn_patronymic",
+    "category": "debt",
+    "tl": "ša {PN1_TL} DUMU {PN2_TL}",
+    "tr": "Concerning {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Short reference to debtor."
+  },
+  {
+    "id": "reeds_bundle_days",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR i-ṣé-er {PN1_TL} {PN2_TL} i-šu-ú ù {AMT2_TL} ri-ik-sí ša qá-nu-we ra-bi-ú-tim a-dí {DEADLINE_TL} u4-me-e ú-ṣa-ba-am",
+    "tr": "{PN1_TR} owes {AMT_TR} of silver to {PN2_TR}, and he will add {AMT2_TR} large bundles of reeds within {DEADLINE_TR} days.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "days"
+        }
+      }
+    ],
+    "notes": "Mixed debt: silver plus reeds with day deadline."
+  },
+  {
+    "id": "installment_payments",
+    "category": "payment",
+    "tl": "{AMT_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qú-lu iš-tù {DEADLINE_TL} ha-am-ša-tum i-ma-lu-ú-ni {AMT_TL} KÙ.BABBAR a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qú-lu",
+    "tr": "They must pay {AMT_TR} in {DEADLINE_TR} weeks; after {DEADLINE_TR} weeks have passed they must pay {AMT_TR} of silver within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Installment payment: repeated payments at equal intervals."
+  },
+  {
+    "id": "seal_with_debt_amount",
+    "category": "debt",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL} ša {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN5_TL} {PN6_TL} i-šu",
+    "tr": "Seal of {PN1_TR} son of {PN2_TR}, seal of {PN3_TR} son of {PN4_TR}, that {PN5_TR} owes {AMT_TR} of refined silver to {PN6_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN6",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal + debt in opening line. Combined formula common in debt tablets."
+  },
+  {
+    "id": "seal_with_debt_habul",
+    "category": "debt",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL} ša hu-bu-ul {PN5_TL} DUMU {PN6_TL}",
+    "tr": "Seal of {PN1_TR}, son of {PN2_TR}, seal of {PN3_TR}, son of {PN4_TR}, about the debt of {PN5_TR} son of {PN6_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN6",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal + debt reference (hubul). Common debt tablet opening."
+  },
+  {
+    "id": "seal_remainder_debt",
+    "category": "debt",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL} ša ší-tí ša hu-bu-ul {PN5_TL}",
+    "tr": "Seal of {PN1_TR}, son of {PN2_TR}, seal of {PN3_TR}, son of {PN4_TR}, of the remainder of the debt of {PN5_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal + remainder of debt. Partial settlement context."
+  },
+  {
+    "id": "seal_working_capital",
+    "category": "debt",
+    "tl": "KIŠIB {PN1_TL} DUMU {PN2_TL} KIŠIB {PN3_TL} DUMU {PN4_TL} ša {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am be-ú-lá-at {PN5_TL}",
+    "tr": "Seal of {PN1_TR}, son of {PN2_TR}, seal of {PN3_TR}, son of {PN4_TR}, about {AMT_TR} of refined silver, the working capital of {PN5_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN5",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Seal + working capital reference."
+  },
+  {
+    "id": "in_place_gave",
+    "category": "receipt",
+    "tl": "i-na {PLACE_TL} a-dí-šu-um",
+    "tr": "I gave it to him in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Location of delivery."
+  },
+  {
+    "id": "in_city_give_silver",
+    "category": "payment",
+    "tl": "i-na A-lim{ki} KÙ.BABBAR {PN1_TL} a-na {PN2_TL} i-da-an",
+    "tr": "in the City {PN1_TR} will give the silver to {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment in the City (Assur) from one person to another."
+  },
+  {
+    "id": "copper_threshing_pure",
+    "category": "payment",
+    "tl": "i-na ad-ri-im i-ša-qal URUDU {PLACE_TL} za-ak-wa-am",
+    "tr": "At the time of the threshing he will weigh out pure copper of {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Pure copper of specific origin, paid at threshing."
+  },
+  {
+    "id": "silver_owed_ladies",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pu-um KI a-we-lá-tim",
+    "tr": "{AMT_TR} of refined silver is owed by the ladies.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Debt owed by women (awelatum)."
+  },
+  {
+    "id": "silver_from_ebla",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR iš-tí {PN1_TL} ša SÍG.HI.A il5-qé-ú",
+    "tr": "{AMT_TR} of silver due from {PN1_TR}, who took wool.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Silver owed from someone who took wool."
+  },
+  {
+    "id": "pay_balance_transfer",
+    "category": "payment",
+    "tl": "ša {AMT_TL} AN.NA ša ni-ip-lá-tim ša {PN1_TL} a-na ILLAT-tim ha-bu-lu AN.NA {PN2_TL} iš-qú-ul",
+    "tr": "Concerning the {AMT_TR} of tin from the balance payment that {PN1_TR} owes to the caravan – {PN2_TR} has paid the tin.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Third party pays caravan debt on behalf of debtor."
+  },
+  {
+    "id": "textile_remains_possession",
+    "category": "debt",
+    "tl": "1 TÚG ku-ta-nam ša {PN1_TL} i-li-bi4 {PN2_TL} a-hu-ur",
+    "tr": "1 kutanu-textile belonging to {PN1_TR} remains in {PN2_TR}'s possession.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Textile remains outstanding with holder."
+  },
+  {
+    "id": "pay_fees",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR da-a-sú ša {PN1_TL} áš-qúl",
+    "tr": "I paid {AMT_TR} of silver, {PN1_TR}'s fees.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment of someone's fees/expenses."
+  },
+  {
+    "id": "pay_for_acorns",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na a-lá-ni ša-ar-ša-ra-ni áš-qú-ul-ma a-na {PN1_TL} a-dí-in",
+    "tr": "I paid {AMT_TR} of silver for a sharšaranu-measure of acorns and gave them to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Purchase of acorns and delivery."
+  },
+  {
+    "id": "owed_votive",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am ša ik-ri-bi ša {PN1_TL} i-ṣé-er {PN2_TL} DUMU {PN3_TL}",
+    "tr": "{AMT_TR} of refined silver, being temple funds, which {PN1_TR} had acquired as claim on {PN2_TR}, son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Votive/temple-fund debt. ikribu = votive offering/temple fund."
+  },
+  {
+    "id": "debt_from_wool_capital",
+    "category": "debt",
+    "tl": "i-na ri-iš SÍG.HI.A ša i-ša-qú-lu-šu-ni {AMT_TL} KÙ.BABBAR {PN1_TL} DUMU {PN2_TL} a-na {PN3_TL} i-ša-qal",
+    "tr": "From the capital on the wool that they are going to pay to him, {PN1_TR} son of {PN2_TR} shall give {AMT_TR} of silver to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment from wool capital/proceeds."
+  },
+  {
+    "id": "pay_instead_copper",
+    "category": "payment",
+    "tl": "i-na ŠÀ.BA {AMT_TL} AN.NA ki-ma {AMT2_TL} i-dí-nam",
+    "tr": "Thereof he has given me {AMT_TR} of tin instead of {AMT2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      }
+    ],
+    "notes": "Tin paid instead of copper at exchange rate."
+  },
+  {
+    "id": "wool_left",
+    "category": "receipt",
+    "tl": "{AMT_TL} SÍG.HI.A ú {AMT2_TL} AN.NA {PN1_TL} a-na {PN2_TL} e-zi-ib",
+    "tr": "{AMT_TR} of wool and {AMT2_TR} of tin {PN1_TR} left with {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "wool"
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Goods left with a person (deposit)."
+  },
+  {
+    "id": "brought_proceeds_place",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR ù {AMT2_TL} KÙ.GI i-ší-im TÚG-ba-ti-a iš-tù {PLACE_TL} ub-lu-nim",
+    "tr": "They brought me {AMT_TR} of silver and {AMT2_TR} of gold, the proceeds from my textiles, from {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Proceeds from textile sales brought from another city."
+  },
+  {
+    "id": "colony_took",
+    "category": "receipt",
+    "tl": "{AMT_TL} {COMM_TL} kà-ru-um {PLACE_TL} il5-qé",
+    "tr": "{AMT_TR} {COMM_TR} the {PLACE_TR} colony took.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "COMM",
+        "type": "commodity",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Colony confiscation or tax collection."
+  },
+  {
+    "id": "tin_conducted",
+    "category": "receipt",
+    "tl": "{AMT_TL} AN.NA ku-nu-ki ša {PN1_TL} {PN2_TL} ir-dí-a-ni",
+    "tr": "{PN2_TR} conducted {AMT_TR} of tin sealed by {PN1_TR} here.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "tin"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Tin transport: conducted/brought sealed tin."
+  },
+  {
+    "id": "debt_iser_silver_refined_full",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} DUMU {PN2_TL} {PN3_TL} i-šu iš-tù ha-mu-uš-tim ša {PN4_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal-ma",
+    "tr": "{PN1_TR} son of {PN2_TR} will pay {AMT_TR} of refined silver to {PN3_TR}, reckoned from the week of {PN4_TR} within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Full debt sentence: amount + debtor + creditor + week start + deadline. Very common single-line debt."
+  },
+  {
+    "id": "debt_iser_refined_full_months",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am iš-tù ha-mu-uš-tim ša {PN1_TL} DUMU {PN2_TL} a-na {DEADLINE_TL} ITI.KAM i-ša-qal",
+    "tr": "{AMT_TR} of refined silver from the week of {PN1_TR}, son of {PN2_TR}, within {DEADLINE_TR} months he will pay.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Full debt with month deadline."
+  },
+  {
+    "id": "debt_iser_refined_to_city_weeks",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am iš-tù ha-mu-uš-tim ša {PN1_TL} a-na {DEADLINE_TL} ha-am-ša-tim a-na {PLACE_TL} i-ša-qal",
+    "tr": "{AMT_TR} of refined silver he will pay in {DEADLINE_TR} weeks reckoned from the week of {PN1_TR}, to {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Debt with payment to specific place."
+  },
+  {
+    "id": "debt_go_city_book",
+    "category": "debt",
+    "tl": "a-na {DEADLINE_TL} ha-am-ša-tim a-na A-lim{ki} i-lá-ak-ma iš-tí um-me-a-ni-šu {AMT_TL} KÙ.GI šu-mì {PN1_TL} i-lá-pá-at",
+    "tr": "he must go to the City within {DEADLINE_TR} weeks and together with his investors he must book {AMT_TR} of gold in {PN1_TR}'s name.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "gold"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Obligation to go to Assur and book gold. Investment context."
+  },
+  {
+    "id": "debt_iser_refined_full_date",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} {PN2_TL} i-šu ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL} DUMU {PN3_TL}",
+    "tr": "{AMT_TR} of refined silver {PN1_TR} owes to {PN2_TR}, month {MONTH_TR} eponymy of {EPONYM_TR}, son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt declaration + date on same line."
+  },
+  {
+    "id": "interest_from_week_two_names",
+    "category": "interest",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} ù {PN2_TL} a-na 1 ma-na-im {RATE_TL} GÍN.TA i-na ITU.KAM ṣí-ib-tám ú-ṣú-bu",
+    "tr": "From the week of {PN1_TR} and {PN2_TR} they will add per 1 mina {RATE_TR} shekels per month as interest.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "RATE",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest with two weekly officials."
+  },
+  {
+    "id": "pay_fulldebt_amt_weeks_silver",
+    "category": "payment",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am {PN1_TL} iš-tù ha-mu-uš-tim ša {PN2_TL} ú {PN3_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal-ma",
+    "tr": "{PN1_TR} will pay {AMT_TR} of refined silver, reckoned from the week of {PN2_TR} and {PN3_TR} within {DEADLINE_TR} weeks,",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Full payment sentence: debtor pays refined silver from week of two officials within N weeks."
+  },
+  {
+    "id": "debt_habul_iser_refined",
+    "category": "debt",
+    "tl": "ša {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} ú {PN2_TL} {PN3_TL} i-šu-ú",
+    "tr": "Concerning the fact that {PN1_TR} and {PN2_TR} owe {AMT_TR} of refined silver to {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Relative clause debt reference. Common when debt is topic of discussion."
+  },
+  {
+    "id": "debt_iser_merchant",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} DUMU {PN2_TL} DAM.GÀR-ru-um i-šu",
+    "tr": "{PN1_TR} son of {PN2_TR} owes {AMT_TR} of refined silver to a merchant.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt to unnamed merchant (bearer-creditor)."
+  },
+  {
+    "id": "debt_iser_creditor_merchant",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} DAM.GÀR i-šu",
+    "tr": "{AMT_TR} of refined silver {PN1_TR} owes to the creditor.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Debt to the creditor (tamkarum). Bearer holds the tablet."
+  },
+  {
+    "id": "gave_wife",
+    "category": "receipt",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na a-ša-at {PN1_TL} a-dí-in",
+    "tr": "I gave {AMT_TR} of silver to {PN1_TR}'s wife.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Payment to wife of a person."
+  },
+  {
+    "id": "receipt_brought_purchase",
+    "category": "receipt",
+    "tl": "a-na ší-a-ma-tim {PN1_TL} ú-bi-il5",
+    "tr": "{PN1_TR} brought it away for purchases.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Goods taken for purchase."
+  },
+  {
+    "id": "receipt_sold_textiles_copper",
+    "category": "receipt",
+    "tl": "{AMT_TL} TÚG.HI.A {PN1_TL} i-dí-in-ma URUDU a-na {PN2_TL} DUMU {PN3_TL} e-zi-ib",
+    "tr": "{PN1_TR} sold {AMT_TR} textiles and left the copper for {PN2_TR} son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Textile sale with copper proceeds left for someone."
+  },
+  {
+    "id": "debt_iser_silver_pair_full",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am KI {PN1_TL} iš-tù ha-muš-tim ša {PN2_TL} DUMU {PN3_TL} a-na {DEADLINE_TL} ha-am-ša-tim a-na {PN4_TL} i-ša-qal",
+    "tr": "{AMT_TR} of refined silver is owed by {PN1_TR}; he will pay in {DEADLINE_TR} weeks reckoned from the week eponymy of {PN2_TR}, son of {PN3_TR}, to {PN4_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      },
+      {
+        "name": "PN4",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Full multi-clause debt: KI + week start + deadline + creditor."
+  },
+  {
+    "id": "shoes_send",
+    "category": "debt",
+    "tl": "{AMT_TL} ší-ni-šu ší-né-en ša {PLACE_TL} SIG5 iš-tù {PLACE_TL} ú-šé-ba-lam",
+    "tr": "From {PLACE_TR} he must send {AMT_TR} pairs of good shoes (made) in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {}
+      },
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      }
+    ],
+    "notes": "Obligation to send shoes from a place."
+  },
+  {
+    "id": "pay_wheat_jars",
+    "category": "receipt",
+    "tl": "{AMT_TL} DUG GIG {AMT2_TL} GÍN áš-qúl",
+    "tr": "(For) {AMT_TR} jars of wheat I paid {AMT2_TR} shekels.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "bare_number": true
+        }
+      },
+      {
+        "name": "AMT2",
+        "type": "amount",
+        "options": {
+          "bare_number": true
+        }
+      }
+    ],
+    "notes": "Purchase of wheat jars. DUG and GÍN units are embedded in TL; bare_number prevents doubled units."
+  },
+  {
+    "id": "further_silver",
+    "category": "receipt",
+    "tl": "a-ha-ma {AMT_TL} KÙ.BABBAR a-na {PN1_TL} a-dí-in",
+    "tr": "Furthermore, I gave {AMT_TR} of silver to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Additional item (ahama = furthermore)."
+  },
+  {
+    "id": "further_working_capital",
+    "category": "receipt",
+    "tl": "a-ha-ma {AMT_TL} KÙ.BABBAR a-na bé-a-lim a-na {PN1_TL} a-dí-in ma-aḫ-ri-šu-nu-ma",
+    "tr": "{AMT_TR} of silver I gave as a working-capital to {PN1_TR} witnessed by the same men.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Working capital given before same witnesses."
+  },
+  {
+    "id": "balanced_silver",
+    "category": "receipt",
+    "tl": "a-na {AMT_TL} KÙ.BABBAR ṣa-ru-pí-im a-šu-mì {PN1_TL} a-na {PN2_TL} DUMU {PN3_TL} a-pu-ul",
+    "tr": "I balanced for {AMT_TR} of refined silver because of {PN1_TR} with {PN2_TR} son of {PN3_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Balancing/clearing an account between parties."
+  },
+  {
+    "id": "interest_colony_rate_v2_shall",
+    "category": "interest",
+    "tl": "šu-ma lá iš-qú-ul ki-ma a-wa-at kà-ri-im {PLACE_TL} ṣí-ib-ta-am ú-ṣa-áb",
+    "tr": "If he does not pay when his term is up, he shall add interest in accordance with the rule of the {PLACE_TR} colony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Colony rate v2 with \"he shall add\" convention."
+  },
+  {
+    "id": "interest_colony_rate_v2_is_to",
+    "category": "interest",
+    "tl": "šu-ma lá iš-qú-ul ki-ma a-wa-at kà-ri-im {PLACE_TL} ṣí-ib-ta-am ú-ṣa-áb",
+    "tr": "If he does not pay when his term is up, he is to add interest in accordance with the rule of the {PLACE_TR} colony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Colony rate v2 with \"he is to add\" convention."
+  },
+  {
+    "id": "interest_from_week_shall",
+    "category": "interest",
+    "tl": "iš-tù ha-muš-tim ša {PN1_TL} {RATE_TL} GÍN.TA ṣí-ib-tám i-na ITU.KAM ú-ṣa-áb",
+    "tr": "From the week of {PN1_TR} he shall add {RATE_TR} shekel of silver as interest per month.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "RATE",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest from week with \"he shall add\" convention."
+  },
+  {
+    "id": "interest_from_week_is_to",
+    "category": "interest",
+    "tl": "iš-tù ha-muš-tim ša {PN1_TL} {RATE_TL} GÍN.TA ṣí-ib-tám i-na ITU.KAM ú-ṣa-áb",
+    "tr": "From the week of {PN1_TR} he is to add {RATE_TR} shekel of silver as interest per month.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "RATE",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Interest from week with \"he is to add\" convention."
+  },
+  {
+    "id": "document_dead",
+    "category": "debt",
+    "tl": "šu-ma lá iš-qú-ul ṭup-pu-um a-num i-mu-at-ma {AMT_TL} {PN1_TL} i-ša-qal",
+    "tr": "But if he has not paid, then this document is dead, and {PN1_TR} will have to pay {AMT_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Document variant of tablet_dead."
+  },
+  {
+    "id": "document_invalid",
+    "category": "debt",
+    "tl": "ṭup-pu-um ha-ar-mu-um ša hu-bu-ul {PN1_TL} DUMU {PN2_TL} ša e-li-a-ni sà-ar",
+    "tr": "A certified document concerning the debt of {PN1_TR} son of {PN2_TR} that may appear will be invalid.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Document variant of tablet_invalid."
+  },
+  {
+    "id": "document_encased",
+    "category": "debt",
+    "tl": "ṭup-pá-am ha-ar-ma-am ša {AMT_TL} KÙ.BABBAR ša hu-bu-ul {PN1_TL}",
+    "tr": "an encased document of {AMT_TR} of silver, being the debt of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Document variant of tablet_encased_debt."
+  },
+  {
+    "id": "date_month_limmu",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL}",
+    "tr": "Month {MONTH_TR}, limmu {EPONYM_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Limmu variant of date_month_eponymy."
+  },
+  {
+    "id": "date_month_limmu_patronymic",
+    "category": "dating",
+    "tl": "ITI.KAM {MONTH_TL} li-mu-um {EPONYM_TL} DUMU {PN1_TL}",
+    "tr": "Month {MONTH_TR}, limmu {EPONYM_TR} son of {PN1_TR}.",
+    "slots": [
+      {
+        "name": "MONTH",
+        "type": "month",
+        "options": {}
+      },
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Limmu variant with patronymic."
+  },
+  {
+    "id": "date_year_of",
+    "category": "dating",
+    "tl": "li-mu-um {EPONYM_TL}",
+    "tr": "Year of {EPONYM_TR}.",
+    "slots": [
+      {
+        "name": "EPONYM",
+        "type": "eponym",
+        "options": {}
+      }
+    ],
+    "notes": "Year of variant of date_year_eponymy."
+  },
+  {
+    "id": "according_to_instructions",
+    "category": "debt",
+    "tl": "a-ma-lá ṭé-mi-šu {AMT_TL} KÙ.BABBAR a-na {PN1_TL} áp-qí-id",
+    "tr": "According to his instructions I entrusted {AMT_TR} of silver to {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "According to (amala) variant of in accordance with."
+  },
+  {
+    "id": "according_to_tablet",
+    "category": "debt",
+    "tl": "a-na ma-lá ṭup-pì-im {PN1_TL} {AMT_TL} KÙ.BABBAR i-ša-qal",
+    "tr": "According to the tablet {PN1_TR} will pay {AMT_TR} of silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "According to (ana mala) variant for document reference."
+  },
+  {
+    "id": "according_to_colony_rule",
+    "category": "interest",
+    "tl": "šu-ma lá iš-qú-ul a-ma-lá a-wa-at kà-ri-im {PLACE_TL} ṣí-ib-ta-am ú-ṣa-áb",
+    "tr": "If he does not pay, he will add interest according to the regulation of the {PLACE_TR} colony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "According to (amala) variant of interest_colony_rate_v2."
+  },
+  {
+    "id": "pay_weeks_shall",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "He shall pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Shall pay variant of pay_weeks."
+  },
+  {
+    "id": "pay_weeks_silver_shall",
+    "category": "payment",
+    "tl": "{AMT_TL} KÙ.BABBAR a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "He shall pay {AMT_TR} of silver within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Shall pay variant of pay_weeks_silver."
+  },
+  {
+    "id": "pay_from_week_shall",
+    "category": "payment",
+    "tl": "iš-tù ha-mu-uš-tim ša {PN1_TL} a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "Reckoned from the week of {PN1_TR} he shall pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Shall pay variant of pay_from_week_to_weeks."
+  },
+  {
+    "id": "pay_festival_shall",
+    "category": "payment",
+    "tl": "i-na ša {FEST_TL} i-ša-qal",
+    "tr": "He shall pay at the {FEST_TR}.",
+    "slots": [
+      {
+        "name": "FEST",
+        "type": "festival",
+        "options": {}
+      }
+    ],
+    "notes": "Shall pay variant of pay_festival."
+  },
+  {
+    "id": "pay_weeks_must",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ha-am-ša-tim i-ša-qal",
+    "tr": "He must pay within {DEADLINE_TR} weeks.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "weeks"
+        }
+      }
+    ],
+    "notes": "Must pay variant of pay_weeks."
+  },
+  {
+    "id": "pay_months_must",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ITI.KAM i-ša-qal",
+    "tr": "He must pay within {DEADLINE_TR} months.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "months"
+        }
+      }
+    ],
+    "notes": "Must pay variant of pay_months."
+  },
+  {
+    "id": "pay_in_place_must",
+    "category": "payment",
+    "tl": "i-na {PLACE_TL} a-na {PN1_TL} i-ša-qal",
+    "tr": "He must pay to {PN1_TR} in {PLACE_TR}.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {}
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Must pay variant of pay_in_place."
+  },
+  {
+    "id": "pay_years_must",
+    "category": "payment",
+    "tl": "a-na {DEADLINE_TL} ša-na-tim i-ša-qal",
+    "tr": "He must pay in {DEADLINE_TR} years.",
+    "slots": [
+      {
+        "name": "DEADLINE",
+        "type": "deadline",
+        "options": {
+          "unit": "years"
+        }
+      }
+    ],
+    "notes": "Must pay variant of pay_years."
+  },
+  {
+    "id": "topic_as_for_debt",
+    "category": "debt",
+    "tl": "a-šu-mì hu-bu-ul {PN1_TL} {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am",
+    "tr": "As for {PN1_TR}'s debt of {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "As for variant of debt_habul_silver."
+  },
+  {
+    "id": "topic_as_for_persons",
+    "category": "debt",
+    "tl": "a-šu-mì {PN1_TL} ù {PN2_TL}",
+    "tr": "As for {PN1_TR} and {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "As for variant with two persons."
+  },
+  {
+    "id": "topic_as_to_debt",
+    "category": "debt",
+    "tl": "a-šu-mì hu-bu-ul {PN1_TL} {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am",
+    "tr": "As to {PN1_TR}'s debt of {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "As to variant of debt_habul_silver."
+  },
+  {
+    "id": "topic_as_to_person",
+    "category": "debt",
+    "tl": "a-šu-mì {PN1_TL} DUMU {PN2_TL}",
+    "tr": "As to {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "As to variant with patronymic."
+  },
+  {
+    "id": "topic_regarding_debt",
+    "category": "debt",
+    "tl": "a-šu-mì hu-bu-ul {PN1_TL} {AMT_TL} KÙ.BABBAR ṣa-ru-pá-am",
+    "tr": "Regarding {PN1_TR}'s debt of {AMT_TR} of refined silver.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      }
+    ],
+    "notes": "Regarding variant of debt_habul_silver."
+  },
+  {
+    "id": "topic_regarding_persons",
+    "category": "debt",
+    "tl": "a-šu-mì {PN1_TL} ù {PN2_TL}",
+    "tr": "Regarding {PN1_TR} and {PN2_TR}.",
+    "slots": [
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Regarding variant with two persons."
+  },
+  {
+    "id": "interest_shall_add",
+    "category": "interest",
+    "tl": "šu-ma lá iš-qú-ul {RATE_TL} GÍN.TA i-na ITI.KAM a-na 1 ma-na-im ṣí-ib-ta-am ú-ṣa-áb",
+    "tr": "If he does not pay, he shall add {RATE_TR} shekel per mina per month as interest.",
+    "slots": [
+      {
+        "name": "RATE",
+        "type": "rate",
+        "options": {}
+      }
+    ],
+    "notes": "Shall add interest variant."
+  },
+  {
+    "id": "interest_accrues_colony",
+    "category": "interest",
+    "tl": "šu-ma lá iš-qú-ul a-na ṣí-ib-tim ki-ma a-wa-at kà-ri-im {PLACE_TL} i-lá-ak-šu-um",
+    "tr": "If he does not pay, interest will accrue to him in accordance with the rule of the {PLACE_TR} colony.",
+    "slots": [
+      {
+        "name": "PLACE",
+        "type": "place",
+        "options": {
+          "values": [
+            "Ka-ni-is/Kanesh",
+            "Dur4-hu-mi-it/Durhumit"
+          ]
+        }
+      }
+    ],
+    "notes": "Interest accrues (ilak-sum, alakum verb) variant. Different TL verb from usab."
+  },
+  {
+    "id": "claim_creditor_silver",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN2_TR} has a claim of {AMT_TR} of refined silver against {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Creditor-first phrasing of i-ṣé-er debt formula. Same TL as debt_iser_silver_refined. Attested: 'Pè-ru-wa i-šu' → 'Peruwa has a claim of 13 ½ shekels of silver against Duda.'"
+  },
+  {
+    "id": "claim_creditor_silver_patronymic",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} DUMU {PN2_TL} {PN3_TL} i-šu",
+    "tr": "{PN3_TR} has a claim of {AMT_TR} of refined silver against {PN1_TR} son of {PN2_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN3",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Creditor-first with patronymic. Attested: 'Bu-za-zu i-šu-ú' → 'Buzāzu has a claim of 1 ⅔ minas of refined silver against Uṣur-ša-Aššur.'"
+  },
+  {
+    "id": "claim_creditor_copper",
+    "category": "debt",
+    "tl": "{AMT_TL} URUDU i-ṣé-er {PN1_TL} {PN2_TL} i-šu",
+    "tr": "{PN2_TR} has a claim of {AMT_TR} of copper against {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "copper"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      },
+      {
+        "name": "PN2",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Creditor-first for copper. Attested: 'A-šur-ta-ak-la-ku i-šu' → 'Aššur-taklāku has a claim of 2 ½ talents and 3 minas of refined copper on Puzur-Ištar.'"
+  },
+  {
+    "id": "claim_merchant_creditor",
+    "category": "debt",
+    "tl": "{AMT_TL} KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er {PN1_TL} DAM.GÀR i-šu",
+    "tr": "The merchant has a claim of {AMT_TR} of refined silver against {PN1_TR}.",
+    "slots": [
+      {
+        "name": "AMT",
+        "type": "amount",
+        "options": {
+          "commodity": "silver"
+        }
+      },
+      {
+        "name": "PN1",
+        "type": "name",
+        "options": {}
+      }
+    ],
+    "notes": "Merchant as creditor. Attested: '11 GÍN KÙ.BABBAR ṣa-ru-pá-am i-ṣé-er Im-li-ik-i-li-im DAM.GÀR i-šu' → 'The merchant has claim against Ímlik-ilum.'"
+  }
+]

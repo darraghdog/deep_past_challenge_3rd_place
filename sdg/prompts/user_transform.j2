@@ -1,0 +1,38 @@
+### Seed sentence
+**Transliteration:** {{ seed_transliteration }}
+**Translation:** {{ seed_translation }}
+**Genre:** {{ seed_genre }}
+
+### OARE annotations for this document
+```
+{{ oare_annotations }}
+```
+
+### Grammar rules (evaluate each for applicability to the seed)
+{% for rule in grammar_rules %}
+Rule {{ loop.index }} [§{{ rule.section }}] {{ rule.title }}:
+{{ rule.rule }}
+{% if rule.transformation_potential %}How to transform: {{ rule.transformation_potential }}
+{% endif %}{% if rule.examples %}Examples:
+{% for ex in rule.examples %}- {{ ex.transliteration }} → {{ ex.translation }}{% if ex.grammar %} ({{ ex.grammar }}){% endif %}
+{% endfor %}{% endif %}
+
+{% endfor %}
+
+### Instructions
+1. Use the **think** tool to analyze the seed and determine which rules apply.
+2. Use **lookup_form** if you need to verify a specific OA form exists in real texts.
+3. For each applicable rule, produce a transformed (transliteration, translation) pair.
+4. Output ALL pairs as a JSON code block:
+
+```json
+[
+  {
+    "rule_section": "§X.Y.Z",
+    "transformation": "brief description of what to be changed"
+    "transliteration": "the new OA transliteration",
+    "translation": "the new English translation"
+
+  }
+]
+```
