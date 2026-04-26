@@ -6,6 +6,10 @@
 **Prize**: $8,000  
 **Solution Writeup**: [Synthetic Data to Teach OA Fundamentals — Deep Past Challenge - Translate Akkadian to English](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation/writeups/3rd-synthetic-data-to-teach-oa-fundamentals)  
 
+## Project Brain
+
+Browse the Quartz knowledge base for this reproduction repo: [Deep Past Solution Brain](https://darraghdog.github.io/deep_past_challenge_3rd_place/).
+
 ## Competition Overview
 
 Four thousand years ago, Assyrian merchants left behind one of the world's richest archives of everyday commercial life — tens of thousands of clay tablets recording debts, caravans, and family matters. Nearly 23,000 tablets survive documenting Old Assyrian trading networks connecting Mesopotamia to Anatolia. Only half have been translated, and fewer than a dozen scholars worldwide can read the rest.
