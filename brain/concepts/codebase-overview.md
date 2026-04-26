@@ -27,6 +27,8 @@ The adjacent `../akk/` repository is the original working tree where investigati
 - `prompts/`: extraction, repair, sentence splitting, and source-layout prompts.
 - `run_pipeline.sh`: sequential extraction and preparation workflow.
 
+For a demo-oriented walkthrough, start with [[prompt-system]], [[synthetic-data-generation]], [[dataset-and-config-map]], and [[evaluation-and-decoding]]. These pages show the repository's distinctive pieces more clearly than a flat file listing.
+
 ## Main Reproduction Flow
 
 The documented high-level path is:

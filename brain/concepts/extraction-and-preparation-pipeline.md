@@ -16,7 +16,7 @@ The pipeline converts competition CSVs, source PDFs, HTML corpora, dictionary at
 
 ## Orchestration
 
-`run_pipeline.sh` is the top-level sequential pipeline. It sets `DATA_DIR`, loads `.env` if present, verifies `AKKADIAN_KEY`, and runs seven stages:
+`run_pipeline.sh` is the top-level sequential pipeline. It sets `DATA_DIR`, loads `.env` if present, verifies that the required API key environment variable is available, and runs seven stages:
 
 1. Expert data: combine competition CSVs, repair translations, split into sentence pairs, deduplicate.
 2. AKT extraction: side-by-side, top-bottom, and OCR extraction modes.

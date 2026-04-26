@@ -49,3 +49,22 @@
 
 - GitHub Pages source was set to GitHub Actions.
 - Touched the wiki log to trigger the Quartz Pages workflow after enabling the setting.
+
+## [2026-04-26] ingest | Demo expansion for prompts and repo sections
+
+- Added pages that make the public brain more useful as a demo of the current repository.
+- Sources inspected:
+  - `prompts/`
+  - `sdg/`
+  - `conf/`
+  - `code/utils/metric_utils.py`
+  - `code/utils/generation_utils.py`
+  - `code/utils/onomasticon.py`
+- Files created or updated:
+  - `brain/raw/transcripts/prompt-and-sdg-inventory-2026-04-26.md`
+  - `brain/concepts/prompt-system.md`
+  - `brain/concepts/synthetic-data-generation.md`
+  - `brain/concepts/dataset-and-config-map.md`
+  - `brain/concepts/evaluation-and-decoding.md`
+  - `brain/index.md`
+  - `brain/log.md`
