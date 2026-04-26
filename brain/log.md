@@ -78,3 +78,8 @@
   - `brain/queries/what-should-i-show-in-a-demo.md`
   - `brain/index.md`
   - `brain/log.md`
+
+## [2026-04-26] update | Query folder landing page
+
+- Added `brain/queries/index.md` so Quartz has an explicit landing page for the queries folder.
+- Verified the deployed homepage already contains the `Queries` section and direct query links.
