@@ -33,3 +33,14 @@
   - `brain/concepts/normalization.md`
   - `brain/concepts/reproducibility-caveats.md`
   - `brain/entities/missing-283-transliterations.md`
+
+## [2026-04-26] update | Brain publishing workflow
+
+- Added GitHub Actions workflow to build `brain/` with Quartz and deploy it to GitHub Pages.
+- Removed one absolute local path from the raw codebase inventory note before publishing.
+- Files created or updated:
+  - `.github/workflows/deploy-brain.yml`
+  - `brain/concepts/brain-publishing.md`
+  - `brain/index.md`
+  - `brain/log.md`
+  - `brain/raw/transcripts/codebase-inventory-2026-04-26.md`

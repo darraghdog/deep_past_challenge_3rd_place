@@ -1,6 +1,6 @@
 # Codebase Inventory — 2026-04-26
 
-This raw note records the observed structure of the current checkout at `/Users/dhanley/Documents/akk-third`. It is a reproducibility repo, not the original exploratory working tree.
+This raw note records the observed structure of the current checkout. It is a reproducibility repo, not the original exploratory working tree.
 
 ## Top-Level Files
 

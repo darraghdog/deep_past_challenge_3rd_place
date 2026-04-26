@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page is listed under its type with a one-line summary.
-> Last updated: 2026-04-26 | Total pages: 6
+> Last updated: 2026-04-26 | Total pages: 7
 
 ## Entities
 
@@ -9,6 +9,7 @@
 
 ## Concepts
 
+- [[brain-publishing]] — GitHub Pages and Quartz workflow used to publish the `brain/` wiki.
 - [[codebase-overview]] — Map of the current reproduction repository and its main modules.
 - [[extraction-and-preparation-pipeline]] — End-to-end data extraction, repair, splitting, deduplication, and final dataset preparation flow.
 - [[normalization]] — Shared transliteration and translation normalization rules used across extraction and preparation.
