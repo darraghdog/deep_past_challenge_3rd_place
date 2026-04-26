@@ -44,3 +44,8 @@
   - `brain/index.md`
   - `brain/log.md`
   - `brain/raw/transcripts/codebase-inventory-2026-04-26.md`
+
+## [2026-04-26] update | Pages deployment enabled
+
+- GitHub Pages source was set to GitHub Actions.
+- Touched the wiki log to trigger the Quartz Pages workflow after enabling the setting.
