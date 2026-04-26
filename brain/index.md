@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page is listed under its type with a one-line summary.
-> Last updated: 2026-04-26 | Total pages: 11
+> Last updated: 2026-04-26 | Total pages: 14
 
 ## Entities
 
@@ -23,3 +23,7 @@
 ## Comparisons
 
 ## Queries
+
+- [[how-does-this-repo-reproduce-the-solution]] — Filed answer explaining the end-to-end reproduction path.
+- [[what-makes-the-data-pipeline-distinctive]] — Filed synthesis of the repo's data-pipeline differentiators.
+- [[what-should-i-show-in-a-demo]] — Suggested walkthrough for presenting the published brain.

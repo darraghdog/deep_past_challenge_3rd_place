@@ -68,3 +68,13 @@
   - `brain/concepts/evaluation-and-decoding.md`
   - `brain/index.md`
   - `brain/log.md`
+
+## [2026-04-26] query | Demo query pages
+
+- Added filed query pages to make the published brain easier to navigate during a demo.
+- Files created or updated:
+  - `brain/queries/how-does-this-repo-reproduce-the-solution.md`
+  - `brain/queries/what-makes-the-data-pipeline-distinctive.md`
+  - `brain/queries/what-should-i-show-in-a-demo.md`
+  - `brain/index.md`
+  - `brain/log.md`
